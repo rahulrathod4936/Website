@@ -1,0 +1,690 @@
+.expressapplicationsBlock .col-lg-1,
+.expressapplicationsBlock .col-lg-10,
+.expressapplicationsBlock .col-lg-11,
+.expressapplicationsBlock .col-lg-12,
+.expressapplicationsBlock .col-lg-2,
+.expressapplicationsBlock .col-lg-3,
+.expressapplicationsBlock .col-lg-4,
+.expressapplicationsBlock .col-lg-5,
+.expressapplicationsBlock .col-lg-6,
+.expressapplicationsBlock .col-lg-7,
+.expressapplicationsBlock .col-lg-8,
+.expressapplicationsBlock .col-lg-9,
+.expressapplicationsBlock .col-md-1,
+.expressapplicationsBlock .col-md-10,
+.expressapplicationsBlock .col-md-11,
+.expressapplicationsBlock .col-md-12,
+.expressapplicationsBlock .col-md-2,
+.expressapplicationsBlock .col-md-3,
+.expressapplicationsBlock .col-md-4,
+.expressapplicationsBlock .col-md-5,
+.expressapplicationsBlock .col-md-6,
+.expressapplicationsBlock .col-md-7,
+.expressapplicationsBlock .col-md-8,
+.expressapplicationsBlock .col-md-9,
+.expressapplicationsBlock .col-sm-1,
+.expressapplicationsBlock .col-sm-10,
+.expressapplicationsBlock .col-sm-11,
+.expressapplicationsBlock .col-sm-12,
+.expressapplicationsBlock .col-sm-2,
+.expressapplicationsBlock .col-sm-3,
+.expressapplicationsBlock .col-sm-4,
+.expressapplicationsBlock .col-sm-5,
+.expressapplicationsBlock .col-sm-6,
+.expressapplicationsBlock .col-sm-7,
+.expressapplicationsBlock .col-sm-8,
+.expressapplicationsBlock .col-sm-9,
+.expressapplicationsBlock .col-xs-1,
+.expressapplicationsBlock .col-xs-10,
+.expressapplicationsBlock .col-xs-11,
+.expressapplicationsBlock .col-xs-12,
+.expressapplicationsBlock .col-xs-2,
+.expressapplicationsBlock .col-xs-3,
+.expressapplicationsBlock .col-xs-4,
+.expressapplicationsBlock .col-xs-5,
+.expressapplicationsBlock .col-xs-6,
+.expressapplicationsBlock .col-xs-7,
+.expressapplicationsBlock .col-xs-8,
+.expressapplicationsBlock .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.expressapplicationsBlock .col-xs-1,
+.expressapplicationsBlock .col-xs-10,
+.expressapplicationsBlock .col-xs-11,
+.expressapplicationsBlock .col-xs-12,
+.expressapplicationsBlock .col-xs-2,
+.expressapplicationsBlock .col-xs-3,
+.expressapplicationsBlock .col-xs-4,
+.expressapplicationsBlock .col-xs-5,
+.expressapplicationsBlock .col-xs-6,
+.expressapplicationsBlock .col-xs-7,
+.expressapplicationsBlock .col-xs-8,
+.expressapplicationsBlock .col-xs-9 {
+    float: left;
+}
+
+.expressapplicationsBlock .col-xs-12 {
+    width: 100%;
+}
+
+.expressapplicationsBlock .alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.expressapplicationsBlock .alert-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.expressapplicationsBlock .file-preview {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.expressapplicationsBlock .file-drop-zone,
+.expressapplicationsBlock .krajee-default .file-preview-audio audio,
+.expressapplicationsBlock .krajee-default .file-preview-image,
+.expressapplicationsBlock .krajee-default .file-preview-other {
+    vertical-align: middle;
+}
+
+.expressapplicationsBlock .file-drop-zone {
+    border: 1px dashed #aaa;
+    border-radius: 4px;
+    height: 100%;
+    text-align: center;
+    margin: 12px 15px 12px 12px;
+    padding: 5px;
+}
+
+.expressapplicationsBlock .clickable .file-drop-zone-title,
+.expressapplicationsBlock .file-preview .clickable {
+    cursor: pointer;
+}
+
+.expressapplicationsBlock .file-drop-zone-title {
+    color: #aaa;
+    font-size: 1.6em;
+    padding: 85px 10px;
+    cursor: default;
+}
+
+.expressapplicationsBlock .file-drop-zone .file-preview-thumbnails {
+    cursor: default;
+}
+
+.expressapplicationsBlock .btn-group-vertical > .btn-group:after,
+.expressapplicationsBlock .btn-group-vertical > .btn-group:before,
+.expressapplicationsBlock .btn-toolbar:after,
+.expressapplicationsBlock .btn-toolbar:before,
+.expressapplicationsBlock .clearfix:after,
+.expressapplicationsBlock .clearfix:before,
+.expressapplicationsBlock .container-fluid:after,
+.expressapplicationsBlock .container-fluid:before,
+.expressapplicationsBlock .container:after,
+.expressapplicationsBlock .container:before,
+.expressapplicationsBlock .dl-horizontal dd:after,
+.expressapplicationsBlock .dl-horizontal dd:before,
+.expressapplicationsBlock .form-horizontal .form-group:after,
+.expressapplicationsBlock .form-horizontal .form-group:before,
+.expressapplicationsBlock .modal-footer:after,
+.expressapplicationsBlock .modal-footer:before,
+.expressapplicationsBlock .modal-header:after,
+.expressapplicationsBlock .modal-header:before,
+.expressapplicationsBlock .nav:after,
+.expressapplicationsBlock .nav:before,
+.expressapplicationsBlock .navbar-collapse:after,
+.expressapplicationsBlock .navbar-collapse:before,
+.expressapplicationsBlock .navbar-header:after,
+.expressapplicationsBlock .navbar-header:before,
+.expressapplicationsBlock .navbar:after,
+.expressapplicationsBlock .navbar:before,
+.expressapplicationsBlock .pager:after,
+.expressapplicationsBlock .pager:before,
+.expressapplicationsBlock .panel-body:after,
+.expressapplicationsBlock .panel-body:before,
+.expressapplicationsBlock .row:after,
+.expressapplicationsBlock .row:before {
+    display: table;
+    content: " ";
+}
+
+.expressapplicationsBlock .btn-group-vertical > .btn-group:after,
+.expressapplicationsBlock .btn-toolbar:after,
+.expressapplicationsBlock .clearfix:after,
+.expressapplicationsBlock .container-fluid:after,
+.expressapplicationsBlock .container:after,
+.expressapplicationsBlock .dl-horizontal dd:after,
+.expressapplicationsBlock .form-horizontal .form-group:after,
+.expressapplicationsBlock .modal-footer:after,
+.expressapplicationsBlock .modal-header:after,
+.expressapplicationsBlock .nav:after,
+.expressapplicationsBlock .navbar-collapse:after,
+.expressapplicationsBlock .navbar-header:after,
+.expressapplicationsBlock .navbar:after,
+.expressapplicationsBlock .pager:after,
+.expressapplicationsBlock .panel-body:after,
+.expressapplicationsBlock .row:after {
+    clear: both;
+}
+
+.expressapplicationsBlock .text-success {
+    color: #3c763d;
+}
+
+.expressapplicationsBlock .file-error-message {
+    color: #a94442;
+    background-color: #f2dede;
+    margin: 5px;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.expressapplicationsBlock .hide {
+    display: none !important;
+}
+
+.expressapplicationsBlock .progress {
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
+    box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
+    border:none;
+}
+
+.expressapplicationsBlock .progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 18px;
+    color: #fff;
+    text-align: center;
+    background-color: #337ab7;
+    -webkit-box-shadow: inset 0 -1px 0 rgb(0 0 0 / 15%);
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 15%);
+    -webkit-transition: width 0.6s ease;
+    -o-transition: width 0.6s ease;
+    transition: width 0.6s ease;
+}
+
+.expressapplicationsBlock .progress-bar-striped,
+.expressapplicationsBlock .progress-striped .progress-bar {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    -webkit-background-size: 40px 40px;
+    background-size: 40px 40px;
+}
+
+.expressapplicationsBlock .progress-bar-success {
+    background-color: #5cb85c;
+}
+
+.expressapplicationsBlock .progress-bar.active,
+.expressapplicationsBlock .progress.active .progress-bar {
+    -webkit-animation: progress-bar-stripes 2s linear infinite;
+    -o-animation: progress-bar-stripes 2s linear infinite;
+    animation: progress-bar-stripes 2s linear infinite;
+}
+
+.expressapplicationsBlock .input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+.expressapplicationsBlock .file-caption-main {
+    width: 100%;
+}
+
+.expressapplicationsBlock .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.expressapplicationsBlock .input-group .form-control {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.expressapplicationsBlock .file-caption-name {
+    display: inline-block;
+    overflow: hidden;
+    height: 20px;
+    word-break: break-all;
+}
+
+.expressapplicationsBlock .input-group .form-control,
+.expressapplicationsBlock .input-group-addon,
+.expressapplicationsBlock .input-group-btn {
+    display: table-cell;
+}
+
+.expressapplicationsBlock .input-group-addon,
+.expressapplicationsBlock .input-group-btn {
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.expressapplicationsBlock .input-group-btn {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+}
+
+.expressapplicationsBlock .btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.expressapplicationsBlock .btn-primary {
+    color: #fff;
+  
+}
+
+.expressapplicationsBlock .btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.expressapplicationsBlock .input-group-btn > .btn {
+    position: relative;
+}
+
+.expressapplicationsBlock .input-group .form-control:last-child,
+.expressapplicationsBlock .input-group-addon:last-child,
+.expressapplicationsBlock .input-group-btn:first-child > .btn-group:not(:first-child) > .btn,
+.expressapplicationsBlock .input-group-btn:first-child > .btn:not(:first-child),
+.expressapplicationsBlock .input-group-btn:last-child > .btn,
+.expressapplicationsBlock .input-group-btn:last-child > .btn-group > .btn,
+.expressapplicationsBlock .input-group-btn:last-child > .dropdown-toggle {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.expressapplicationsBlock .input-group-btn:last-child > .btn,
+.expressapplicationsBlock .input-group-btn:last-child > .btn-group {
+    z-index: 2;
+    margin-left: -1px;
+}
+
+.expressapplicationsBlock .glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: "Glyphicons Halflings";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.expressapplicationsBlock .glyphicon-folder-open:before {
+    content: "\e118";
+}
+
+.expressapplicationsBlock .btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    text-align: right;
+    opacity: 0;
+    background: none;
+    cursor: inherit;
+    display: block;
+}
+
+.expressapplicationsBlock .btn-group-lg > .btn,
+.expressapplicationsBlock .btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+.expressapplicationsBlock .fa-cloud:before {
+    content: "\f0c2";
+}
+
+.expressapplicationsBlock table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.expressapplicationsBlock table {
+    background-color: transparent;
+}
+
+.expressapplicationsBlock .table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.expressapplicationsBlock .table-responsive {
+    min-height: 0.01%;
+    overflow-x: auto;
+}
+
+.expressapplicationsBlock caption {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #777;
+    text-align: left;
+}
+
+.expressapplicationsBlock .lead {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.expressapplicationsBlock .krajee-default.file-preview-frame {
+    position: relative;
+    display: table;
+    margin: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 5px 0 #a2958a;
+    padding: 6px;
+    float: left;
+    text-align: center;
+}
+
+.expressapplicationsBlock .krajee-default.file-preview-frame {
+    width: 100%;
+    margin: 0px;
+}
+
+.expressapplicationsBlock .krajee-default.file-preview-frame .kv-file-content {
+    height: 170px;
+}
+
+.expressapplicationsBlock .krajee-default .file-preview-other {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.expressapplicationsBlock .krajee-default .file-other-icon {
+    font-size: 8em;
+}
+
+.expressapplicationsBlock .fa-file-pdf-o:before {
+    content: "\f1c1";
+}
+
+.expressapplicationsBlock .krajee-default .file-thumbnail-footer {
+    position: relative;
+}
+
+.expressapplicationsBlock .krajee-default.file-preview-frame .file-thumbnail-footer {
+    height: 70px;
+}
+
+.expressapplicationsBlock .krajee-default .file-footer-caption {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 160px;
+    text-align: center;
+    padding-top: 4px;
+    font-size: 11px;
+    color: #777;
+    margin: 5px auto;
+}
+
+.expressapplicationsBlock .krajee-default .file-thumb-progress {
+    height: 10px;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    right: 0;
+}
+
+.expressapplicationsBlock .krajee-default .file-thumb-progress .progress,
+.expressapplicationsBlock .krajee-default .file-thumb-progress .progress-bar {
+    height: 10px;
+    font-size: 9px;
+    line-height: 10px;
+}
+
+.expressapplicationsBlock .krajee-default .file-thumb-progress .progress,
+.expressapplicationsBlock .krajee-default .file-thumb-progress .progress-bar,
+.expressapplicationsBlock .krajee-default .file-upload-indicator {
+    display: none;
+}
+
+.expressapplicationsBlock .file-drop-zone.clickable:hover {
+    border: 2px dashed #999;
+}
+
+.expressapplicationsBlock .file-highlighted {
+    border: 2px dashed #999!important;
+    background-color: #f0f0f0;
+}
+
+.expressapplicationsBlock .generaljobapplicationBlock-17 {
+    padding: 0 !important;
+}
+
+.expressapplicationsBlock .generaljobapplicationBlock-17 .pd-left-0{
+    padding-left:0;
+}
+
+.expressapplicationsBlock .SUBMITTED_RESUME_LIST,
+.expressapplicationsBlock .applicationResumeHint{
+    font-weight: bold;
+    color: #000;
+    font-size:16px;
+}
+
+.expressapplicationsBlock .SUBMITTED_RESUME_LIST{
+    padding-top:0;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .expressapplicationsBlock .col-sm-1,
+    .expressapplicationsBlock .col-sm-10,
+    .expressapplicationsBlock .col-sm-11,
+    .expressapplicationsBlock .col-sm-12,
+    .expressapplicationsBlock .col-sm-2,
+    .expressapplicationsBlock .col-sm-3,
+    .expressapplicationsBlock .col-sm-4,
+    .expressapplicationsBlock .col-sm-5,
+    .expressapplicationsBlock .col-sm-6,
+    .expressapplicationsBlock .col-sm-7,
+    .expressapplicationsBlock .col-sm-8,
+    .expressapplicationsBlock .col-sm-9 {
+        float: left;
+    }
+
+    .expressapplicationsBlock .col-sm-8 {
+        width: 100%;
+    }
+
+    .expressapplicationsBlock .col-sm-5 {
+        width: 41.66666667%;
+    }
+
+    .expressapplicationsBlock .col-sm-7 {
+        width: 58.33333333%;
+    }
+
+   
+}
+
+@media (min-width: 992px) {
+    .expressapplicationsBlock .col-md-1,
+    .expressapplicationsBlock .col-md-10,
+    .expressapplicationsBlock .col-md-11,
+    .expressapplicationsBlock .col-md-12,
+    .expressapplicationsBlock .col-md-2,
+    .expressapplicationsBlock .col-md-3,
+    .expressapplicationsBlock .col-md-4,
+    .expressapplicationsBlock .col-md-5,
+    .expressapplicationsBlock .col-md-6,
+    .expressapplicationsBlock .col-md-7,
+    .expressapplicationsBlock .col-md-8,
+    .expressapplicationsBlock .col-md-9 {
+        float: left;
+    }
+
+    .expressapplicationsBlock .col-md-9 {
+        width: 75%;
+    }
+
+    .expressapplicationsBlock .col-md-5 {
+        width: 41.66666667%;
+    }
+
+    .expressapplicationsBlock .col-md-7 {
+        width: 58.33333333%;
+    }
+    
+    .expressapplicationsBlock {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    .expressapplicationsBlock .col-lg-1,
+    .expressapplicationsBlock .col-lg-10,
+    .expressapplicationsBlock .col-lg-11,
+    .expressapplicationsBlock .col-lg-12,
+    .expressapplicationsBlock .col-lg-2,
+    .expressapplicationsBlock .col-lg-3,
+    .expressapplicationsBlock .col-lg-4,
+    .expressapplicationsBlock .col-lg-5,
+    .expressapplicationsBlock .col-lg-6,
+    .expressapplicationsBlock .col-lg-7,
+    .expressapplicationsBlock .col-lg-8,
+    .expressapplicationsBlock .col-lg-9 {
+        float: left;
+    }
+
+    .expressapplicationsBlock .col-lg-9 {
+        width: 100%;
+    }
+
+    .expressapplicationsBlock .col-lg-5 {
+        width: 41.66666667%;
+    }
+
+    .expressapplicationsBlock .col-lg-7 {
+        width: 58.33333333%;
+    }
+}
+
+
+.captionFormModal {
+    display: none;
+}
+
+.captionFormModal .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.captionFormModal .input-lg {
+    height: 46px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+.captionFormModal textarea.form-control {
+    height: auto;
+}
+
+.captionFormModal select[multiple].input-lg,
+.captionFormModal textarea.input-lg {
+    height: auto;
+}
+
+.captionFormModal .modal-footer{
+    background-color:transparent;
+}
+
+.captionFormModal form{
+    margin-bottom:0;
+}

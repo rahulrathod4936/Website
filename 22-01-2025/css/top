@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif !important;
+}
+body {
+    font-size: 16px;
+    font-family: "Gotham-Book", sans-serif !important;
+    }
+* {
+    box-sizing: border-box;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.filter-option::before {
+    font-weight: 900;
+    content: "\f0d7";
+    font-family: "Font Awesome 6 Free";
+    margin-right: 5px;
+    position: absolute;
+    top: 11px;
+    right: 6px;
+}
+header a,
+footer a {
+    transition: color 0.1s linear;
+}
+
+.well.featurehover.featurehover-alljobs,
+.well.featurehover.featurehover-jobsbylocations.center,
+.well.featurehover.featurehover-jobsbycategories.center,
+.well.featurehover.featurehover-alljobs:hover,
+.well.featurehover.featurehover-jobsbylocations.center:hover,
+.well.featurehover.featurehover-jobsbycategories.center:hover {
+    cursor: pointer;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+form label {
+    cursor: default;
+}
+ul.dropdown-menu.inner a span.text {
+    font-size: 13px;
+}
+@media screen and (max-width: 1200px) and (min-width: 767px) {
+    a.btn.btn-large.btn-primary.JOB_U {
+        width: 100%;
+    }
+
+    a.btn.btn-large.btn-primary.Sea_Agent {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 352px) and (min-width: 320px) {
+    .well.featurehover.featurehover-misc.center a {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .well.featurehover.featurehover-misc.center a:nth-child(2) {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 979px) and (min-width: 768px) {
+    .well.featurehover.featurehover-alljobs.center .highlight,
+    .well.featurehover.featurehover-jobsbylocations.center .highlight,
+    .well.featurehover.featurehover-jobsbycategories.center .highlight {
+        font-size: 16px;
+    }
+
+    ul.unstyled.featuring.animated.fadeIn i {
+        font-size: 82px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+    .jobdescription a.btn.btn-primary.btn-large.btn-block.btn-apply-part {
+        margin-bottom: 10px;
+    }
+}
+
+.Div_Class {
+    margin-top: 8px;
+}
+
+.Width_Full a {
+    width: 100%;
+}
+
+.input-block-level.search-query {
+    margin-bottom: 10px;
+}
+
+.pdtop {
+    padding-top: 0;
+}
+
+.featurehover:hover {
+    background-color: transparent !important;
+    cursor: auto !important;
+}
+
+.row-fluid.general_j .highlight {
+    cursor: default;
+    font-size: 18px !important;
+}
+
+.row-fluid.general_j .well.featurehover.featurehover-misc.center div {
+    cursor: default;
+}
+
+.designer-1 a {
+    font-weight: bold;
+}
+
+.row-fluid.general_j .well.featurehover.featurehover-misc.center div {
+    display: inline-block !important;
+}
+
+form.form-search input.input-block-level.search-query{
+    margin-bottom:0;
+}
+
+@media screen and (max-width: 425px) {
+    .span4.hasSimilarJobs .btn {
+        font-size: 13px;
+    }
+
+    .span4.hasSimilarJobs * {
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 979px) and (min-width: 768px) {
+    .safari .container.main-cntr .span4.hasSimilarJobs *,
+    .safari .container.main-cntr .span4.hasSimilarJobs .btn-middle-size{
+        font-size: 12px !important;
+    }
+    
+    .safari .container.main-cntr{
+        width:100% !important;
+        padding-left:25px !important;
+        padding-right:25px !important;
+    }
+}
+
+.main-cntr {
+    margin-top: 150px;
+}
+
+.container.main-cntr {
+    min-height: calc(100vh - 100px);
+}
+

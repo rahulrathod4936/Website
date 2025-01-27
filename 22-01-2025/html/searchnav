@@ -1,0 +1,101 @@
+{{#hasJobs}}
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 carousel padding-0" style="padding:0;">
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"> 				
+						<a href="{{alljobsUri}}">
+					    	<div class="well feature-jobs text-center">
+					      		<div class="highlight">{{labels.LIST_ALL_JOBS}}</div>
+					      		<br>
+					      		<ul>
+					        		<i class="fa fa-briefcase"></i>
+					        		<span>{{hasJobs}}</span>
+					      		</ul>
+					      		<br>
+					    	</div>
+					    </a>
+					</div>
+					
+					{{#hasJobLocations}}
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"> 
+						<a href="{{jobaggregatedlocationsUri}}">
+					    	<div class="well feature-jobs text-center">
+					      		<div class="highlight">{{labels.SEARCH_JOBS_BY_LOCATIONS}}</div>
+					      		<br>
+					      		<ul>
+					        		<i class="fa fa-globe"></i>
+					        		<span>{{hasJobLocations}}</span>
+					      		</ul>
+					      		<br>
+					    	</div>
+					    </a>
+					</div>
+					{{/hasJobLocations}}
+					
+					{{#hasJobCategories}}
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"> 
+						<a href="{{jobcategoriesUri}}">
+					    	<div class="well feature-jobs text-center">
+					      		<div class="highlight">{{labels.JOBS_BY_CATEGORIES}}</div>
+					      		<br>
+					      		<ul>
+					        		<i class="fa fa-cog"></i>
+					        		<span>{{hasJobCategories}}</span>
+					      		</ul>
+					      		<br>
+					    	</div>
+					    </a>
+					</div>
+					{{/hasJobCategories}}
+					
+				
+					
+					{{#hasJobTypes}}
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"> 
+						<a href="{{jobtypesUri}}">
+					    	<div class="well feature-jobs text-center">
+					      		<div class="highlight">{{labels.JOBS_BY_TYPES}}</div>
+					      		<br>
+					      		<ul>
+					        		<i class="fa fa-certificate"></i>
+					        		<span>{{hasJobTypes}}</span>
+					      		</ul>
+					      		<br>
+					    	</div>
+					    </a>
+					</div>
+					{{/hasJobTypes}}
+					
+					{{#hasJobCompanies}}
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"> 
+						<a href="{{jobcompaniesUri}}">
+					    	<div class="well feature-jobs text-center">
+					      		<div class="highlight">{{labels.JOBS_BY_COMPANIES}}</div>
+					      		<br>
+					      		<ul>
+					        		<i class="fa fa-building"></i>
+					        		<span>{{hasJobCompanies}}</span>
+					      		</ul>
+					      		<br>
+					    	</div>
+					    </a>
+					</div>
+					{{/hasJobCompanies}}
+					
+					{{#hasJobDivisions}}
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"> 
+						<a href="{{jobdivisionsUri}}">
+					    	<div class="well feature-jobs text-center">
+					      		<div class="highlight">{{labels.JOBS_BY_DIVISIONS}}</div>
+					      		<br>
+					      		<ul>
+					        		<i class="fa fa-cubes"></i>
+					        		<span>{{hasJobDivisions}}</span>
+					      		</ul>
+					      		<br>
+					    	</div>
+					    </a>
+					</div>
+					{{/hasJobDivisions}}
+				</div>
+				<div class="clearfix"></div>
+				<br>
+				{{/hasJobs}}

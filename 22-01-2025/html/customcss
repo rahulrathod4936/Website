@@ -1,0 +1,572 @@
+{{#ie}}
+<style type="text/css">
+input[type="radio"], 
+input[type="checkbox"] {
+	margin-top:-1px;
+}
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+  line-height: 21px;
+}
+</style>
+{{/ie}}
+
+{{#fontFamily}}
+<style type="text/css">
+body {
+  font-family: {{fontFamily}}, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+</style>
+{{/fontFamily}}
+
+{{#accentColor}}
+<style type="text/css">
+.btn-primary {
+  border: 1px solid {{accentColor}};
+}
+.btn:focus {
+  border-color: {{accentColor}};
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:focus {
+  border: 1px solid {{accentColor}};
+}
+.btn-primary:active,
+.btn-primary.active {
+  border: 1px solid {{accentColor}};
+}
+.btn-primary:focus {
+  border: 1px solid {{accentColor}};
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus {
+  border: 1px solid {{accentColor}};
+}
+.btn-primary {
+  background-color: {{accentColor}};
+  background-image: -moz-linear-gradient(top, {{accentColor}}, {{accentColor}});
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from({{accentColor}}), to({{accentColor}}));
+  background-image: -webkit-linear-gradient(top, {{accentColor}}, {{accentColor}});
+  background-image: -o-linear-gradient(top, {{accentColor}}, {{accentColor}});
+  background-image: linear-gradient(to bottom, {{accentColor}}, {{accentColor}});
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='{{accentColor}}', endColorstr='{{accentColor}}', GradientType=0);
+  *background-color: {{accentColor}};
+}
+.datepicker table tr td.today,
+.datepicker table tr td.today:hover,
+.datepicker table tr td.today.disabled,
+.datepicker table tr td.today.disabled:hover,
+.datepicker table tr td.active,
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td span.active,
+.datepicker table tr td span.active:hover,
+.datepicker table tr td span.active.disabled,
+.datepicker table tr td span.active.disabled:hover,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:focus {
+  background-color: {{accentColor}};
+  background-image: -moz-linear-gradient(top, {{accentColor}}, {{accentColor}});
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from({{accentColor}}), to({{accentColor}}));
+  background-image: -webkit-linear-gradient(top, {{accentColor}}, {{accentColor}});
+  background-image: -o-linear-gradient(top, {{accentColor}}, {{accentColor}});
+  background-image: linear-gradient(to bottom, {{accentColor}}, {{accentColor}});
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='{{accentColor}}', endColorstr='{{accentColor}}', GradientType=0);
+  *background-color: {{accentColor}};
+}
+.btn-primary:active,
+.btn-primary.active {
+  background-color: {{accentColor}};
+  background-image: -moz-linear-gradient(top, {{accentColor}}, {{accentColor}});
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from({{accentColor}}), to({{accentColor}}));
+  background-image: -webkit-linear-gradient(top, {{accentColor}}, {{accentColor}});
+  background-image: -o-linear-gradient(top, {{accentColor}}, {{accentColor}});
+  background-image: linear-gradient(to bottom, {{accentColor}}, {{accentColor}});
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='{{accentColor}}', endColorstr='{{accentColor}}', GradientType=0);
+  *background-color: {{accentColor}};
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus {
+  background-color: {{accentColor}};
+  background-image: -moz-linear-gradient(top, {{accentColor}}, {{accentColor}});
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from({{accentColor}}), to({{accentColor}}));
+  background-image: -webkit-linear-gradient(top, {{accentColor}}, {{accentColor}});
+  background-image: -o-linear-gradient(top, {{accentColor}}, {{accentColor}});
+  background-image: linear-gradient(to bottom, {{accentColor}}, {{accentColor}});
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='{{accentColor}}', endColorstr='{{accentColor}}', GradientType=0);
+  *background-color: {{accentColor}};
+}
+
+.btn-group.open .btn-primary.dropdown-toggle {
+  background-color: {{accentColor}};
+}
+aside section {
+    background: {{accentColor}} no-repeat top right;
+}
+a:hover,
+aside a:hover, 
+aside li.active a {
+    color:  {{accentColor}};
+}
+aside li span, aside li a:hover span {
+    background: {{accentColor}};
+}
+.nav-tabs > li > a > span {
+  	color: {{accentColor}};
+}
+a {
+	color: {{accentColor}};
+}
+.mediafile-caption {
+	color: {{accentColor}};
+}
+.btn-group > .btn:hover,
+.btn-group > .btn:focus,
+.btn-group > .btn:active,
+.btn-group > .btn.active {
+	color: {{accentColor}};
+}
+.nav-tabs-google li.active {
+  border-bottom: 3px solid {{accentColor}};
+}
+.nav-tabs-google li:hover {
+  border-bottom: 3px solid {{accentColor}};
+}
+.nav-tabs-google > li > a:active {
+  color: {{accentColor}};
+}
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover,
+.nav-pills > .active > a:focus {
+  background-color: {{accentColor}};
+}
+.pagination ul > .active > a,
+.pagination ul > .active > span {
+  color: {{accentColor}};
+}
+select:focus {
+  outline: 0;
+}
+select:focus,
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: {{accentColor}};
+}
+.featurehover-profile,
+.featurehover-profile:hover,
+.featurehover-jobagents,
+.featurehover-jobagents:hover,
+.featurehover-alljobs,
+.featurehover-alljobs:hover,
+.featurehover-jobsbylocations,
+.featurehover-jobsbycategories, 
+.featurehover-jobsbytypes, 
+.featurehover-jobsbycompanies, 
+.featurehover-jobsbydivisions, 
+.featurehover-appliedjobs,
+.featurehover-savedjobs,
+.featurehover-applicationsinprogress,
+.featurehover-alljobs:hover,
+.featurehover-jobsbylocations:hover,
+.featurehover-jobsbycategories:hover,
+.featurehover-jobsbytypes:hover,
+.featurehover-jobsbycompanies:hover,
+.featurehover-jobsbydivisions:hover,
+.featurehover-appliedjobs:hover,
+.featurehover-savedjobs:hover, 
+.featurehover-applicationsinprogress:hover {
+  background-color: {{accentColor}};
+  background-image: -moz-linear-gradient(top, {{accentColor}}, {{accentColor}});
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from({{accentColor}}), to({{accentColor}}));
+  background-image: -webkit-linear-gradient(top, {{accentColor}}, {{accentColor}});
+  background-image: -o-linear-gradient(top, {{accentColor}}, {{accentColor}});
+  background-image: linear-gradient(to bottom, {{accentColor}}, {{accentColor}});
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='{{accentColor}}', endColorstr='{{accentColor}}', GradientType=0);
+  *background-color: {{accentColor}};
+  border-color: {{accentColor}};
+}
+.accent-color {
+  	color: {{accentColor}};
+}
+</style>
+{{/accentColor}}
+
+{{#accentColor1}}
+<style type="text/css">
+.nav-tabs > li > a > div {
+  	color: {{accentColor1}};
+}
+aside section {
+    background: {{accentColor1}} no-repeat top right;
+}
+a:hover,
+aside a:hover, 
+aside li.active a {
+    color:  {{accentColor1}};
+}
+aside li span, aside li a:hover span {
+    background: {{accentColor1}};
+}
+.accent-color1 {
+  	color: {{accentColor1}};
+}
+</style>
+{{/accentColor1}}
+
+{{#linkColor}}
+<style type="text/css">
+a:hover {
+	color: {{linkColor}};
+}
+a {
+	color: {{linkColor}};
+}
+.nav-tabs > li > a,
+.nav-tabs > li > a > span {
+  	color: {{linkColor}};
+}
+.mediafile-caption {
+	color: {{linkColor}};
+}
+.pagination ul > li > a,
+.pagination ul > li > span {
+  	color: {{linkColor}};
+}
+.btn-group > .btn {
+	color: {{linkColor}};
+}
+.link-color {
+  	color: {{linkColor}};
+}
+</style>
+{{/linkColor}}
+
+{{#iconColor}}
+<style type="text/css">
+.masonry-container a,
+.masonry-container a:active,
+.masonry-container a:visited,
+.masonry-container a:hover {
+	color: {{iconColor}};
+}
+</style>
+{{/iconColor}}
+
+{{#hasGradientColors}}
+<style type="text/css">
+.btn-primary {
+  background-color: {{gradientEndColor}};
+  border: {{gradientEndColor}};
+  background-image: -moz-linear-gradient(top, {{gradientStartColor}}, {{gradientEndColor}});
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from({{gradientStartColor}}), to({{gradientEndColor}}));
+  background-image: -webkit-linear-gradient(top, {{gradientStartColor}}, {{gradientEndColor}});
+  background-image: -o-linear-gradient(top, {{gradientStartColor}}, {{gradientEndColor}});
+  background-image: linear-gradient(to bottom, {{gradientStartColor}}, {{gradientEndColor}});
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='{{gradientStartColor}}', endColorstr='{{gradientEndColor}}', GradientType=0);
+  *background-color: {{gradientStartColor}};
+}
+.datepicker table tr td.today,
+.datepicker table tr td.today:hover,
+.datepicker table tr td.today.disabled,
+.datepicker table tr td.today.disabled:hover,
+.datepicker table tr td.active,
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td span.active,
+.datepicker table tr td span.active:hover,
+.datepicker table tr td span.active.disabled,
+.datepicker table tr td span.active.disabled:hover,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:focus {
+  background-color: {{gradientEndColor}};
+  border: {{gradientEndColor}};
+  background-image: -moz-linear-gradient(top, {{gradientStartColor}}, {{gradientEndColor}});
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from({{gradientStartColor}}), to({{gradientEndColor}}));
+  background-image: -webkit-linear-gradient(top, {{gradientStartColor}}, {{gradientEndColor}});
+  background-image: -o-linear-gradient(top, {{gradientStartColor}}, {{gradientEndColor}});
+  background-image: linear-gradient(to bottom, {{gradientStartColor}}, {{gradientEndColor}});
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='{{gradientStartColor}}', endColorstr='{{gradientEndColor}}', GradientType=0);
+  *background-color: {{gradientStartColor}};
+}
+.btn-primary:active,
+.btn-primary.active {
+  background-color: {{gradientEndColor}};
+  border: {{gradientEndColor}};
+  background-image: -moz-linear-gradient(top, {{gradientStartColor}}, {{gradientEndColor}});
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from({{gradientStartColor}}), to({{gradientEndColor}}));
+  background-image: -webkit-linear-gradient(top, {{gradientStartColor}}, {{gradientEndColor}});
+  background-image: -o-linear-gradient(top, {{gradientStartColor}}, {{gradientEndColor}});
+  background-image: linear-gradient(to bottom, {{gradientStartColor}}, {{gradientEndColor}});
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='{{gradientStartColor}}', endColorstr='{{gradientEndColor}}', GradientType=0);
+  *background-color: {{gradientStartColor}};
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus {
+  background-color: {{gradientEndColor}};
+  border: {{gradientEndColor}};
+  background-image: -moz-linear-gradient(top, {{gradientStartColor}}, {{gradientEndColor}});
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from({{gradientStartColor}}), to({{gradientEndColor}}));
+  background-image: -webkit-linear-gradient(top, {{gradientStartColor}}, {{gradientEndColor}});
+  background-image: -o-linear-gradient(top, {{gradientStartColor}}, {{gradientEndColor}});
+  background-image: linear-gradient(to bottom, {{gradientStartColor}}, {{gradientEndColor}});
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='{{gradientStartColor}}', endColorstr='{{gradientEndColor}}', GradientType=0);
+  *background-color: {{gradientStartColor}};
+}
+.featurehover-profile,
+.featurehover-profile:hover,
+.featurehover-jobagents,
+.featurehover-jobagents:hover,
+.featurehover-alljobs,
+.featurehover-alljobs:hover,
+.featurehover-jobsbylocations,
+.featurehover-jobsbycategories, 
+.featurehover-jobsbytypes,
+.featurehover-jobsbycompanies, 
+.featurehover-jobsbydivisions, 
+.featurehover-appliedjobs,
+.featurehover-savedjobs,
+.featurehover-applicationsinprogress,
+.featurehover-alljobs:hover,
+.featurehover-jobsbylocations:hover,
+.featurehover-jobsbycategories:hover,
+.featurehover-jobsbytypes:hover,
+.featurehover-jobsbycompanies:hover,
+.featurehover-jobsbydivisions:hover,
+.featurehover-appliedjobs:hover,
+.featurehover-savedjobs:hover, 
+.featurehover-applicationsinprogress:hover {
+  background-color: {{gradientEndColor}};
+  border: {{gradientEndColor}};
+  background-image: -moz-linear-gradient(top, {{gradientStartColor}}, {{gradientEndColor}});
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from({{gradientStartColor}}), to({{gradientEndColor}}));
+  background-image: -webkit-linear-gradient(top, {{gradientStartColor}}, {{gradientEndColor}});
+  background-image: -o-linear-gradient(top, {{gradientStartColor}}, {{gradientEndColor}});
+  background-image: linear-gradient(to bottom, {{gradientStartColor}}, {{gradientEndColor}});
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='{{gradientStartColor}}', endColorstr='{{gradientEndColor}}', GradientType=0);
+  *background-color: {{gradientStartColor}};
+  border-color: {{gradientEndColor}};
+}
+</style>    
+{{/hasGradientColors}}
+
+{{#bgColor}}
+<style type="text/css">
+body,
+#content {
+    background: {{bgColor}};
+}
+</style>
+{{/bgColor}}
+
+{{#headerBgColor}}
+<style type="text/css">
+.masthead {
+  background: {{headerBgColor}};
+}
+</style>
+{{/headerBgColor}}
+
+{{#navBgColor}}
+<style type="text/css">
+aside form div,
+aside li, aside label, aside h2,
+aside .sidebar-scroll {
+  background: {{navBgColor}};
+}
+</style>
+{{/navBgColor}}
+
+{{#bgImage}}
+<style type="text/css">
+body,
+#content {
+    background: url({{imageBaseUrl}}{{bgImage}}) 0px 0px {{bgImageRepeat}} scroll transparent;
+    {{#bgColor}}
+    	background-color: {{bgColor}};
+    {{/bgColor}}
+    {{^bgColor}}
+    	background-color: #ffffff;
+    {{/bgColor}}
+    {{#bgImageStretch}}
+ 		-moz-background-size: auto 100%;
+        -webkit-background-size: auto 100%;
+    	background-size: auto 100%;
+    {{/bgImageStretch}}
+}
+{{#bgImageStretch}}
+@media screen and (orientation:portrait) {
+	body,
+	#content {
+		-moz-background-size: auto 100%;
+		-webkit-background-size: auto 100%;
+	    background-size: auto 100%;
+	}
+}
+@media screen and (orientation:landscape) {
+	body,
+	#content {
+		-moz-background-size: 100% auto;
+		-webkit-background-size: 100% auto;
+		background-size: 100% auto;
+	}
+}
+{{/bgImageStretch}}
+</style>
+{{/bgImage}}
+
+{{#fontColor}}
+<style type="text/css">
+body,
+#content {
+    color: {{fontColor}};
+}
+</style>
+{{/fontColor}}
+
+{{#headerFontColor}}
+<style type="text/css">
+.masthead,
+.masthead a, .masthead a:visited,
+.masthead span {
+  color: {{headerFontColor}};
+}
+</style>
+{{/headerFontColor}}
+
+{{#navFontColor}}
+<style type="text/css">
+aside form div,
+aside li, aside label, aside h2,
+aside .sidebar-scroll,
+aside a, aside a:visited,
+aside .copyright {
+  color: {{navFontColor}};
+}
+</style>
+{{/navFontColor}}
+
+{{^showFeatureImageText}}
+<style type="text/css">
+.masonry-item {
+	height: 70px;
+}
+.custom-icon { 
+	max-height:76px;
+	max-width:76px;
+}
+.custom-icon-holder {
+	height:76px;
+	width:76px;
+}
+
+@media  (min-width:1200px) { 
+	.masonry-item {
+		width: 140px;
+		height: 140px;
+		margin-left: 25px;
+	}
+	.custom-icon { 
+		max-height:140px;
+		max-width:140px;
+	}
+	.custom-icon-holder {
+		height:140px;
+		width:140px;
+	}		
+}
+@media  (min-width:979px) and (max-width:1200px) { 
+	.masonry-item {
+		width: 140px;
+		height: 140px;
+		margin-left: 25px;
+	}
+	.custom-icon { 
+		max-height:140px;
+		max-width:140px;
+	}
+	.custom-icon-holder {
+		height:140px;
+		width:140px;
+	}		
+}
+@media  (min-width:768px) and (max-width:978px) {
+	.masonry-item {
+		width: 140px;
+		height: 140px;
+		margin-left: 25px;
+	}
+	.custom-icon { 
+		max-height:140px;
+		max-width:140px;
+	}
+	.custom-icon-holder {
+		height:140px;
+		width:140px;
+	}
+}
+</style>
+{{/showFeatureImageText}}
+
+{{#corpCustomCss}}
+<style type="text/css">
+{{{corpCustomCss}}}
+</style>
+{{/corpCustomCss}}
+
+{{#customCss}}
+<style type="text/css">
+{{{customCss}}}
+</style>
+{{/customCss}}

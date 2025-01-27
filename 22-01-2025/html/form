@@ -1,0 +1,123 @@
+<div class="divide_form">
+{{#formFields}}
+    <div class="newform {{value}} HDSATAPARA">
+	    {{#hint}}
+	        <div class="alert_v1">
+		        <div class="alert alert-info hint">{{{hint}}}</div>
+	        </div>
+	    {{/hint}}
+	    
+	{{#isHidden}}
+		<input type="hidden" name="{{id}}" value="{{defaultValue}}"/>
+	{{/isHidden}}
+	{{^isHidden}}
+    {{#multipleChoiceSingleAnswer}}
+      <div class="singlechoice filltheblack">
+		 {{#required}}
+         <label><strong><span class="required-star">*</span>{{value}}</strong></label>
+         {{/required}}
+         {{^required}}
+         <label><strong>{{value}}</strong></label>
+         {{/required}}
+         
+         <select name="{{id}}" class="input-block-level work-select">
+ 			  	 <option value="" class="ChangeText">Select Title</option>
+ 			     {{#choices}}
+ 			     	{{#selected}}
+			  			<option value="{{value}}" selected>{{label}}</option>
+			  		{{/selected}}
+ 			     	{{^selected}}
+			  			<option value="{{value}}">{{label}}</option>
+			  		{{/selected}}
+			  	 {{/choices}}
+		      </select>
+         
+          {{#choiceCountGreaterThanTen}}
+ 		
+		      {{#choices}}
+	      	  	<label class="radio">
+	      			<input name="{{id}}" type="radio" class="input-block-level radiobox cleartext" value="{{value}}"{{checked}}>{{label}}
+	      			<div class="clearfix"></div>
+	      		</label>
+	      	  {{/choices}}
+          {{/choiceCountGreaterThanTen}}
+          {{^choiceCountGreaterThanTen}}
+	      	  {{#choices}}
+	      	  	<label class="radio">
+	      			<input name="{{id}}" type="radio" class="input-block-level radiobox cleartext" value="{{value}}"{{checked}}>{{label}}
+	      			<div class="clearfix"></div>
+	      		</label>
+	      	  {{/choices}}
+      	  {{/choiceCountGreaterThanTen}}
+      	  {{#freetext}}
+      	  	<input type="text" name="{{id}}" class="input-block-level clearradio" placeHolder="{{labels.NONE_OF_THE_ABOVE}}" value="{{defaultFreeText}}"/>
+      	  {{/freetext}}
+      	  {{#multipleChoiceComment}}
+      	  	<label>{{labels.COMMENT}}</label>
+       		<textarea class="input-block-level" name="{{id}}-comment" cols="30" rows="4">{{defaultComment}}</textarea>
+      	  {{/multipleChoiceComment}}   		
+      </div>
+  	  {{/multipleChoiceSingleAnswer}}
+      {{#multipleChoiceMultipleAnswers}}
+    	 <div class="multiplechoice filltheblack">
+    	 {{#required}}
+         <label><strong><span class="required-star">*</span>{{value}}</strong></label>
+         {{/required}}
+         {{^required}}
+         <label><strong>{{value}}</strong></label>
+         {{/required}}
+           {{#choices}}
+      	  	<label class="checkbox">	
+      			<input class="input-block-level checkboxchoice" name="{{id}}" type="checkbox" value="{{value}}"{{checked}}>{{label}}
+      			<div class="clearfix"></div>
+      	  	</label>
+      	  {{/choices}}      	     		
+      	  {{#freetext}}
+      	  	<input class="input-block-level" type="text" name="{{id}}" placeHolder="{{labels.NONE_OF_THE_ABOVE}}" value="{{defaultFreeText}}"/>
+      	  {{/freetext}}
+      	  {{#multipleChoiceComment}}
+      	  	<label>{{labels.COMMENT}}</label>
+       		<textarea class="input-block-level" name="{{id}}-comment" cols="30" rows="4">{{defaultComment}}</textarea>
+      	  {{/multipleChoiceComment}}
+     </div>
+  	{{/multipleChoiceMultipleAnswers}}
+  	{{#fillInTheBlank}}
+      <div class="filltheblack">
+	     {{#required}}
+         <label><strong><span class="required-star">*</span>{{value}}</strong></label>
+         {{/required}}
+         {{^required}}
+         <label><strong>{{value}}</strong></label>
+         {{/required}}
+         <div class="custom-vspace-small"></div>
+         {{#isSelect}}
+			<select name="{{id}}" class="input-block-level selectbox" id="{{inputTypeText}}-formfield" current="{{defaultValue}}" language="{{language}}">
+			  <option value="">{{labels.SELECT}}</option>
+		    </select> 
+         {{/isSelect}}
+         {{^isSelect}}
+	         {{#multipleLines}}
+	      	  <textarea class="input-block-level textareabox {{#max}}maxlength{{/max}}" name="{{id}}" cols="30" rows="12" maxlength="{{max}}">{{defaultValue}}</textarea>
+	      	 {{/multipleLines}}
+	         {{^multipleLines}}
+	         	{{#inputType}}
+	         		{{^isDate}}
+	         			<input class="input-block-level textbox {{#max}}maxlength{{/max}}" type="{{inputTypeText}}" name="{{id}}" value="{{defaultValue}}" maxlength="{{max}}"/>
+	         		    <div class="errormsg"></div>
+	         		{{/isDate}}
+	         		{{#isDate}}
+	         			<input class="input-block-level datepicker" type="text" name="{{id}}" value="{{defaultValue}}"/>
+	         		{{/isDate}}
+	         	{{/inputType}}
+	         	{{^inputType}}
+	         		<input class="input-block-level  inputbox {{#max}}maxlength{{/max}}" type="text" name="{{id}}" value="{{defaultValue}}" maxlength="{{max}}"/>
+	         	{{/inputType}}
+	      	  {{/multipleLines}}
+      	  {{/isSelect}}
+      </div>
+  {{/fillInTheBlank}}
+  <div class="custom-vspace"></div>
+  {{/isHidden}}
+  </div>
+{{/formFields}}
+</div>

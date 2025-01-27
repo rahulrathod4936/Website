@@ -1,0 +1,156 @@
+</div>
+{{#displayPoweredBy}}
+	<div class="SHPoweredBy">
+		{{labels.POWERED_BY}} <a href="https://snaphop.com/" target="_blank"><strong class="snaphop-black">Snap</strong><strong class="snaphop-red">Hop</strong></a>
+	</div>
+{{/displayPoweredBy}}
+<div class="newfooter">
+    <footer class="footer-fixed">
+        <div class="footer__socials">
+            <form role="search" method="get" id="searchform-footer" action="https://www.australianturfclub.com.au/" class="searchform-custom">
+                <div class="row no-gutters">
+                    <div class="col-10"><input type="search" id="s" name="s" required="required" placeholder="Search..."></div>
+                    <div class="col-2">
+                        <button type="submit" class="btn"></button>
+                    </div>
+                </div>
+            </form>
+            <div class="footer-signup">
+                <h2>NEWSLETTER SIGN UP</h2>
+                <p>Keep up to date with Australian Turf Club</p>
+                <button type="button" data-toggle="modal" data-target="#subscribeForm" class="btn btn--forward btn--solid-light">Subscribe</button>
+            </div>
+            <div class="social-icons d-none d-md-block">
+                <a href="https://www.instagram.com/australianturfclub/" target="_new" class="social-icon icon-instagram"></a>
+                <a href="https://twitter.com/aus_turf_club" target="_new" class="social-icon icon-twitter"></a>
+                <a href="https://www.facebook.com/australianturfclub" target="_new" class="social-icon icon-facebook2"></a>
+                <a href="https://www.youtube.com/user/AtcracesTV" target="_new" class="social-icon icon-youtube"></a>
+                <a href="https://www.linkedin.com/company/australian-turf-club/" target="_new" class="social-icon icon-linkedin"></a>
+               <a href="https://www.tiktok.com/@australianturfclub" class="social-icon icon-tiktok" target="_new"></a>
+               
+                <!--<a href="https://www.theatc.cn/" target="_new" class="china">-->
+                <!--    <img src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/china-flag.svg" data-src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/china-flag.svg" class="china-flag lazy loaded" data-was-processed="true">-->
+                <!--</a>-->
+            </div>
+            <div class="footer__primary-logo d-none d-md-block d-lg-none" style="width: 100%;">
+                <img src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/atc-logo-primary.svg" data-src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/atc-logo-primary.svg" alt="Australian Turf Club | Sydney Racing | Royal Randwick | Rosehill Gardens" class="footer__primary-logo-img lazy">
+            <div class="footer__rsa">
+The Australian Turf Club practices the responsible service of alcohol<br>Help is close at hand GambleAware<br><a href="https://www.gambleaware.nsw.gov.au/" target="_blank">Gambleaware.nsw.gov.au</a> <br>1800 858 858</div>
+            </div>
+        </div>
+        <div class="footer__menu">
+            <nav class="footer-nav">
+              <div class="menu-footer-menu-container">
+                  <ul id="menu-footer-menu" class="footer-navigation"><li id="menu-item-5766" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5766"><a href="https://www.australianturfclub.com.au/about-us/">About Us</a></li>
+<li id="menu-item-3267" class="footer-menu__link menu-item menu-item-type-post_type menu-item-object-page menu-item-3267"><a href="https://www.australianturfclub.com.au/our-careers/">Careers</a></li>
+<li id="menu-item-5765" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5765"><a href="https://www.australianturfclub.com.au/foundation/">Community</a></li>
+<li id="menu-item-5770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5770"><a href="https://www.australianturfclub.com.au/contact-us/">Contact Us</a></li>
+<li id="menu-item-113244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113244"><a href="https://www.australianturfclub.com.au/conditions-of-entry/">Raceday Policies &amp; Conditions of Entry</a></li>
+<!--<li id="menu-item-113244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113244"><a href="https://www.australianturfclub.com.au/conditions-of-entry/">Conditions of Entry</a></li>-->
+<li id="menu-item-140677" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140677"><a href="https://www.australianturfclub.com.au/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-5767" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5767"><a href="https://www.australianturfclub.com.au/corporate/">Corporate</a></li>
+<li id="menu-item-47376" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47376"><a href="https://www.australianturfclub.com.au/equine-welfare/">Equine Welfare</a></li>
+<li id="menu-item-49658" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49658"><a href="https://www.australianturfclub.com.au/faq/">FAQs</a></li>
+
+<li id="menu-item-49656" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49656"><a href="https://www.australianturfclub.com.au/what-to-wear/">What To Wear</a></li>
+<li id="menu-item-5768" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5768"><a href="https://www.australianturfclub.com.au/heritage/">Heritage</a></li>
+<li id="menu-item-5832" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5832"><a href="https://www.australianturfclub.com.au/history-timeline/">History Timeline</a></li>
+<li id="menu-item-159488" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159488"><a href="https://www.australianturfclub.com.au/news/">News</a></li>
+<li id="menu-item-5769" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5769"><a href="https://www.australianturfclub.com.au/official-partners/">Partnerships</a></li>
+<li id="menu-item-123639" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-123639"><a href="https://www.australianturfclub.com.au/corporate/#racecourse-maps">Racecourse Maps</a></li>
+<li id="menu-item-49926" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49926"><a href="https://www.australianturfclub.com.au/membership-services/members-travel-coach-parking/">Travel &amp; Parking</a></li>
+<li id="menu-item-164437" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-164437"><a href="https://www.australianturfclub.com.au/venue-accessibility/">Venue Accessibility <i class="fa-solid fa-wheelchair" aria-hidden="true"></i></a></li>
+<li id="menu-item-49886" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49886"><a href="https://www.australianturfclub.com.au/visiting-sydney/">Visiting Sydney</a></li>
+<li id="menu-item-120013" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-120013"><a href="https://www.australianturfclub.com.au/local-resident-info/">Local Resident Information</a></li></ul></div>
+            </nav>
+            <div class="footer__primary-logo d-none d-lg-block">
+                <img src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/atc-logo-primary.svg" data-src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/atc-logo-primary.svg" alt="Australian Turf Club | Sydney Racing | Royal Randwick | Rosehill Gardens" class="lazy loaded" data-was-processed="true">
+            
+            <div class="footer__rsa">
+The Australian Turf Club practices the responsible service of alcohol<br>Help is close at hand GambleAware<br><a href="https://www.gambleaware.nsw.gov.au/" target="_blank">Gambleaware.nsw.gov.au</a> <br>1800 858 858</div>
+        </div>
+      
+        <div class="social-icons d-md-none">
+            <a href="https://www.instagram.com/australianturfclub/" target="_new" class="social-icon icon-instagram"></a>
+            <a href="https://twitter.com/aus_turf_club" target="_new" class="social-icon icon-twitter"></a>
+            <a href="https://www.facebook.com/australianturfclub" target="_new" class="social-icon icon-facebook2"></a>
+            <a href="https://www.youtube.com/user/AtcracesTV" target="_new" class="social-icon icon-youtube"></a>
+            <a href="https://www.linkedin.com/company/australian-turf-club/" target="_new" class="social-icon icon-linkedin"></a>
+            
+            <a href="https://www.tiktok.com/@australianturfclub" class="social-icon icon-tiktok" target="_new"></a>
+            
+            <!--<a href="https://www.theatc.cn/" target="_new">-->
+            <!--    <img src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/china-flag.svg" data-src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/china-flag.svg" class="china-flag lazy">-->
+            <!--</a>-->
+        </div>
+        <div class="footer__primary-logo d-md-none">
+            <img src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/atc-logo-primary.svg" data-src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/atc-logo-primary.svg" alt="Australian Turf Club | Sydney Racing | Royal Randwick | Rosehill Gardens" class="lazy">
+        <div class="footer__rsa">
+The Australian Turf Club practices the responsible service of alcohol<br>Help is close at hand GambleAware<br><a href="https://www.gambleaware.nsw.gov.au/" target="_blank">Gambleaware.nsw.gov.au</a> <br>1800 858 858</div>
+        </div>
+    </footer><div class="white_border"></div>
+
+</div>
+
+<div class="gototop">
+    <a id="back-to-top" href="#" class="btn btn-lg btn-primary" role="button" style="display: inline;">
+        <span class="fa fa-chevron-up"></span>
+    </a>
+</div>
+
+    
+	{{{translationJs}}}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js" integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-maxlength/1.7.0/bootstrap-maxlength.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.0/js/fileinput.min.js"></script>
+    
+    
+	<script src="https://cdn.australianturfclub.com.au/app/cache/minify/044a6.js"></script>
+	
+    {{{RESOURCES.geolocationJs}}}
+    
+   <script src="{{design.asset.js.FunctionJS.url}}"></script>
+   
+   {{> customjs}}
+    <script src="{{design.asset.js.ArrowNew.url}}"></script>
+    <script src="{{design.asset.js.MakeMyJs.url}}"></script>
+   
+    
+    <script src="{{design.asset.js.SnaphopScript.url}}"></script>
+
+    <script>
+    $(document).ready(function() {        
+    	if ($('.sidenav').length>0){
+    		$('.search-nav-spacer').show();
+    	}else{
+    	    $('.search-nav-input-button').show();
+    	}		
+    });    
+    </script>
+  
+	{{^preview}}
+		{{#analyticsJs}}
+		<script>
+		{{{analyticsJs}}}
+		</script>
+	  	{{/analyticsJs}}
+	  	
+	  	{{#corpAnalyticsJs}}
+		<script>
+		{{{corpAnalyticsJs}}}
+		</script>
+	  	{{/corpAnalyticsJs}}
+  	{{/preview}}
+  	
+  
+  
+  </body>
+</html>

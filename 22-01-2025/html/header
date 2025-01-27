@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>    
+	{{> meta}}
+    
+    
+    
+    <link href="/static/resources/snaphop-common/css/bootstrap.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="/static/resources/snaphop-common/css/style.css" rel="stylesheet" type="text/css" media="screen"/>
+      
+    <link href="/static/resources/snaphop-desktop/css/style.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="{{design.asset.css.header.url}}" rel="stylesheet" type="text/css" media="screen"/>
+    
+    <link href="{{design.asset.css.footer.url}}" rel="stylesheet" type="text/css" media="screen"/>
+    
+    <link href="{{design.asset.css.top.url}}" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="{{design.asset.css.headermedia.url}}" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="{{design.asset.css.footermedia.url}}" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="{{design.asset.css.MakeMyCss.url}}" rel="stylesheet" type="text/css" media="screen"/>
+    
+    <link href="{{design.asset.css.common.url}}" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="{{design.asset.css.print.url}}" rel="stylesheet" type="text/css" media="print"/>
+   
+    <link href="{{design.asset.css.sidebar.url}}" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="{{design.asset.css.Resume.url}}" rel="stylesheet" type="text/css" media="screen"/>
+    
+    
+    
+    <link rel="shortcut icon" href="{{touchiconUrl}}" type="image/x-icon"/>
+    
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+  <style media="all" id="fa-kit-upload">@charset "utf-8";.fak.fa-gates-closed:before,.fa-kit.fa-gates-closed:before{content:""}.fak.fa-gates-open:before,.fa-kit.fa-gates-open:before{content:""}.fak.fa-horse-racing:before,.fa-kit.fa-horse-racing:before{content:""}.fak.fa-mobile-buy-icon:before,.fa-kit.fa-mobile-buy-icon:before{content:""}.fak.fa-turnstiles-1:before,.fa-kit.fa-turnstiles-1:before{content:""}.fak.fa-turnstiles-2:before,.fa-kit.fa-turnstiles-2:before{content:""}.fak.fa-what-to-wear:before,.fa-kit.fa-what-to-wear:before{content:""}.fak.fa-what-to-wear-2:before,.fa-kit.fa-what-to-wear-2:before{content:""}.fak,.fa-kit{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:var(--fa-display,inline-block);font-variant:normal;text-rendering:auto;font-family:Font Awesome Kit;font-style:normal;line-height:1}@font-face{font-family:Font Awesome Kit;font-style:normal;font-display:block;src:url(data:font/woff2;base64,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)format("woff2")}</style>
+    {{#accentColor}}
+    <style type="text/css">
+        .addquestionhead,
+        .custom-details-field{
+            color: {{accentColor}} !important;
+        }
+
+        a.last-back-uri,
+        label.Change-Color > *{
+            color: {{accentColor}};
+        }
+    </style>
+    {{/accentColor}} 
+  
+          
+    {{> customcss}}
+  </head>
+
+  <body id="body"{{#pageBodyClass}} class="{{pageBodyClass}}"{{/pageBodyClass}}>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId={{facebookAppId}}";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	</script>  
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+   
+   
+<!--<div class="masthead describe007 newheader">-->
+<!--   <header class="header-fixed">-->
+<!--        <div class="header-fixed__logo">-->
+<!--            <a href="https://www.australianturfclub.com.au/" class="logo-link">-->
+<!--                <img src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/atc-logo-secondary.svg" alt="Australian Turf Club">-->
+<!--            </a>-->
+<!--        </div>-->
+
+<!--        <div class="header-fixed__navigation dark hide-sm">-->
+<!--            <nav class="nav-primary">-->
+<!--                <div class="menu-primary-menu-container">-->
+<!--                    <ul id="menu-primary-menu" class="primary-navigation">-->
+<!--                        <li id="menu-item-2339" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2339">-->
+<!--                            <a href="https://www.australianturfclub.com.au/races/">Raceday Calendar</a>-->
+<!--                        </li>-->
+
+<!--                        <li id="menu-item-4220" class="menu-hospitality menu-item menu-item-type-custom menu-item-object-custom menu-item-4220">-->
+<!--                            <a>Premium Experiences</a>-->
+<!--                        </li>-->
+
+<!--                        <li id="menu-item-10" class="menu-membership menu-item menu-item-type-custom menu-item-object-custom menu-item-10">-->
+<!--                            <a>Membership</a>-->
+<!--                        </li>-->
+
+<!--                        <li id="menu-item-49979" class="menu-racing menu-item menu-item-type-custom menu-item-object-custom menu-item-49979">-->
+<!--                            <a>Racing</a>-->
+<!--                        </li>-->
+
+<!--                        <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12">-->
+<!--                            <a  rel="noopener noreferrer" href="https://www.australianturfclub.com.au/meetings-and-events/">Meetings &amp; Events</a>-->
+<!--                        </li>-->
+
+<!--                        <li id="menu-item-201" class="menu-racecourses menu-item menu-item-type-custom menu-item-object-custom menu-item-201">-->
+<!--                            <a>Venues</a>-->
+<!--                        </li>-->
+                        
+                        
+<!--                        <li class="menu-item header__member-icon" style="position:relative;">-->
+<!--                        	<button id="dropdownMemberButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Member Area">-->
+<!--                        		<img width="30" height="30" src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/member-icon.svg" data-src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/member-icon.svg" alt="Member Area" class="lazy loaded" data-was-processed="true">-->
+<!--                        	</button>-->
+<!--                        	<div id="dropdownMemberMenu" aria-labelledby="dropdownMemberButton" class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute;  top: 29px; left: -129px; will-change: transform;">-->
+<!--                        		<a href="https://www.australianturfclub.com.au/memlog/">Member Login</a>-->
+<!--                        	</div>-->
+<!--                        </li>-->
+                        
+                        
+                        
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </nav>-->
+
+
+<!--        <a href="https://www.ticketmaster.com.au/australianturfclub" class="btn btn--forward btn--solid-light">Buy Tickets</a>-->
+          
+<!--        </div>-->
+
+<!--        <div class="mobile-menu__buy-tickets">-->
+<!--            <a href="https://www.ticketmaster.com.au/australianturfclub">-->
+<!--                <img width="50" height="50" src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/mobile-buy-icon.svg" alt="Buy Tickets">-->
+<!--            </a>-->
+<!--        </div>-->
+<!--        <div class="mobile-menu__button">-->
+<!--            <button id="mobile_menu" type="button" class="burger burger--slider">-->
+<!--                <span class="burger-box"><span class="burger-inner"></span></span>-->
+<!--            </button>-->
+<!--        </div>-->
+<!--    </header>-->
+    
+    
+    
+<!--    <div class="mobile-menu">-->
+<!--        <a href="https://www.ticketmaster.com.au/australian-turf-club-tickets/artist/2770128#about?" class="btn btn--forward btn--solid-light">Buy Tickets</a>-->
+<!--        <nav class="nav-mobile">-->
+<!--            <div class="menu-mobile-menu-container">-->
+<!--                <ul id="menu-mobile-menu" class="mobile-navigation">-->
+<!--                    <li id="menu-item-3280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3280"><a href="https://www.australianturfclub.com.au/races/">Raceday Calendar</a></li>-->
+<!--                    <li id="menu-item-3282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3282"><a href="https://www.australianturfclub.com.au/our-hospitality/">Premium Experiences</a></li>-->
+<!--                    <li id="menu-item-48338" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48338"><a href="https://www.australianturfclub.com.au/membership-services/">Membership</a></li>-->
+<!--                    <li id="menu-item-49985" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49985"><a href="https://www.australianturfclub.com.au/racing/">Racing</a></li>-->
+<!--                    <li id="menu-item-3283" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3283">-->
+<!--                        <a rel="noopener noreferrer" href="https://www.australianturfclub.com.au/meetings-and-events/">Meetings &amp; Events</a>-->
+<!--                    </li>-->
+<!--                    <li id="menu-item-3279" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3279"><a href="https://www.australianturfclub.com.au/our-venues/">Venues</a></li>-->
+<!--                    <li class="menu-item header__member-icon header__member-icon--mobile"><a title="Member Login" href="https://www.australianturfclub.com.au/memlog/"><img width="30" height="30" src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/member-icon.svg" data-src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/member-icon.svg" alt="Member Login" class="lazy loaded" data-was-processed="true"> Member Login</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--            <form role="search" method="get" id="searchform-mobile-nav" action="{{jobsearchActionUri}}" class="searchform-custom form-search">-->
+<!--                <div class="row no-gutters">-->
+<!--                    <div class="col-10"><input type="text" class="input-block-level search-query" id="s" value="{{#term}}{{term}}{{/term}}" placeholder="Search..." name="term" /></div>-->
+<!--                    <div class="col-2">-->
+<!--                        <button type="submit" class="btn"><i class="fa fa-search"></i></button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </form>-->
+<!--        </nav>-->
+<!--    </div>-->
+
+<!--    <div id="hospitality-dropdown" class="hospitality-dropdown d-none d-lg-block dropdown-container visible open">-->
+<!--        <div class="hospitality-dropdown__inner nav-dropdown">-->
+<!--            <div class="racecourses slick-initialized slick-slider">-->
+<!--                <div class="slick-list draggable" style="padding: 0px 20px;">-->
+<!--                    <div class="slick-track">-->
+<!--                        <div class="slick-slide slick-current slick-center" data-slick-index="0" aria-hidden="true">-->
+<!--                            <div>-->
+<!--                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">-->
+<!--                                    <a href="https://www.australianturfclub.com.au/premium-experiences/" target="_self" tabindex="-1">-->
+<!--                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2022/12/221006_Randwick_Everest-Fashion-lunch_PaulMcMillan_086-min-683x1024.jpg');"></div>-->
+<!--                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Premium Dining Experiences</span></div>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="slick-slide" data-slick-index="1" aria-hidden="true">-->
+<!--                            <div>-->
+<!--                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">-->
+<!--                                    <a href="https://www.australianturfclub.com.au/hospitality?racecourse=2298" target="_self" tabindex="-1">-->
+<!--                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2022/11/randwick-hospo-dropdown-min.jpg');"></div>-->
+<!--                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Royal Randwick</span></div>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="slick-slide" data-slick-index="2" aria-hidden="true">-->
+<!--                            <div>-->
+<!--                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">-->
+<!--                                    <a href="https://www.australianturfclub.com.au/hospitality?racecourse=2297" target="_self" tabindex="-1">-->
+<!--                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2020/05/rh-hospitality-dropdown-450x620-min.jpg');"></div>-->
+<!--                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Rosehill Gardens</span></div>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="slick-slide slick-center" data-slick-index="3" aria-hidden="true">-->
+<!--                            <div>-->
+<!--                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">-->
+<!--                                    <a href="https://www.australianturfclub.com.au/our-hospitality/" target="_self" tabindex="-1">-->
+<!--                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2023/02/cp-wf-hospitality-menu-min.jpg');"></div>-->
+<!--                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Canterbury Park & Warwick Farm</span></div>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="racecourses__prev slick-arrow slick-hidden" aria-disabled="true" tabindex="-1" style=""><img src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/arrowblack.svg" alt="Back" /></div>-->
+<!--            <div class="racecourses__next slick-arrow slick-hidden" aria-disabled="true" tabindex="-1" style=""><img src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/arrowblack.svg" alt="Forwards" /></div>-->
+<!--        </div>-->
+<!--        <a href="https://www.australianturfclub.com.au/our-hospitality/" class="btn--outline-light btn--forward btn">View all</a>-->
+<!--    </div>-->
+
+<!--    <div id="membership-dropdown" class="membership-dropdown d-none d-lg-block dropdown-container visible open">-->
+<!--        <div class="membership-dropdown__inner nav-dropdown">-->
+<!--            <div class="racecourses slick-initialized slick-slider">-->
+<!--                <div class="slick-list draggable" style="padding: 0px 20px;">-->
+<!--                    <div class="slick-track" style="opacity: 1;  transform: translate3d(0px, 0px, 0px);">-->
+<!--                        <div class="slick-slide slick-current slick-center" data-slick-index="0" aria-hidden="true">-->
+<!--                            <div>-->
+<!--                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">-->
+<!--                                    <a href="https://www.australianturfclub.com.au/join-membership/" target="_self" tabindex="-1">-->
+<!--                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2020/05/join-membership-dropdown-450x620-min.jpg');"></div>-->
+<!--                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Join Membership</span></div>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="slick-slide" data-slick-index="1" aria-hidden="true">-->
+<!--                            <div>-->
+<!--                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">-->
+<!--                                    <a href="https://www.australianturfclub.com.au/membership/" target="_self" tabindex="-1">-->
+<!--                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2020/03/Championships_Day_1-HL71-1024x683.jpg');"></div>-->
+<!--                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Membership Renewals & Services</span></div>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="slick-slide" data-slick-index="2" aria-hidden="true" >-->
+<!--                            <div>-->
+<!--                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">-->
+<!--                                    <a href="https://www.australianturfclub.com.au/raceday-information-for-members/" target="_self" tabindex="-1">-->
+<!--                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2020/05/membership-raceday-infomation-450x620-min.jpg');"></div>-->
+<!--                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Raceday Information for Members</span></div>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="slick-slide slick-center" data-slick-index="3" aria-hidden="true">-->
+<!--                            <div>-->
+<!--                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">-->
+<!--                                    <a href="https://www.australianturfclub.com.au/our-hospitality/" target="_self" tabindex="-1">-->
+<!--                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2020/05/book-hospitality-membership-dropdown-450x620-min.jpg');"></div>-->
+<!--                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Book Hospitality</span></div>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="racecourses__prev slick-arrow slick-hidden" aria-disabled="true" tabindex="-1"><img src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/arrowblack.svg" alt="Back" /></div>-->
+<!--            <div class="racecourses__next slick-arrow slick-hidden" aria-disabled="true" tabindex="-1"><img src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/arrowblack.svg" alt="Forwards" /></div>-->
+<!--        </div>-->
+<!--        <a href="https://www.australianturfclub.com.au/membership/" class="btn--outline-light btn--forward btn">View All</a>-->
+<!--    </div>-->
+
+<!--    <div id="racing-dropdown" class="racing-dropdown d-none d-lg-block dropdown-container visible open">-->
+<!--        <div class="racing-dropdown__inner this-is-racing-drop nav-dropdown">-->
+<!--            <div class="racecourses slick-initialized slick-slider">-->
+<!--                <div class="slick-list draggable" style="padding: 0px 20px;">-->
+<!--                    <div class="slick-track" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">-->
+<!--                        <div class="slick-slide slick-current slick-center" data-slick-index="0" aria-hidden="true">-->
+<!--                            <div>-->
+<!--                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">-->
+<!--                                    <a href="https://www.australianturfclub.com.au/racing-information/" target="_blank" tabindex="-1">-->
+<!--                                       <div class="racecourses__image lazy" style="background-image: url(&quot;https://cdn.australianturfclub.com.au/app/uploads/2023/05/DALAALAAT_1_RW_22022023__F017_450x620.jpg&quot;);" data-bg="url('https://cdn.australianturfclub.com.au/app/uploads/2023/05/DALAALAAT_1_RW_22022023__F017_450x620.jpg')" data-was-processed="true"></div>-->
+<!--                                       <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Racing & Wagering </span></div>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="slick-slide" data-slick-index="1" aria-hidden="true">-->
+<!--                            <div>-->
+<!--                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">-->
+<!--                                    <a href="https://www.australianturfclub.com.au/owners-information/" target="_self" tabindex="-1">-->
+<!--                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2020/05/owners-information-racing-dropdown-450x620-min.jpg');"></div>-->
+<!--                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Owners' Information</span></div>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="slick-slide" data-slick-index="2" aria-hidden="true">-->
+<!--                            <div>-->
+<!--                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">-->
+<!--                                    <a href="https://www.australianturfclub.com.au/weather-and-tracks/" target="_self" tabindex="-1">-->
+<!--                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2023/02/weather-track-racing-menu-min.jpg');"></div>-->
+<!--                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Weather & Track </span></div>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="slick-slide slick-center" data-slick-index="3" aria-hidden="true" >-->
+<!--                            <div>-->
+<!--                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">-->
+<!--                                    <a href="https://racing.australianturfclub.com.au/" target="_self" tabindex="-1">-->
+<!--                                      <div class="racecourses__image lazy" style="background-image: url(&quot;https://cdn.australianturfclub.com.au/app/uploads/2023/05/MILITARIZES_6_RW_01042023__D174_450x620.jpg&quot;);" data-bg="url('https://cdn.australianturfclub.com.au/app/uploads/2023/05/MILITARIZES_6_RW_01042023__D174_450x620.jpg')" data-was-processed="true"></div>-->
+<!--                                      <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Calendar & Results</span></div>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="racecourses__prev slick-arrow slick-hidden" aria-disabled="true" tabindex="-1"><img src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/arrowblack.svg" alt="Back" /></div>-->
+<!--            <div class="racecourses__next slick-arrow slick-hidden" aria-disabled="true" tabindex="-1"><img src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/arrowblack.svg" alt="Forwards" /></div>-->
+<!--        </div>-->
+<!--        <a href="https://www.australianturfclub.com.au/racing/" class="btn--outline-light btn--forward btn">View All</a>-->
+<!--    </div>-->
+
+<!--    <div id="header__racecourses" class="header__racecourses d-none d-lg-block dropdown-container visible open">-->
+<!--        <div class="module-9-racecourses nav-dropdown">-->
+<!--            <div class="racecourses slick-initialized slick-slider">-->
+<!--                <div class="slick-list draggable" style="padding: 0px 20px;">-->
+<!--                    <div class="slick-track" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">-->
+<!--                        <div class="slick-slide slick-current slick-center" data-slick-index="0" aria-hidden="true">-->
+<!--                            <div>-->
+<!--                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">-->
+<!--                                    <a href="https://www.australianturfclub.com.au/racecourses/royal-randwick/" target="_self" tabindex="-1">-->
+<!--                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2020/05/rr-racecourse-dropdown-450x620-min.jpg');"></div>-->
+<!--                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Royal Randwick</span></div>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="slick-slide" data-slick-index="1" aria-hidden="true">-->
+<!--                            <div>-->
+<!--                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">-->
+<!--                                    <a href="https://www.australianturfclub.com.au/racecourses/rosehill-gardens/" target="_self" tabindex="-1">-->
+<!--                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2021/03/210313_RosehillGardens_ChandonLadiesDay_PaulMcMillan-170-min-683x1024.jpg');"></div>-->
+<!--                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Rosehill Gardens</span></div>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="slick-slide" data-slick-index="2" aria-hidden="true">-->
+<!--                            <div>-->
+<!--                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">-->
+<!--                                    <a href="https://www.rosehillbowlingclub.com.au/" target="_blank" tabindex="-1">-->
+<!--                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2020/05/venues-rbc-450x620-min.jpg');"></div>-->
+<!--                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Rosehill Bowling Club</span></div>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="slick-slide slick-center" data-slick-index="3" aria-hidden="true">-->
+<!--                            <div>-->
+<!--                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">-->
+<!--                                    <a href="https://www.australianturfclub.com.au/our-venues/" target="_self" tabindex="-1">-->
+<!--                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2020/05/cp-racecourse-dropdown-450x620-min.jpg');"></div>-->
+<!--                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Canterbury Park &amp; Warwick Farm</span></div>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="racecourses__prev slick-arrow slick-hidden" aria-disabled="true" tabindex="-1"><img src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/arrowblack.svg" alt="Back" /></div>-->
+<!--            <div class="racecourses__next slick-arrow slick-hidden" aria-disabled="true" tabindex="-1"><img src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/arrowblack.svg" alt="Forwards" /></div>-->
+<!--        </div>-->
+<!--        <a href="https://www.australianturfclub.com.au/our-racecourses" class="btn--outline-light btn--forward btn">View All</a>-->
+<!--    </div>-->
+<!--</div>-->
+<div class="mega-nav__top-bar"><div class="mega-nav__top-bar-left"><div class="menu-item header__member-icon"><button id="dropdownMemberButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Member Area"><i class="fa-solid fa-user" aria-hidden="true"></i> <span>Members</span></button><div id="dropdownMemberMenu" class="dropdown-menu" aria-labelledby="dropdownMemberButton" style="will-change: transform;"><a href="https://www.australianturfclub.com.au/memlog/" rel="noopener noreferrer">Member Login</a></div></div></div><div class="mega-nav__top-bar-center"><div class="top-bar-center__dropdown dropdown">
+<button class="dropdown-toggle" type="button" id="upcomingDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span class="topbar__upcoming-title"><i class="fa-sharp fa-solid fa-chevron-down" aria-hidden="true"></i> <span class="topbar__upcoming-span">Upcoming Raceday</span> McKell Cup Day<span class="topbar__upcoming-date">, Saturday, 29th June</span></span>
+</button><div class="dropdown-menu" aria-labelledby="upcomingDropdown"><h4><a href="https://www.australianturfclub.com.au/races/rosehill-gardens-race-day-saturday-29-june-2024/">McKell Cup Day, Saturday, 29th June</a></h4><p><small>Rosehill Gardens</small></p><p><a class="btn btn--forward btn--outline-gold" href="https://www.australianturfclub.com.au/races/rosehill-gardens-race-day-saturday-29-june-2024/#premium-experience-packages">Explore Experiences</a><a class="btn btn--forward btn--solid-gold" href="https://www.ticketmaster.com.au/mckell-cup-day-rosehill-29-06-2024/event/25006073ABB31C66" target="_blank" rel="noopener noreferrer">Buy tickets</a></p></div></div><div class="topbar__upcoming">
+<span class="topbar__upcoming-span">Upcoming Raceday</span>
+<a class="topbar__upcoming-title" href="https://www.australianturfclub.com.au/races/rosehill-gardens-race-day-saturday-29-june-2024/">McKell Cup Day, <span class="topbar__upcoming-date">Saturday, 29th June</span></a>
+<a class="btn btn--forward btn--outline-gold" href="https://www.australianturfclub.com.au/races/rosehill-gardens-race-day-saturday-29-june-2024/#premium-experience-packages">Explore Experiences</a><a class="btn btn--forward btn--solid-gold" href="https://www.ticketmaster.com.au/mckell-cup-day-rosehill-29-06-2024/event/25006073ABB31C66" target="_blank" rel="noopener noreferrer">Buy tickets</a></div></div><div class="mega-nav__top-bar-right"><form action="{{jobsearchActionUri}}" method="get">
+    <div class="search-input-container">
+
+     <input type="text" id="top-bar-search" class="input-block-level search-query" value="{{#term}}{{term}}{{/term}}" name="term"/><button type="submit"  value="Search"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button></div><div class="mega-nav__top-bar-right-search-text">
+<i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i> <span>Search</span></div></form></div></div>
+<div class="masthead describe007 newheader">
+   <div id="mega-nav-container"><div id="mega-menu-wrap-main_navigation" class="mega-menu-wrap" style=""><div class="mega-menu-toggle"><div class="mega-toggle-blocks-left"><div class="mega-toggle-block mega-menu-toggle-animated-block mega-toggle-block-1" id="mega-toggle-block-1"><button aria-label="Toggle Menu" class="mega-toggle-animated mega-toggle-animated-slider" type="button" aria-expanded="false">
+<span class="mega-toggle-animated-box">
+<span class="mega-toggle-animated-inner"></span>
+</span>
+</button></div></div><div class="mega-toggle-blocks-center">
+    <div class="mega-toggle-block mega-html-block mega-toggle-block-2" id="mega-toggle-block-2">
+        <a class="mega-menu-wrap-main_navigation__logo-mobile" href="https://www.australianturfclub.com.au/">
+            <img class="lazy loaded" style="width: 250px;" src="https://cdn.australianturfclub.com.au/app/uploads/2024/04/atc-logo-primary.svg" data-src="https://cdn.australianturfclub.com.au/app/uploads/2024/04/atc-logo-primary.svg" alt="Australian Turf Club" width="250" height="72" data-was-processed="true"></a></div></div><div class="mega-toggle-blocks-right"><div class="mega-toggle-block mega-html-block mega-toggle-block-3" id="mega-toggle-block-3"><a class="mobile-buy-icon" href="https://www.ticketmaster.com.au/australianturfclub" target="_blank" rel="noopener noreferrer"><i class="fa-kit fa-mobile-buy-icon" aria-hidden="true"></i></a></div></div></div><ul id="mega-menu-main_navigation" class="mega-menu max-mega-menu mega-menu-horizontal" data-event="hover_intent" data-effect="fade_up" data-effect-speed="200" data-effect-mobile="slide_left" data-effect-speed-mobile="200" data-mobile-force-width="false" data-second-click="go" data-document-click="collapse" data-vertical-behaviour="standard" data-breakpoint="1199" data-unbind="false" data-mobile-state="collapse_all" data-hover-intent-timeout="300" data-hover-intent-interval="100" data-sticky-enabled="true" data-sticky-desktop="true" data-sticky-mobile="true" data-sticky-offset="0" data-sticky-expand="false" data-sticky-expand-mobile="false" data-sticky-transition="false" data-sticky-hide="true" data-sticky-hide-tolerance="10" data-sticky-hide-offset="0" style=""><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-menu-item-144118" id="mega-menu-item-144118"><a class="mega-menu-wrap-main_navigation__logo" href="https://www.australianturfclub.com.au/"><img class="lazy loaded" style="width: 261px;" src="https://cdn.australianturfclub.com.au/app/uploads/2024/04/atc-logo-secondary.svg" data-src="https://cdn.australianturfclub.com.au/app/uploads/2024/04/atc-logo-secondary.svg" alt="Australian Turf Club" width="261" height="38" data-was-processed="true"></a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-has-icon mega-icon-left mega-hide-on-desktop mega-menu-item-144119" id="mega-menu-item-144119">
+    <div class="mega-search-wrap mega-static"><form class="mega-search mega-search-open" role="search" action="https://www.australianturfclub.com.au/"><input type="submit" value="Search"><input type="text" role="searchbox" id="mega-search-144119" aria-label="Search..." name="s" placeholder="Search..."><span tabindex="0" role="button" class="dashicons dashicons-search search-icon" aria-controls="mega-search-144119" aria-label="Search"></span></form></div></li>
+    
+    <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-160592" id="mega-menu-item-160592"><a class="mega-menu-link" aria-expanded="false" tabindex="0">Plan Your Day<span class="mega-indicator" data-has-click-event="true"></span></a><ul class="mega-sub-menu">
+        <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-163615" id="mega-menu-item-163615"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/carnival/sydney-autumn-racing/">Carnival</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-162749" id="mega-menu-item-162749"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/kia-friday-night-racing/">Kia Friday Night Racing</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-162445" id="mega-menu-item-162445"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/travel-coach-parking/">How to Get Here</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-160587" id="mega-menu-item-160587"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/what-to-wear/">What To Wear</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-160590" id="mega-menu-item-160590"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/maps">Maps</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-164436" id="mega-menu-item-164436"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/venue-accessibility/">Venue Accessibility <i class="fa-solid fa-wheelchair" aria-hidden="true"></i></a></li></ul>
+        </li>
+        
+        
+        <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-144121" id="mega-menu-item-144121"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/races/" tabindex="0">Raceday Calendar</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-144122" id="mega-menu-item-144122"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/premium-experiences/" aria-haspopup="true" aria-expanded="false" tabindex="0">Premium Dining<span class="mega-indicator" data-has-click-event="true"></span></a><ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-144127" id="mega-menu-item-144127"><h3 class="menu-navigation-heading">
+Premium Dining Experiences</h3></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-144144" id="mega-menu-item-144144"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/hospitality?racecourse=2298">Royal Randwick</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-144145" id="mega-menu-item-144145"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/hospitality?racecourse=2297">Rosehill Gardens</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-144146" id="mega-menu-item-144146"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/our-hospitality/">Canterbury Park &amp; Warwick Farm</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-144147" id="mega-menu-item-144147"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/our-hospitality/">View All</a></li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-144123" id="mega-menu-item-144123"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/membership-services/" aria-haspopup="true" aria-expanded="false" tabindex="0">Membership<span class="mega-indicator" data-has-click-event="true"></span></a><ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-144128" id="mega-menu-item-144128"><h3 class="menu-navigation-heading">
+Membership</h3></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-144142" id="mega-menu-item-144142"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/join-membership/">Join Membership</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-144141" id="mega-menu-item-144141"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/membership-services/">Membership Renewals &amp; Services</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-144140" id="mega-menu-item-144140"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/raceday-information-for-members/">Raceday Information for Members</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-144139" id="mega-menu-item-144139"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/our-hospitality/">Book Premium Dining</a></li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-144124" id="mega-menu-item-144124"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/racing/" aria-haspopup="true" aria-expanded="false" tabindex="0">Racing<span class="mega-indicator" data-has-click-event="true"></span></a><ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-144129" id="mega-menu-item-144129"><h3 class="menu-navigation-heading">
+    
+Racing</h3></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-144138" id="mega-menu-item-144138"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/racing-information/">Racing &amp; Wagering</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-144137" id="mega-menu-item-144137"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/owners-information/">Owners’ Information</a></li>
+<li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-144136" id="mega-menu-item-144136"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/weather-and-tracks/">Weather and Track Details</a></li>
+<li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-144135" id="mega-menu-item-144135"><a class="mega-menu-link" href="https://racing.australianturfclub.com.au/">Calendar &amp; Results</a></li>
+<li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-159036" id="mega-menu-item-159036"><a target="_blank" class="mega-menu-link" href="https://www.racingandsports.com.au/transcription/atc/ATC-Media-Service-2024-2025/">Media Service</a></li>
+</ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-144125" id="mega-menu-item-144125"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/meetings-and-events/" aria-haspopup="true" aria-expanded="false" tabindex="0">Meetings &amp; Events<span class="mega-indicator" data-has-click-event="true"></span></a><ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-144880" id="mega-menu-item-144880"><h3 class="menu-navigation-heading">
+Meetings &amp; Events</h3></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-144877" id="mega-menu-item-144877"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/meetings-and-events/#explore-venues">Explore Venues</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-144878" id="mega-menu-item-144878"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/meetings-and-events/#explore-events">Explore Events</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-144879" id="mega-menu-item-144879"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/meetings-and-events/#enquire-now">Enquire Now</a></li>
+<li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-149259" id="mega-menu-item-149259"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/meetings-and-events/newsletter-subscription/">Subscribe to Newsletter</a></li>
+</ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-hide-on-desktop mega-hide-on-mobile mega-menu-item-144126" id="mega-menu-item-144126"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/our-venues/" aria-haspopup="true" aria-expanded="false" tabindex="0">Our Venues<span class="mega-indicator" data-has-click-event="true"></span></a><ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-144130" id="mega-menu-item-144130"><h3 class="menu-navigation-heading">
+Our Venues</h3></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-racecourses mega-menu-item-144133" id="mega-menu-item-144133"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/racecourses/royal-randwick/">Royal Randwick</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-racecourses mega-menu-item-144132" id="mega-menu-item-144132"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/racecourses/rosehill-gardens/">Rosehill Gardens</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-racecourses mega-menu-item-144131" id="mega-menu-item-144131"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/racecourses/canterbury-park/">Canterbury Park</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-racecourses mega-menu-item-144134" id="mega-menu-item-144134"><a class="mega-menu-link" href="https://www.australianturfclub.com.au/racecourses/warwick-farm/">Warwick Farm</a></li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-menu-item-144120" id="mega-menu-item-144120"><a id="btn-nav-cta" class="btn btn--solid-gold btn--forward" href="https://www.ticketmaster.com.au/australianturfclub" target="_blank" rel="noopener noreferrer">Buy Tickets</a></li></ul></div></div>
+    
+    
+    
+    <div class="mobile-menu">
+        <a href="https://www.ticketmaster.com.au/australian-turf-club-tickets/artist/2770128#about?" class="btn btn--forward btn--solid-light">Buy Tickets</a>
+        <nav class="nav-mobile">
+            <div class="menu-mobile-menu-container">
+                <ul id="menu-mobile-menu" class="mobile-navigation">
+                    <li id="menu-item-3280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3280"><a href="https://www.australianturfclub.com.au/races/">Raceday Calendar</a></li>
+                    <li id="menu-item-3282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3282"><a href="https://www.australianturfclub.com.au/our-hospitality/">Premium Experiences</a></li>
+                    <li id="menu-item-48338" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48338"><a href="https://www.australianturfclub.com.au/membership-services/">Membership</a></li>
+                    <li id="menu-item-49985" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49985"><a href="https://www.australianturfclub.com.au/racing/">Racing</a></li>
+                    <li id="menu-item-3283" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3283">
+                        <a rel="noopener noreferrer" href="https://www.australianturfclub.com.au/meetings-and-events/">Meetings &amp; Events</a>
+                    </li>
+                    <li id="menu-item-3279" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3279"><a href="https://www.australianturfclub.com.au/our-venues/">Venues</a></li>
+                    <li class="menu-item header__member-icon header__member-icon--mobile"><a title="Member Login" href="https://www.australianturfclub.com.au/memlog/"><img width="30" height="30" src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/member-icon.svg" data-src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/member-icon.svg" alt="Member Login" class="lazy loaded" data-was-processed="true"> Member Login</a></li>
+                </ul>
+            </div>
+            <form role="search" method="get" id="searchform-mobile-nav" action="/l/recruiting/jobsearchaction/895a4ee8-9bc9-11ea-b3bd-42010a8a0feb/8c732630-31db-11ef-a079-42010a8a0fd9/false" class="searchform-custom form-search">
+                <div class="row no-gutters">
+                    <div class="col-10"><input type="text" class="input-block-level search-query" id="s" value="" placeholder="Search..." name="term"></div>
+                    <div class="col-2">
+                        <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </form>
+        </nav>
+    </div>
+
+    <div id="hospitality-dropdown" class="hospitality-dropdown d-none d-lg-block dropdown-container visible open">
+        <div class="hospitality-dropdown__inner nav-dropdown">
+            <div class="racecourses slick-initialized slick-slider">
+                <div class="slick-list draggable" style="padding: 0px 20px;">
+                    <div class="slick-track" style="width: 1866px;">
+                        <div class="slick-slide slick-current slick-center" data-slick-index="0" aria-hidden="true" style="width: 466px;">
+                            <div>
+                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">
+                                    <a href="https://www.australianturfclub.com.au/premium-experiences/" target="_self" tabindex="-1">
+                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2022/12/221006_Randwick_Everest-Fashion-lunch_PaulMcMillan_086-min-683x1024.jpg');"></div>
+                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Premium Dining Experiences</span></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 466px;">
+                            <div>
+                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">
+                                    <a href="https://www.australianturfclub.com.au/hospitality?racecourse=2298" target="_self" tabindex="-1">
+                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2022/11/randwick-hospo-dropdown-min.jpg');"></div>
+                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Royal Randwick</span></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 466px;">
+                            <div>
+                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">
+                                    <a href="https://www.australianturfclub.com.au/hospitality?racecourse=2297" target="_self" tabindex="-1">
+                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2020/05/rh-hospitality-dropdown-450x620-min.jpg');"></div>
+                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Rosehill Gardens</span></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slide slick-center" data-slick-index="3" aria-hidden="true" style="width: 466px;">
+                            <div>
+                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">
+                                    <a href="https://www.australianturfclub.com.au/our-hospitality/" target="_self" tabindex="-1">
+                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2023/02/cp-wf-hospitality-menu-min.jpg');"></div>
+                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Canterbury Park &amp; Warwick Farm</span></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="racecourses__prev slick-arrow slick-hidden" aria-disabled="true" tabindex="-1" style=""><img src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/arrowblack.svg" alt="Back"></div>
+            <div class="racecourses__next slick-arrow slick-hidden" aria-disabled="true" tabindex="-1" style=""><img src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/arrowblack.svg" alt="Forwards"></div>
+        </div>
+        <a href="https://www.australianturfclub.com.au/our-hospitality/" class="btn--outline-light btn--forward btn">View all</a>
+    </div>
+
+    <div id="membership-dropdown" class="membership-dropdown d-none d-lg-block dropdown-container visible open">
+        <div class="membership-dropdown__inner nav-dropdown">
+            <div class="racecourses slick-initialized slick-slider">
+                <div class="slick-list draggable" style="padding: 0px 20px;">
+                    <div class="slick-track" style="opacity: 1; transform: translate3d(0px, 0px, 0px); width: 1866px;">
+                        <div class="slick-slide slick-current slick-center" data-slick-index="0" aria-hidden="true" style="width: 466px;">
+                            <div>
+                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">
+                                    <a href="https://www.australianturfclub.com.au/join-membership/" target="_self" tabindex="-1">
+                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2020/05/join-membership-dropdown-450x620-min.jpg');"></div>
+                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Join Membership</span></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 466px;">
+                            <div>
+                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">
+                                    <a href="https://www.australianturfclub.com.au/membership/" target="_self" tabindex="-1">
+                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2020/03/Championships_Day_1-HL71-1024x683.jpg');"></div>
+                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Membership Renewals &amp; Services</span></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 466px;">
+                            <div>
+                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">
+                                    <a href="https://www.australianturfclub.com.au/raceday-information-for-members/" target="_self" tabindex="-1">
+                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2020/05/membership-raceday-infomation-450x620-min.jpg');"></div>
+                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Raceday Information for Members</span></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slide slick-center" data-slick-index="3" aria-hidden="true" style="width: 466px;">
+                            <div>
+                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">
+                                    <a href="https://www.australianturfclub.com.au/our-hospitality/" target="_self" tabindex="-1">
+                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2020/05/book-hospitality-membership-dropdown-450x620-min.jpg');"></div>
+                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Book Hospitality</span></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="racecourses__prev slick-arrow slick-hidden" aria-disabled="true" tabindex="-1"><img src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/arrowblack.svg" alt="Back"></div>
+            <div class="racecourses__next slick-arrow slick-hidden" aria-disabled="true" tabindex="-1"><img src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/arrowblack.svg" alt="Forwards"></div>
+        </div>
+        <a href="https://www.australianturfclub.com.au/membership/" class="btn--outline-light btn--forward btn">View All</a>
+    </div>
+
+    <div id="racing-dropdown" class="racing-dropdown d-none d-lg-block dropdown-container visible open">
+        <div class="racing-dropdown__inner this-is-racing-drop nav-dropdown">
+            <div class="racecourses slick-initialized slick-slider">
+                <div class="slick-list draggable" style="padding: 0px 20px;">
+                    <div class="slick-track" style="opacity: 1; transform: translate3d(0px, 0px, 0px); width: 1866px;">
+                        <div class="slick-slide slick-current slick-center" data-slick-index="0" aria-hidden="true" style="width: 466px;">
+                            <div>
+                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">
+                                    <a href="https://www.australianturfclub.com.au/racing-information/" target="_blank" tabindex="-1">
+                                       <div class="racecourses__image lazy" style="background-image: url(&quot;https://cdn.australianturfclub.com.au/app/uploads/2023/05/DALAALAAT_1_RW_22022023__F017_450x620.jpg&quot;);" data-bg="url('https://cdn.australianturfclub.com.au/app/uploads/2023/05/DALAALAAT_1_RW_22022023__F017_450x620.jpg')" data-was-processed="true"></div>
+                                       <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Racing &amp; Wagering </span></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 466px;">
+                            <div>
+                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">
+                                    <a href="https://www.australianturfclub.com.au/owners-information/" target="_self" tabindex="-1">
+                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2020/05/owners-information-racing-dropdown-450x620-min.jpg');"></div>
+                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Owners' Information</span></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 466px;">
+                            <div>
+                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">
+                                    <a href="https://www.australianturfclub.com.au/weather-and-tracks/" target="_self" tabindex="-1">
+                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2023/02/weather-track-racing-menu-min.jpg');"></div>
+                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Weather &amp; Track </span></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slide slick-center" data-slick-index="3" aria-hidden="true" style="width: 466px;">
+                            <div>
+                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">
+                                    <a href="https://racing.australianturfclub.com.au/" target="_self" tabindex="-1">
+                                      <div class="racecourses__image lazy" style="background-image: url(&quot;https://cdn.australianturfclub.com.au/app/uploads/2023/05/MILITARIZES_6_RW_01042023__D174_450x620.jpg&quot;);" data-bg="url('https://cdn.australianturfclub.com.au/app/uploads/2023/05/MILITARIZES_6_RW_01042023__D174_450x620.jpg')" data-was-processed="true"></div>
+                                      <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Calendar &amp; Results</span></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="racecourses__prev slick-arrow slick-hidden" aria-disabled="true" tabindex="-1"><img src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/arrowblack.svg" alt="Back"></div>
+            <div class="racecourses__next slick-arrow slick-hidden" aria-disabled="true" tabindex="-1"><img src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/arrowblack.svg" alt="Forwards"></div>
+        </div>
+        <a href="https://www.australianturfclub.com.au/racing/" class="btn--outline-light btn--forward btn">View All</a>
+    </div>
+
+    <div id="header__racecourses" class="header__racecourses d-none d-lg-block dropdown-container visible open">
+        <div class="module-9-racecourses nav-dropdown">
+            <div class="racecourses slick-initialized slick-slider">
+                <div class="slick-list draggable" style="padding: 0px 20px;">
+                    <div class="slick-track" style="opacity: 1; transform: translate3d(0px, 0px, 0px); width: 1866px;">
+                        <div class="slick-slide slick-current slick-center" data-slick-index="0" aria-hidden="true" style="width: 466px;">
+                            <div>
+                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">
+                                    <a href="https://www.australianturfclub.com.au/racecourses/royal-randwick/" target="_self" tabindex="-1">
+                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2020/05/rr-racecourse-dropdown-450x620-min.jpg');"></div>
+                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Royal Randwick</span></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 466px;">
+                            <div>
+                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">
+                                    <a href="https://www.australianturfclub.com.au/racecourses/rosehill-gardens/" target="_self" tabindex="-1">
+                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2021/03/210313_RosehillGardens_ChandonLadiesDay_PaulMcMillan-170-min-683x1024.jpg');"></div>
+                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Rosehill Gardens</span></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 466px;">
+                            <div>
+                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">
+                                    <a href="https://www.rosehillbowlingclub.com.au/" target="_blank" tabindex="-1">
+                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2020/05/venues-rbc-450x620-min.jpg');"></div>
+                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Rosehill Bowling Club</span></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slide slick-center" data-slick-index="3" aria-hidden="true" style="width: 466px;">
+                            <div>
+                                <div class="racecourses__slide" style="width: 100%; display: inline-block;">
+                                    <a href="https://www.australianturfclub.com.au/our-venues/" target="_self" tabindex="-1">
+                                        <div class="racecourses__image" style="background-image: url('https://cdn.australianturfclub.com.au/app/uploads/2020/05/cp-racecourse-dropdown-450x620-min.jpg');"></div>
+                                        <div class="racecourses__gradient"><span class="nav-dropdown__page-title">Canterbury Park &amp; Warwick Farm</span></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="racecourses__prev slick-arrow slick-hidden" aria-disabled="true" tabindex="-1"><img src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/arrowblack.svg" alt="Back"></div>
+            <div class="racecourses__next slick-arrow slick-hidden" aria-disabled="true" tabindex="-1"><img src="https://www.australianturfclub.com.au/app/themes/e3creative/dist/images/arrowblack.svg" alt="Forwards"></div>
+        </div>
+        <a href="https://www.australianturfclub.com.au/our-racecourses" class="btn--outline-light btn--forward btn">View All</a>
+    </div>
+</div>
+   

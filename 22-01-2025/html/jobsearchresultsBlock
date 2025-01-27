@@ -1,0 +1,41 @@
+{{#jobsearchresultsBlock}}
+<div class="container-fluid">
+	<div class="row">
+
+	</div>
+	<div class="row">
+		
+		<div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+			
+                			<ul class="list-group" id="jobList">			
+			  {{#jobs}}
+			  <li class="list-group-item">
+			  	<a href="{{pathFromListing}}"><h3>{{name}}</h3></a>
+			  	
+				{{#locations}}
+				<strong>{{{locations}}}</strong>
+				{{/locations}}		
+			
+				{{#hasJobCompanies}}
+   					{{#companyName}}
+   						<strong>{{{companyName}}}</strong>
+   					{{/companyName}}
+				{{/hasJobCompanies}}
+			  	
+			  	{{#descriptionSummary}}
+			  	<p>{{{descriptionSummary}}}</p>
+			  	{{/descriptionSummary}}
+			  	
+			  	<strong>{{labels.DATE_POSTED}}:</strong> {{formattedBeginTime}}
+			  	{{#recommended}}<span class="label label-primary">{{labels.SIMILAR}}</span>{{/recommended}}
+			  	
+			  	<div class="clearfix"></div>
+			  	<br>
+			  </li>
+			  {{/jobs}}
+			</ul>
+
+		</div>	
+	</div>
+</div>	
+{{/jobsearchresultsBlock}}

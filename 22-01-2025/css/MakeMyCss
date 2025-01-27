@@ -1,0 +1,347 @@
+.jobdescription p:not(:last-child) , .jobdescription li {
+  margin-bottom: 16px !important;
+  
+}
+
+.jobdescription ul, .jobdescription ol {
+    padding: 0;
+    margin: 16px 0 24px 32px;
+}
+
+.jobdescription .content ul li, .jobdescription .content ol li {
+    list-style-type: disc;
+    margin-left: 0;
+    line-height: 24px;
+    margin: 0 !important;
+}
+
+.jobdescription h2 {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.questiontoggle{
+    display: none;
+}
+
+.well.featurehover.featurehover-misc.center div {
+    cursor: default;
+}
+
+.well.featurehover.featurehover-misc.center div {
+    cursor: default !important;
+}
+
+.container.cntr-prt.main-cntr {
+    min-height: calc(100vh + 1px);
+}
+
+.container.cntr-prt.main-cntr {
+    min-height: calc(100vh + 1px);
+}
+
+.addquestionhead {
+    margin: 20px 0px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: normal;
+}
+.row-fluid.jobdescription .content {
+    font-size: 16px;
+}
+.addquestionhead:before {
+    content: "\f067";
+    font-family: FontAwesome;
+    margin-right: 5px;
+}
+
+.addquestionhead.active:before {
+    content: "\f068";
+}
+
+.addquestionhead:after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: red;
+    margin-left: 5px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .dividegrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2%;
+    }
+}
+
+.divide_form:after,
+.part_1:after,
+.part_2:after,
+.part_3:after,
+.part_4:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.divide_form.Fromaldetails label {
+    display: none;
+}
+
+.resume-error-msg,
+.errormsg,
+.resume-length {
+    background: #f2dede;
+    padding: 10px;
+    color: #cd908f;
+    font-size: 13px;
+    display: none;
+}
+
+.errormsg.active,
+.resume-error-msg.active,
+.resume-length.active {
+    display: block;
+}
+
+.addquestionhead.is-active:after {
+    background: green;
+}
+
+.Radiobutton input[type="radio"],
+.multiplechoice input[type="checkbox"],
+.privacyquestion input[type="radio"],
+.privacyquestion input[type="checkbox"] {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 5px;
+    float: none;
+    position: static;
+    margin-top: -1.5px;
+}
+
+input.input-block-level.radiobox {
+    margin-top: -1px !important;
+    vertical-align: middle !important;
+    margin-right: 5px !important;
+    float: none !important;
+    position: static !important;
+    display: inline-block;
+    margin-bottom: 0 !important;
+}
+
+a.last-back-uri {
+    margin-left: 15px;
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    top: 1px;
+}
+
+.privacylable::after {
+    content: "*";
+    margin-left: 7px;
+}
+
+label.Change-Color > * {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+label.Change-Color span.required-star {
+    font-size: 20px;
+    margin-left: 3px;
+}
+
+label.Change-Color {
+    margin: 20px 0px 15px 0px;
+}
+
+
+
+.MakeDiv > * {
+    font-weight: bold !important;
+}
+
+.MakeDiv {
+    display: block;
+    line-height: 1;
+}
+
+.custom-details-field {
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    margin: 15px 0px;
+    margin-top: 20px;
+}
+
+.resume-error-msg {
+    margin-top: 20px;
+}
+
+.safari input.input-block-level.checkboxchoice {
+    margin-top: -6.5px;
+}
+
+.termsofuse label.checkbox {
+    font-size: 0 !important;
+    display: inline-block;
+}
+
+.termsofuse p {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.Radiobutton input[type="radio"],
+.multiplechoice input[type="checkbox"],
+.privacyquestion input[type="radio"],
+.privacyquestion input[type="checkbox"] {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 5px;
+    float: none;
+    position: static;
+    margin-top: -4.5px;
+}
+
+.termsofuse label {
+    display: none;
+}
+
+.privacyquestion .errormsg {
+    margin-bottom: 20px;
+}
+
+a#submitExpressApplicationsForm {
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.termsofuse .multiplechoice {
+    display: flex;
+}
+
+.center.text {
+    word-break: break-word;
+}
+
+.row-fluid.jobdescription iframe {
+    width: 100%;
+}
+
+.termsofuse .multiplechoice input[type="checkbox"] {
+    margin-top: -4.5px;
+}
+
+.termsofuse .multiplechoice .multipluscheck {
+    display: flex;
+}
+
+.Addquestions .multiplechoice input[type="checkbox"] {
+    margin-top: -1.5px;
+}
+
+@media screen and (max-width: 777px) and (min-width: 320px) {
+    .row-fluid.general_j .highlight {
+        cursor: default;
+        display: inline-block;
+    }
+}
+
+.row-fluid.general_j .highlight {
+    display: inline-block;
+}
+
+.general_j .featurehover-misc .btn {
+    display: block;
+    width: 100%;
+}
+
+.general_j .featurehover-misc .Sea_Agent {
+    margin-top: 10px;
+}
+
+input.input-block-level.search-query {
+    margin-bottom: 10px;
+}
+
+.spacereduce-1 {
+    margin-top: 0;
+}
+
+.span8.content.let-me {
+    padding-top: 0;
+}
+
+.Check_Country {
+    display: none;
+}
+
+.span4.Align-Ment-Image img {
+    max-height: 70px;
+}
+
+.span4.Align-Ment-Image {
+    text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+    .job-main-part {
+        display: block;
+    }
+
+    .newimgcam {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .job-main-part {
+        display: flex;
+    }
+
+    .job-part-1.job-part {
+        margin-right: 20px;
+    }
+
+    .job-part-1.job-part {
+        width: 20%;
+    }
+
+    .job-part-2.job-part {
+        width: 80%;
+    }
+}
+
+form#captionForm .modal-body {
+    max-height: unset !important;
+    overflow-y: unset !important;
+}
+
+body .Link-1:nth-child(odd) {
+    display: none !important;
+}
+
+.shareon > .twitter {
+    background-color: #020202 !important;
+}
+
+.shareon > .twitter::before {
+    background-image: url("https://c240120.ssl.cf1.rackcdn.com/ea7f7847-aeb5-11ee-952b-42010a8a0fd9") !important;
+}
+
+.SHPoweredBy {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+

@@ -1,0 +1,32 @@
+<div class="row-fluid jobgroupjobgroup">
+    <div class="span8">
+        {{#jobgroup}}
+            <h3>{{jobgroup}}</h3>
+        {{/jobgroup}}
+        
+        {{^jobgroup}}
+            <h3 class="alljobslabel" style="padding-bottom: 0;margin-top: 0; margin-bottom: 15px;">{{labels.ALL_JOBS}} <span class="alljobspage-job-count">({{hasJobs}})</span></h3>
+        {{/jobgroup}}
+			
+		{{> joblist}}
+			
+		{{^hasSearchResults}}
+			<div class="content center">					
+				<span class="search-no-job 1 ">
+			        <div class="designer-1">Currently there are no jobs listed - Please complete a 
+			            <a href="{{generaljobapplicationUri}}">General Job Application</a> 
+			            and/or a 
+			            <a href="{{registeredusersearchagentsUri}}">Job Alert</a> to be kept up to date when jobs become available.
+			          </div>
+			     </span>
+			</div>	
+		{{/hasSearchResults}}
+
+		{{> paginator}}
+	</div>
+	
+	{{> sidenav}}
+	
+	<div class="clearfix"></div>
+
+</div>

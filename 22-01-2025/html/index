@@ -1,0 +1,3649 @@
+{{> header}}
+    
+  	<div class="container main-cntr">
+    {{#bannerImageSticky}}
+	  {{#bannerImage}}
+      <div class="center">
+	  	<a href="{{homeUri}}"><img src="{{imageBaseUrl}}{{bannerImage}}"/></a>
+      </div>
+      {{^introVideoThumbnail}}
+	  	<br/>
+	  {{/introVideoThumbnail}}
+      {{/bannerImage}}   
+    {{/bannerImageSticky}}
+    
+	{{#indexBlock}}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	  {{^bannerImageSticky}}
+		  {{#bannerImage}}
+	      <div class="center">
+		  	<a href="{{homeUri}}"><img src="{{imageBaseUrl}}{{bannerImage}}"/></a>
+	      </div>
+	      {{^introVideoThumbnail}}
+		  	<br/>
+		  {{/introVideoThumbnail}}
+	      {{/bannerImage}}
+	  {{/bannerImageSticky}}
+	  
+	{{#introVideoUrl}}
+	<div class="center fitvideo media-holder">
+		<iframe src="{{introVideoUrl}}" frameborder="0" allowFullScreen></iframe>
+	</div>
+	<br/>
+	{{/introVideoUrl}}
+
+   {{> alljobspage}}
+   
+   
+    
+	{{#hasSocialChannels}}
+	<br/>
+	<div class="row-fluid center">
+           <span class="social-channels">                        	   	                 		
+                 	{{#facebookUrlCampaign}}			
+                 	<a href="{{facebookUrlCampaign}}" target="_blank">
+						<span class="icon-stack icon-2x facebook-color accent-color">
+						  <i class="icon-circle icon-stack-base"></i>
+						  <i class="icon-facebook-sign icon-light"></i>
+						</span>
+                 	</a>
+                 	{{/facebookUrlCampaign}}
+                 	{{#twitterUrlCampaign}}
+                 	<a href="{{twitterUrlCampaign}}" target="_blank">
+						<span class="icon-stack icon-2x twitter-color accent-color">
+						  <i class="icon-circle icon-stack-base"></i>
+						  <i class="icon-twitter-sign icon-light"></i>
+						</span>
+                 	</a>
+                 	{{/twitterUrlCampaign}}
+                 	{{#linkedinUrlCampaign}}
+                 	<a href="{{linkedinUrlCampaign}}" target="_blank">
+						<span class="icon-stack icon-2x linkedin-color accent-color">
+						  <i class="icon-circle icon-stack-base"></i>
+						  <i class="icon-linkedin-sign icon-light"></i>
+						</span>
+                 	</a>
+                 	{{/linkedinUrlCampaign}}
+                 	{{#googleplusUrlCampaign}}
+                 	<a href="{{googleplusUrlCampaign}}?rel=author" target="_blank">
+						<span class="icon-stack icon-2x google-color accent-color">
+						  <i class="icon-circle icon-stack-base"></i>
+						  <i class="icon-google-plus-sign icon-light"></i>
+						</span>
+                 	</a>
+                 	{{/googleplusUrlCampaign}}   
+                 	{{#xingUrlCampaign}}
+                 	<a href="{{xingUrlCampaign}}" target="_blank">
+						<span class="icon-stack icon-2x xing-color accent-color">
+						  <i class="icon-circle icon-stack-base"></i>
+						  <i class="icon-xing-sign icon-light"></i>
+						</span>
+                 	</a>
+                 	{{/xingUrlCampaign}}
+                 	{{#youtubeUrlCampaign}}			
+                 	<a href="{{youtubeUrlCampaign}}" target="_blank">
+						<span class="icon-stack icon-2x youtube-color accent-color">
+						  <i class="icon-circle icon-stack-base"></i>
+						  <i class="icon-youtube-sign icon-light"></i>
+						</span>
+                 	</a>
+                 	{{/youtubeUrlCampaign}}
+                 	{{#instagramUrlCampaign}}			
+                 	<a href="{{instagramUrlCampaign}}" target="_blank">
+						<span class="icon-stack icon-2x instagram-color accent-color">
+						  <i class="icon-circle icon-stack-base"></i>
+						  <i class="icon-instagram icon-light"></i>
+						</span>
+                 	</a>
+                 	{{/instagramUrlCampaign}}
+                 	{{#pinterestUrlCampaign}}			
+                 	<a href="{{pinterestUrlCampaign}}" target="_blank">
+						<span class="icon-stack icon-2x pinterest-color accent-color">
+						  <i class="icon-circle icon-stack-base"></i>
+						  <i class="icon-pinterest-sign icon-light"></i>
+						</span>
+                 	</a>
+                 	{{/pinterestUrlCampaign}}
+                 	{{#flickrUrlCampaign}}			
+                 	<a href="{{flickrUrlCampaign}}" target="_blank">
+						<span class="icon-stack icon-2x flickr-color accent-color">
+						  <i class="icon-circle icon-stack-base"></i>
+						  <i class="icon-flickr icon-light"></i>
+						</span>
+                 	</a>
+                 	{{/flickrUrlCampaign}}
+                 	{{#tumblrUrlCampaign}}			
+                 	<a href="{{tumblrUrlCampaign}}" target="_blank">
+						<span class="icon-stack icon-2x tumblr-color accent-color">
+						  <i class="icon-circle icon-stack-base"></i>
+						  <i class="icon-tumblr-sign icon-light"></i>
+						</span>
+                 	</a>
+                 	{{/tumblrUrlCampaign}}
+                 	{{#sinaweiboUrlCampaign}}			
+                 	<a href="{{sinaweiboUrlCampaign}}" target="_blank">
+						<span class="icon-stack icon-2x sinaweibo-color accent-color">
+						  <i class="icon-circle icon-stack-base"></i>
+						  <i class="icon-weibo icon-light"></i>
+						</span>
+                 	</a>
+                 	{{/sinaweiboUrlCampaign}}
+                 	{{#blogUrlCampaign}}			
+                 	<a href="{{blogUrlCampaign}}" target="_blank">
+						<span class="icon-stack icon-2x snaphop-red accent-color">
+						  <i class="icon-circle icon-stack-base"></i>
+						  <i class="icon-rss-sign icon-light"></i>
+						</span>
+                 	</a>
+                 	{{/blogUrlCampaign}}	
+                 	{{#hasOffices}}
+						{{^hasOffices.uri}}
+						 <a href="{{pageUri}}/{{hasOffices.id}}">
+							<span class="icon-stack icon-2x snaphop-red accent-color">
+							  <i class="icon-circle icon-stack-base"></i>
+							  <i class="icon-map-marker icon-light"></i>
+							</span>
+						 </a>
+						{{/hasOffices.uri}}
+						{{#hasOffices.uri}}
+						<a href="{{hasOffices.uri}}">
+							<span class="icon-stack icon-2x snaphop-red accent-color">
+							  <i class="icon-circle icon-stack-base"></i>
+							  <i class="icon-map-marker icon-light"></i>
+							</span>
+						</a>
+						{{/hasOffices.uri}}
+                 	{{/hasOffices}}    
+                 	{{^hasOffices}}
+						{{#hasParentGeos}}
+	                     <a href="{{directionsUri}}">
+							<span class="icon-stack icon-2x snaphop-red accent-color">
+							  <i class="icon-circle icon-stack-base"></i>
+							  <i class="icon-map-marker icon-light"></i>
+							</span>
+	                      </a>
+	                    {{/hasParentGeos}}  
+                 	{{/hasOffices}}
+			</span>
+		</div>
+		<br/>
+        {{/hasSocialChannels}}
+	{{/indexBlock}}
+	
+	{{#savedjobsearchBlock}}
+	<div class="row-fluid">		
+		<div class="span1"></div>
+		<div class="span10">
+			<h3>{{labels.SAVED_JOB_SEARCH}}</h3>
+			<ul class="nav nav-tabs nav-stacked">				
+				{{#savedJobSearches}}
+				  <li>
+				  	<a href="{{jobsearchActionUri}}?{{searchParams}}">
+				  		<span>{{{name}}}</span>
+				  	</a>
+				  </li>														
+				{{/savedJobSearches}}
+			</ul>
+		</div>	
+		<div class="span1"></div>
+		<div class="clearfix"></div>
+	</div>							
+	{{/savedjobsearchBlock}}
+      
+	{{#registereduserBlock}}
+		{{#registereduserchoiceBlock}}
+		  {{^emailJobLink}}
+	      <div class="row-fluid">
+	        <div class="span4">
+	        	<a href="{{registereduserUri}}?page=1&section=applied">
+			    <div class="well featurehover featurehover-appliedjobs center">
+			      <div class="highlight">{{labels.APPLIED_JOBS}}</div>
+			      <br/>
+			      <ul class="unstyled featuring animated fadeIn">
+			        <i class="icon-briefcase"></i>
+			      </ul>
+			      <br/>
+			    </div>
+			   </a>
+	        </div>
+	        <div class="span4">
+	        	<a href="{{registereduserUri}}?page=1&section=saved">
+			    <div class="well featurehover featurehover-savedjobs center">
+			      <div class="highlight">{{labels.SAVED_JOBS}}</div>
+			      <br/>
+			      <ul class="unstyled featuring animated fadeIn">
+			        <i class="icon-briefcase"></i>
+			      </ul>
+			      <br/>
+			    </div>
+			    </a>
+	        </div>
+	        <div class="span4">
+	        	<a href="{{registereduserUri}}?page=1&section=inprogress">
+			    <div class="well featurehover featurehover-applicationsinprogress center">
+			      <div class="highlight">{{labels.APPLICATIONS_IN_PROGRESS}}</div>
+			      <br/>
+			      <ul class="unstyled featuring animated fadeIn">
+			        <i class="icon-briefcase"></i>
+			      </ul>
+			      <br/>
+			    </div>
+			    </a>
+	        </div>
+	   	 </div>	
+	      <div class="row-fluid">
+	        <div class="span4">
+	        	<a href="{{registereduserprofileEditUri}}">
+			    <div class="well featurehover featurehover-profile center">
+			      <div class="highlight">{{labels.MY_PROFILE}}</div>
+			      <br/>
+			      <ul class="unstyled featuring animated fadeIn">
+			        <i class="icon-user"></i>
+			      </ul>
+			      <br/>
+			    </div>
+			   </a>
+	        </div>
+	        <div class="span4">
+	        	<a href="{{registeredusercredentialsUri}}">
+			    <div class="well featurehover featurehover-profile center">
+			      <div class="highlight">{{labels.MY_RESUMES}}</div>
+			      <br/>
+			      <ul class="unstyled featuring animated fadeIn">
+			        <i class="icon-file-text"></i>
+			      </ul>
+			      <br/>
+			    </div>
+			   </a>
+	        </div>
+	        <div class="span4">
+	        	<a href="{{registereduserexperienceUri}}">
+			    <div class="well featurehover featurehover-profile center">
+			      <div class="highlight">{{labels.MY_WORK_EXPERIENCES}}</div>
+			      <br/>
+			      <ul class="unstyled featuring animated fadeIn">
+			        <i class="icon-file-text"></i>
+			      </ul>
+			      <br/>
+			    </div>
+			   </a>
+	        </div>
+	     </div>
+	     <div class="row-fluid">
+	        <div class="span4">
+	        	<a href="{{registereduserskillUri}}">
+			    <div class="well featurehover featurehover-profile center">
+			      <div class="highlight">{{labels.MY_SKILL_AND_EXPERTISE}}</div>
+			      <br/>
+			      <ul class="unstyled featuring animated fadeIn">
+			        <i class="icon-file-text"></i>
+			      </ul>
+			      <br/>
+			    </div>
+			   </a>
+	        </div>
+	        <div class="span4">
+	        	<a href="{{registeredusereducationUri}}">
+			    <div class="well featurehover featurehover-profile center">
+			      <div class="highlight">{{labels.MY_EDUCATION_HISTORY}}</div>
+			      <br/>
+			      <ul class="unstyled featuring animated fadeIn">
+			        <i class="icon-file-text"></i>
+			      </ul>
+			      <br/>
+			    </div>
+			   </a>
+	        </div>
+	        <div class="span4">
+	        	<a href="{{registeredusercertificationUri}}">
+			    <div class="well featurehover featurehover-profile center">
+			      <div class="highlight">{{labels.MY_CERTIFICATIONS}}</div>
+			      <br/>
+			      <ul class="unstyled featuring animated fadeIn">
+			        <i class="icon-file-text"></i>
+			      </ul>
+			      <br/>
+			    </div>
+			   </a>
+	        </div>
+	    </div>
+	    <div class="row-fluid">
+	        <div class="span4">
+	        	<a href="{{registereduserlanguageUri}}">
+			    <div class="well featurehover featurehover-profile center">
+			      <div class="highlight">{{labels.MY_LANGUAGES}}</div>
+			      <br/>
+			      <ul class="unstyled featuring animated fadeIn">
+			        <i class="icon-file-text"></i>
+			      </ul>
+			      <br/>
+			    </div>
+			   </a>
+	        </div>
+	        <div class="span4">
+	        	<a href="{{registereduserreferenceUri}}">
+			    <div class="well featurehover featurehover-profile center">
+			      <div class="highlight">{{labels.MY_REFERENCES}}</div>
+			      <br/>
+			      <ul class="unstyled featuring animated fadeIn">
+			        <i class="icon-file-text"></i>
+			      </ul>
+			      <br/>
+			    </div>
+			   </a>
+	        </div>
+	        {{#searchAgentIntegration}}
+	        <div class="span4">
+	        	<a href="{{registeredusersearchagentsUri}}">
+			    <div class="well featurehover featurehover-jobagents center">
+			      <div class="highlight">{{labels.SEARCH_AGENTS}}</div>
+			      <br/>
+			      <ul class="unstyled featuring animated fadeIn">
+			        <i class="icon-search"></i>
+			      </ul>
+			      <br/>
+			    </div>
+			   </a>
+	        </div>
+	        {{/searchAgentIntegration}}
+	   	 </div>		
+	   	 {{/emailJobLink}}
+	   	 {{#emailJobLink}}
+	      <div class="row-fluid">
+	        <div class="span4">
+	        	<a href="{{registereduserUri}}?page=1&section=saved">
+			    <div class="well featurehover featurehover-savedjobs center">
+			      <div class="highlight">{{labels.SAVED_JOBS}}</div>
+			      <br/>
+			      <ul class="unstyled featuring animated fadeIn">
+			        <i class="icon-briefcase"></i>
+			      </ul>
+			      <br/>
+			    </div>
+			    </a>
+	        </div>
+	        <div class="span4">
+	        	<a href="{{registereduserprofileEditUri}}">
+			    <div class="well featurehover featurehover-profile center">
+			      <div class="highlight">{{labels.MY_PROFILE}}</div>
+			      <br/>
+			      <ul class="unstyled featuring animated fadeIn">
+			        <i class="icon-user"></i>
+			      </ul>
+			      <br/>
+			    </div>
+			   </a>
+	        </div>
+	        {{#searchAgentIntegration}}
+	        <div class="span4">
+	        	<a href="{{registeredusersearchagentsUri}}">
+			    <div class="well featurehover featurehover-jobagents center">
+			      <div class="highlight">{{labels.SEARCH_AGENTS}}</div>
+			      <br/>
+			      <ul class="unstyled featuring animated fadeIn">
+			        <i class="icon-search"></i>
+			      </ul>
+			      <br/>
+			    </div>
+			   </a>
+	        </div>
+	        {{/searchAgentIntegration}}
+	   	 </div>	
+	   	 {{/emailJobLink}}
+		{{/registereduserchoiceBlock}}
+		{{^registereduserchoiceBlock}}
+	    <div class="row-fluid">
+	    	<div class="span1"></div>
+	        <div class="span10">
+	        	{{#hasRegisteredUserJobs}}
+	        	<h3>{{title}}</h3>
+			
+				{{> joblist}}
+
+				{{/hasRegisteredUserJobs}}
+				{{^hasRegisteredUserJobs}}
+				<div class="center">
+					<div class="alert alert-info hint">
+						{{infoMessage}}
+					</div>
+				</div>
+				{{/hasRegisteredUserJobs}}
+				<div>
+					<a href="{{registereduserUri}}" class="btn btn-large">{{labels.DONE}}</a>
+				</div>
+			</div>
+			<div class="span1"></div>
+			<div class="clearfix"></div>
+		</div>	
+		{{/registereduserchoiceBlock}}						
+	{{/registereduserBlock}}
+	
+	{{#registereduserprofileeditBlock}}
+	<div class="row-fluid">
+	    <h3>{{labels.MY_PROFILE}}</h3>
+	    <input type="hidden" id="base" name="base" value="{{base}}" />			
+		<form action="#" method="post" id="registeredUserForm">
+			<div class="span6">		
+				<input type="hidden" name="id" value="{{registeredUser.id}}"/>
+				<input type="hidden" id="campaignId" name="campaignId" value="{{campaign.id}}" />		
+				<label><strong><span class="required-star">*</span>{{labels.FULL_NAME}}</strong></label>
+				<div class="custom-vspace-small"></div>					
+				<input class="input-block-level" type="text" name="name" id="name" value="{{registeredUser.name}}"/>
+	
+				<label><strong><span class="required-star">*</span>{{labels.EMAIL_ADDRESS}}</strong></label>
+				<div class="custom-vspace-small"></div>				
+				<input class="input-block-level" type="email" name="email" id="email" value="{{registeredUser.email}}"/>
+	
+				<label><strong>{{labels.PHONE_NUMBER}}</strong></label>
+				<div class="custom-vspace-small"></div>				
+				<input class="input-block-level" type="tel" name="phone" value="{{registeredUser.phone}}"/>
+			    
+				<label><strong>{{labels.ABOUT}}</strong></label>
+				<div class="custom-vspace-small"></div>
+				<textarea class="input-block-level" name="about" cols="30" rows="12">{{registeredUser.about}}</textarea>
+				<div class="custom-vspace"></div>
+				
+				<div>
+					<a href="#" id="updateRegisteredUser" class="btn btn-large btn-primary" signoutUri="{{signoutUri}}"><i class="icon-save"></i> {{labels.SAVE}}</a>
+					<a href="{{registereduserUri}}" class="btn btn-large">{{labels.DONE}}</a>
+				</div>
+			</div>
+			<div class="span6">								    
+				<label><strong>{{labels.COUNTRY}}</strong></label>
+				<div class="custom-vspace-small"></div>	
+				<select name="country" class="input-block-level" id="country-formfield" current="{{registeredUser.country}}">
+				  <option value="">{{labels.SELECT}}</option>
+			    </select> 
+			    
+				<label><strong>{{labels.STATE_PROVINCE_COUNTY}}</strong></label>
+				<div class="custom-vspace-small"></div>	
+				<select name="stateProvinceCounty" class="input-block-level" id="stateprovincecounty-formfield" current="{{registeredUser.stateProvinceCounty}}">
+				  <option value="">{{labels.SELECT}}</option>
+			    </select>
+				
+				<label><strong>{{labels.FACEBOOK_PROFILE}}</strong></label>
+				<div class="custom-vspace-small"></div>				
+				<input class="input-block-level" type="text" name="facebookUrl" value="{{registeredUser.facebookUrl}}"/>
+	
+				<label><strong>{{labels.TWITTER_PROFILE}}</strong></label>
+				<div class="custom-vspace-small"></div>				
+				<input class="input-block-level" type="text" name="twitterUrl" value="{{registeredUser.twitterUrl}}"/>
+	
+				<label><strong>{{labels.LINKEDIN_PROFILE}}</strong></label>
+				<div class="custom-vspace-small"></div>				
+				<input class="input-block-level" type="text" name="linkedinUrl" value="{{registeredUser.linkedinUrl}}"/>
+				
+				<label><strong>{{labels.GOOGLE_PLUS_PROFILE}}</strong></label>
+				<div class="custom-vspace-small"></div>				
+				<input class="input-block-level" type="text" name="googleplusUrl" value="{{registeredUser.googleplusUrl}}"/>
+				
+				<label><strong>{{labels.XING_PROFILE}}</strong></label>
+				<div class="custom-vspace-small"></div>				
+				<input class="input-block-level" type="text" name="xingUrl" value="{{registeredUser.xingUrl}}"/>
+			</div>
+		</form>
+		<div class="clearfix"></div>
+	</div>
+	{{/registereduserprofileeditBlock}}
+	
+	{{#registeredusersearchagentsBlock}}
+	<div class="row-fluid">		
+		<div class="span1"></div>
+		<div class="span10">
+			<h3>{{labels.SEARCH_AGENTS}}</h3>
+			{{#hasSearchAgents}}
+				<ul class="nav nav-tabs nav-stacked">				
+						{{#searchAgents}}
+						  <li>
+						  	<a href="{{registeredusersearchagentsEditUri}}?searchAgentId={{id}}&integrationId={{searchAgentIntegration.id}}">
+						  		<span>{{name}}</span>
+								<div class="clearfix"></div>
+						  	</a>
+						  </li>														
+						{{/searchAgents}}
+				</ul>
+			{{/hasSearchAgents}}
+			{{^hasSearchAgents}}
+			<div class="center content">
+				<div class="alert alert-info hint">
+					{{infoMessage}}
+				</div>
+			</div>
+			{{/hasSearchAgents}}
+			<div>
+				<a href="{{registeredusersearchagentsEditUri}}?integrationId={{searchAgentIntegration.id}}" class="btn btn-large btn-primary"><i class="icon-plus-sign"></i> {{labels.ADD_SEARCH_AGENT}}</a>
+				<a href="{{registereduserUri}}" class="btn btn-large">{{labels.DONE}}</a>
+			</div>
+		</div>	
+		<div class="span1"></div>
+		<div class="clearfix"></div>
+	</div>				
+	{{/registeredusersearchagentsBlock}}
+	
+	{{#registeredusersearchagentseditBlock}}
+	<div class="row-fluid registeredusersearchagentseditBlock">	
+		<div class="span12">
+			
+			{{#create}}
+                		<h3>Create Job Alert</h3>
+			{{/create}}
+			{{^create}}
+				<h3>Edit Job Alert</h3>
+			{{/create}}
+
+			<form action="{{searchagentActionUri}}" method="post" id="searchAgentForm">	
+				<input type="hidden" name="id" value="{{searchAgent.id}}"/>	
+				<input type="hidden" name="campaignId" value="{{searchAgent.campaignId}}"/>
+				<input type="hidden" name="registeredUserId" value="{{searchAgent.registeredUserId}}"/>
+				<input type="hidden" name="integrationId" value="{{searchAgent.integrationId}}"/>
+				<input type="hidden" name="measurementSystem" value="{{measurementSystem}}"/>
+				{{#authenticated}}	
+					<input type="hidden" name="returnUrl" value="{{registeredusersearchagentsUri}}"/>
+				{{/authenticated}}
+				{{^authenticated}}
+					<input type="hidden" name="returnUrl" value="{{homeUri}}"/>
+				{{/authenticated}}
+				
+				
+				    <div class="MainFlex">
+				
+				<div class="MakeAFlex JobAlert">				
+				<div class="custom-vspace-small"></div>					
+				<input class="input-block-level" type="text" name="name" id="name" value="{{searchAgent.name}}"/ placeholder="* {{labels.SEARCH_AGENT_NAME}}">
+				</div>
+				    
+				<div class="MakeAFlex email_address">    
+				<div class="custom-vspace-small"></div>					
+				<input class="input-block-level" type="email" name="email" id="email" value="{{searchAgent.email}}"/ placeholder="* {{labels.EMAIL}}">
+				</div>
+				    
+			    <div class="MakeAFlex Keywords">	    
+				<div class="custom-vspace-small"></div>				
+				<input class="input-block-level" type="text" name="query" id="query" value="{{searchAgent.query}}"/ placeholder=" Keywords (separate Keywords with a comma)">
+				</div>
+				
+				<div class="MakeAFlex">
+				{{#hasCategories}}
+				<div class="custom-vspace-small"></div>
+				<select class="input-block-level" name="tags">
+				  {{#categories}}
+					  {{#checked}}
+					  <option value="{{value}}" selected="selected">{{name}}</option>
+					  {{/checked}}
+					  {{^checked}}
+					  <option value="{{value}}">{{name}}</option>
+					  {{/checked}}
+				  {{/categories}}
+			    </select> 
+				<div class="custom-vspace"></div>
+				{{/hasCategories}}	
+				</div>
+				
+				<div class="MakeAFlex">
+				
+				<div class="custom-vspace-small"></div>	
+				<select class="input-block-level" name="frequencyInDays" id="frequencyInDays" current="{{searchAgent.frequencyInDays}}">
+				
+				  <option value="1">{{labels.FREQUENCY_ONCE_ONE_DAY}}</option>
+				  <option value="2">{{labels.FREQUENCY_ONCE_TWO_DAYS}}</option>
+				  <option value="3">{{labels.FREQUENCY_ONCE_THREE_DAYS}}</option>
+				  <option value="4">{{labels.FREQUENCY_ONCE_FOUR_DAYS}}</option>
+				  <option value="5">{{labels.FREQUENCY_ONCE_FIVE_DAYS}}</option>
+				  <option value="6">{{labels.FREQUENCY_ONCE_SIX_DAYS}}</option>
+				  <option value="7">{{labels.FREQUENCY_ONCE_SEVEN_DAYS}}</option>
+			    </select> 
+			    </div>
+			        
+			        
+			    
+				  
+				 </div>   
+				    
+				<div class="custom-vspace"></div>
+				
+				<div>
+					{{#create}}
+    						<a href="#" id="updateSearchAgent" class="btn btn-large btn-primary"><i class="icon-save"></i> Create</a>
+			        	{{/create}}
+				    	{{^create}}
+				        	<a href="#" id="updateSearchAgent" class="btn btn-large btn-primary"><i class="icon-save"></i> Update</a>
+			        	{{/create}}
+			        
+					{{#authenticated}}
+						<a href="{{registeredusersearchagentsUri}}" class="btn btn-large">Cancel</a>
+					{{/authenticated}}
+					{{^authenticated}}
+						<a href="{{homeUri}}" class="btn btn-large">Cancel</a>
+					{{/authenticated}}
+				</div>
+				<div>
+					{{^create}}
+				        <br><br>
+				        <p>Or if you would like to unsubscribe this Job Alert, click the button below:</p>
+				        {{#authenticated}}
+				        	<a href="{{registeredusersearchagentsRemoveUri}}?searchAgentId={{searchAgent.id}}&returnUrl={{registeredusersearchagentsUri}}" class="btn btn-large btn-primary"><i class="icon-remove-sign"></i> {{labels.SEARCH_AGENT_UNSUBSCRIBE}}</a>
+				        {{/authenticated}}
+				        {{^authenticated}}
+				        	<a href="{{registeredusersearchagentsRemoveUri}}?searchAgentId={{searchAgent.id}}&returnUrl={{homeUri}}" class="btn btn-large btn-primary"><i class="icon-remove-sign"></i> {{labels.SEARCH_AGENT_UNSUBSCRIBE}}</a>
+			        	{{/authenticated}}
+			        	{{/create}}
+			        	<br><br>
+					<p>Please note that Job Alerts will be purged after 2 years if not removed earlier.</p>
+				</div>
+			</form>
+		</div>
+		<div class="span1"></div>
+		<div class="clearfix"></div>
+	</div>
+	{{/registeredusersearchagentseditBlock}}
+	
+	{{#registeredusercredentialsBlock}}
+    <div class="row-fluid">
+    	<div class="span1"></div>
+        <div class="span10">
+		    {{#hasSavedResumeManageLinkList}}
+		      <h3>{{title}}</h3>
+		      <div class="masonry-container">
+		      {{#savedResumeManageLinkList}}
+		        <div class="masonry-item">
+		        	<a href="{{uri}}">
+		           		{{#fontIconClass}}
+		                <div class="center">
+		                	<i class="{{fontIconClass}}"></i>
+		                </div>
+		                {{/fontIconClass}}
+		                <div class="center text">
+		                {{label}}
+		                </div>
+		            </a>
+		      	</div>
+		      {{/savedResumeManageLinkList}}
+		      </div>
+		    {{/hasSavedResumeManageLinkList}}	
+		    {{^hasSavedResumeManageLinkList}}
+			<div class="center">
+				<div class="alert alert-info hint">
+					{{infoMessage}}
+				</div>
+			</div>
+		    {{/hasSavedResumeManageLinkList}}	        
+		        		        
+		    <div class="masonry-container">
+		    <hr/>
+		    <div class="clearfix"></div>
+		    <br/>
+		    {{#resumeUpload}}
+		    	<div class="masonry-item" id="uploadCredential" campaignId="{{campaign.id}}" >
+		        	<a href="#">
+		            	{{#fontIconClass}}
+		                <div class="center">
+		                  <i class="{{fontIconClass}}"></i>
+		                </div>
+		                {{/fontIconClass}}
+		                <div class="center text">
+		              	{{label}}
+		                </div>
+		            </a>
+		        </div>		
+		     {{/resumeUpload}}	
+		    
+		     {{#resumeManageLinkList}}
+		        <div class="masonry-item">
+		            <a href="{{uri}}">
+		              {{#fontIconClass}}
+		                <div class="center">
+		                  <i class="{{fontIconClass}}"></i>
+		                  </div>
+		                  {{/fontIconClass}}
+		                <div class="center text">
+		              {{label}}
+		                  </div>
+		                </a>
+		            </div>
+		      {{/resumeManageLinkList}}
+		      </div>
+		
+		      <div class="clearfix"></div>
+		      <br/>
+		   		   	   
+			<div>
+				<a href="{{registereduserUri}}" class="btn btn-large">{{labels.DONE}}</a>
+			</div>
+		</div>
+		<div class="span1"></div>
+		<div class="clearfix"></div>
+	</div>			
+	{{/registeredusercredentialsBlock}}
+	
+	{{#registeredusercredentialseditBlock}}
+    <div class="row-fluid">
+    	<div class="span1"></div>
+        <div class="span10">
+			<form action="{{credentialActionUri}}" method="post" id="credentialForm">	
+				<input type="hidden" name="credentialId" value="{{credential.id}}"/>
+				<h3><span class="required-star">*</span>{{labels.PROVIDE_BRIEF_DESCRIPTION}}</h3>
+				<div class="custom-vspace-small"></div>				
+				<textarea class="input-block-level" id="caption" name="caption" cols="30" rows="4">{{credential.caption}}</textarea>
+				<select class="input-block-level" id="category" name="category">
+				  {{#credentialCategories}}
+				  	{{#checked}}
+				  	<option value="{{name}}" selected="selected">{{value}}</option>
+				  	{{/checked}}
+				  	{{^checked}}
+				  	<option value="{{name}}">{{value}}</option>
+				  	{{/checked}}
+				  {{/credentialCategories}}
+			    </select> 
+				<div>
+					<a href="#" id="updateCredential" class="btn btn-large btn-primary"><i class="icon-save"></i> {{labels.SAVE}}</a>
+					<a href="{{removecredentialUri}}?credentialId={{credential.id}}&manage=true&returnUrl={{registeredusercredentialsUri}}" class="btn btn-large"><i class="icon-remove-sign"></i> {{labels.REMOVE}}</a>
+					<a href="{{registeredusercredentialsUri}}" class="btn btn-large">{{labels.DONE}}</a>
+				</div>
+			</form>		
+		</div>
+		<div class="span1"></div>
+		<div class="clearfix"></div>
+	</div>	
+	{{/registeredusercredentialseditBlock}}
+	
+	{{#registereduserexperienceBlock}}
+    <div class="row-fluid">
+    	<div class="span1"></div>
+        <div class="span10">	
+			{{#hasRegisteredUserPositions}}
+				<h3>{{title}}</h3>
+				<ul class="nav nav-tabs nav-stacked">				
+					{{#registeredUserPositions}}
+					  <li>
+					  	<a href="{{registereduserexperienceEditUri}}?returnUrl={{returnUrl}}&registeredUserPositionId={{id}}"> 
+					  		<span>{{company}}</span>
+					  		<div>
+					  		{{#endTSString}}
+					  			{{#beginTSString}}
+									{{beginTSString}} - {{endTSString}}
+								{{/beginTSString}}
+					  			{{^beginTSString}}
+									{{endTSString}}
+								{{/beginTSString}}
+							{{/endTSString}}
+					  		{{^endTSString}}
+								{{beginTSString}} - {{labels.PRESENT}}
+							{{/endTSString}}
+							</div>
+					  	</a>
+					  </li>														
+					{{/registeredUserPositions}}
+				</ul>
+			{{/hasRegisteredUserPositions}}
+			{{^hasRegisteredUserPositions}}
+			<div class="center content">
+				<div class="alert alert-info hint">
+					{{infoMessage}}
+				</div>
+			</div>
+			{{/hasRegisteredUserPositions}}
+			<div>
+				<a href="{{registereduserexperienceEditUri}}?returnUrl={{returnUrl}}" class="btn btn-large btn-primary"><i class="icon-plus-sign"></i> {{labels.ADD_WORK_EXPERIENCE}}</a>	
+				<a href="{{registereduserUri}}" class="btn btn-large">{{labels.DONE}}</a>
+			</div>	
+		</div>
+		<div class="span1"></div>
+		<div class="clearfix"></div>	
+	</div>			
+	{{/registereduserexperienceBlock}}
+	
+	{{#registereduserexperienceeditBlock}}
+	<div class="row-fluid">
+	   <div class="span1"></div>
+	   <div class="span10">
+	    <h3>{{labels.WORK_EXPERIENCE}}</h3>		
+		<form action="{{jobexperienceActionUri}}/{{registeredUserPosition.id}}" method="post" id="jobExperienceForm">	
+		
+			<span class="span6">						
+				<label><strong><span class="required-star">*</span>{{registeredUserPosition.companyCaption}}</strong></label>
+				<div class="custom-vspace-small"></div>					
+				<input class="input-block-level" type="text" name="company" value="{{registeredUserPosition.company}}"/>
+				<input type="hidden" name="companyRequired" value="true"/>
+				<div class="custom-vspace"></div>
+			</span>
+			<span class="span6">
+				<label><strong><span class="required-star">*</span>{{registeredUserPosition.titleCaption}}</strong></label>
+				<div class="custom-vspace-small"></div>				
+				<input class="input-block-level" type="text" name="title" value="{{registeredUserPosition.title}}"/>
+				<input type="hidden" name="titleRequired" value="true"/>
+				<div class="custom-vspace"></div>
+			</span>
+			
+			<span class="span6">
+				<label><strong><span class="required-star">*</span>{{registeredUserPosition.beginTSCaption}}</strong></label>
+				<div class="custom-vspace-small"></div>
+				<input class="input-block-level datepicker" type="text" name="beginTSString" value="{{registeredUserPosition.beginTSString}}"/>
+				<input type="hidden" name="beginTSRequired" value="true"/>
+				<div class="custom-vspace"></div>
+			</span>
+			<span class="span6">
+				<label><strong>{{registeredUserPosition.endTSCaption}}</strong></label>
+				<div class="custom-vspace-small"></div>
+				<input class="input-block-level datepicker" type="text" name="endTSString" value="{{registeredUserPosition.endTSString}}"/>
+				<div class="custom-vspace"></div>
+			</span>
+			
+			<label><strong>{{registeredUserPosition.summaryCaption}}</strong></label>
+			<div class="custom-vspace-small"></div>
+			<textarea class="input-block-level" name="summary" cols="30" rows="12">{{registeredUserPosition.summary}}</textarea>
+			<div class="custom-vspace"></div>
+			<div>
+				<a href="#" id="addJobExperienceForm" successUri="{{returnUrl}}" class="btn btn-large btn-primary"><i class="icon-save"></i> {{labels.SAVE}}</a>
+				{{^create}}
+				<a href="{{registereduserexperienceRemoveUri}}?returnUrl={{returnUrl}}&registeredUserPositionId={{registeredUserPosition.id}}" class="btn btn-large"><i class="icon-remove-sign"></i> {{labels.REMOVE}}</a>
+				{{/create}}
+				<a href="{{returnUrl}}" class="btn btn-large">{{labels.DONE}}</a>
+			</div>
+		</form>
+	 </div>
+	 <div class="span1"></div>
+	</div>	
+	{{/registereduserexperienceeditBlock}}	
+	
+	{{#registeredusereducationBlock}}
+    <div class="row-fluid">
+    	<div class="span1"></div>
+        <div class="span10">	
+			{{#hasRegisteredUserEducations}}
+				<h3>{{title}}</h3>
+				<ul class="nav nav-tabs nav-stacked">				
+				{{#registeredUserEducations}}
+				  <li>
+				  	<a href="{{registeredusereducationEditUri}}?returnUrl={{returnUrl}}&registeredUserEducationId={{id}}">
+				  		<span>{{schoolName}}</span>
+				  		<div>
+				  		{{#endTSString}}
+				  			{{#beginTSString}}
+								{{beginTSString}} - {{endTSString}}
+							{{/beginTSString}}
+				  			{{^beginTSString}}
+								{{endTSString}}
+							{{/beginTSString}}
+						{{/endTSString}}
+				  		{{^endTSString}}
+							{{beginTSString}} - {{labels.PRESENT}}
+						{{/endTSString}}
+						</div>
+				  	</a>
+				  </li>														
+				{{/registeredUserEducations}}
+				</ul>
+			{{/hasRegisteredUserEducations}}
+			{{^hasRegisteredUserEducations}}
+			<div class="center content">
+				<div class="alert alert-info hint">
+					{{infoMessage}}
+				</div>
+			</div>
+			{{/hasRegisteredUserEducations}}
+			<div>
+				<a href="{{registeredusereducationEditUri}}?returnUrl={{returnUrl}}" class="btn btn-large btn-primary"><i class="icon-plus-sign"></i> {{labels.ADD_EDUCATION}}</a>	
+				<a href="{{registereduserUri}}" class="btn btn-large">{{labels.DONE}}</a>
+			</div>	
+		</div>
+		<div class="span1"></div>
+		<div class="clearfix"></div>	
+	</div>			
+	{{/registeredusereducationBlock}}
+	
+	{{#registeredusereducationeditBlock}}
+	<div class="row-fluid">
+	   <div class="span1"></div>
+	   <div class="span10">
+	    <h3>{{labels.EDUCATION_HISTORY}}</h3>			
+		<form action="{{jobeducationActionUri}}/{{registeredUserEducation.id}}" method="post" id="jobEducationForm">							
+			<label><strong><span class="required-star">*</span>{{registeredUserEducation.schoolNameCaption}}</strong></label>	
+			<div class="custom-vspace-small"></div>				
+			<input class="input-block-level" type="text" name="schoolName" value="{{registeredUserEducation.schoolName}}"/>
+			<input type="hidden" name="schoolNameRequired" value="true"/>
+			<div class="custom-vspace"></div>
+			<div class="clearfix"></div>
+			
+			<span class="span6">
+				<label><strong><span class="required-star">*</span>{{registeredUserEducation.degreeCaption}}</strong></label>	
+				<div class="custom-vspace-small"></div>				
+				<input class="input-block-level" type="text" name="degree" value="{{registeredUserEducation.degree}}"/>
+				<input type="hidden" name="degreeRequired" value="true"/>
+				<div class="custom-vspace"></div>
+			</span>
+			<span class="span6">
+				<label><strong><span class="required-star">*</span>{{registeredUserEducation.fieldOfStudyCaption}}</strong></label>	
+				<div class="custom-vspace-small"></div>				
+				<input class="input-block-level" type="text" name="fieldOfStudy" value="{{registeredUserEducation.fieldOfStudy}}"/>
+				<input type="hidden" name="fieldOfStudyRequired" value="true"/>						
+				<div class="custom-vspace"></div>
+			</span>
+			
+			<span class="span6">
+				<label><strong><span class="required-star">*</span>{{registeredUserEducation.beginTSCaption}}</strong></label>
+				<div class="custom-vspace-small"></div>
+				<input class="input-block-level datepicker" type="text" name="beginTSString" value="{{registeredUserEducation.beginTSString}}"/>
+				<input type="hidden" name="beginTSRequired" value="true"/>
+				<div class="custom-vspace"></div>
+			</span>
+			<span class="span6">
+				<label><strong>{{registeredUserEducation.endTSCaption}}</strong></label>
+				<div class="custom-vspace-small"></div>
+				<input class="input-block-level datepicker" type="text" name="endTSString" value="{{registeredUserEducation.endTSString}}"/>
+				<div class="custom-vspace"></div>
+			</span>
+			
+			<label><strong>{{registeredUserEducation.activitiesCaption}}</strong></label>
+			<div class="custom-vspace-small"></div>
+			<textarea class="input-block-level" name="activities" cols="30" rows="12">{{registeredUserEducation.activities}}</textarea>
+			<div class="custom-vspace"></div>
+			<label><strong>{{registeredUserEducation.notesCaption}}</strong></label>
+			<div class="custom-vspace-small"></div>
+			<textarea class="input-block-level" name="notes" cols="30" rows="12">{{registeredUserEducation.notes}}</textarea>
+			<div class="custom-vspace"></div>		
+			<div>
+				<a href="#" id="addJobEducationForm" successUri="{{returnUrl}}" class="btn btn-large btn-primary"><i class="icon-save"></i> {{labels.SAVE}}</a>
+				{{^create}}
+				<a href="{{registeredusereducationRemoveUri}}?returnUrl={{returnUrl}}&registeredUserEducationId={{registeredUserEducation.id}}" class="btn btn-large"><i class="icon-remove-sign"></i> {{labels.REMOVE}}</a>
+				{{/create}}
+				<a href="{{returnUrl}}" class="btn btn-large">{{labels.DONE}}</a>
+			</div>
+		</form>
+	  </div>
+	  <div class="span1"></div>
+	</div>
+	{{/registeredusereducationeditBlock}}
+	
+	{{#registeredusercertificationBlock}}
+    <div class="row-fluid">
+    	<div class="span1"></div>
+        <div class="span10">		
+		{{#hasRegisteredUserCertifications}}
+			<h3>{{title}}</h3>
+			<ul class="nav nav-tabs nav-stacked">				
+			{{#registeredUserCertifications}}
+			  <li>
+			  	<a href="{{registeredusercertificationEditUri}}?returnUrl={{returnUrl}}&registeredUserCertificationId={{id}}">
+			  		<span>{{name}}</span>
+			  		<div>
+			  		{{#endTSString}}
+			  			{{#beginTSString}}
+							{{beginTSString}} - {{endTSString}}
+						{{/beginTSString}}
+			  			{{^beginTSString}}
+							{{endTSString}}
+						{{/beginTSString}}
+					{{/endTSString}}
+			  		{{^endTSString}}
+						{{beginTSString}} - {{labels.PRESENT}}
+					{{/endTSString}}
+					</div>
+			  	</a>
+			  </li>														
+			{{/registeredUserCertifications}}
+			</ul>
+		{{/hasRegisteredUserCertifications}}
+		{{^hasRegisteredUserCertifications}}
+		<div class="center content">
+			<div class="alert alert-info hint">
+				{{infoMessage}}
+			</div>
+		</div>
+		{{/hasRegisteredUserCertifications}}
+		<div>
+			<a href="{{registeredusercertificationEditUri}}?returnUrl={{returnUrl}}" class="btn btn-large btn-primary"><i class="icon-plus-sign"></i> {{labels.ADD_CERTIFICATION}}</a>	
+			<a href="{{registereduserUri}}" class="btn btn-large">{{labels.DONE}}</a>
+		</div>	
+		</div>
+		<div class="span1"></div>
+		<div class="clearfix"></div>	
+	</div>					
+	{{/registeredusercertificationBlock}}	
+	
+	{{#registeredusercertificationeditBlock}}
+	<div class="row-fluid">
+	   <div class="span1"></div>
+	   <div class="span10">
+	   	<h3>{{labels.CERTIFICATION}}</h3>		
+		<form action="{{jobcertificationActionUri}}/{{registeredUserCertification.id}}" method="post" id="jobCertificationForm">							
+			<label><strong><span class="required-star">*</span>{{registeredUserCertification.authorityCaption}}</strong></label>	
+			<div class="custom-vspace-small"></div>				
+			<input class="input-block-level" type="text" name="authority" value="{{registeredUserCertification.authority}}"/>
+			<input type="hidden" name="authorityRequired" value="true"/>
+			<div class="custom-vspace"></div>
+			<div class="clearfix"></div>
+			
+			<span class="span6">
+				<label><strong><span class="required-star">*</span>{{registeredUserCertification.nameCaption}}</strong></label>	
+				<div class="custom-vspace-small"></div>				
+				<input class="input-block-level" type="text" name="name" value="{{registeredUserCertification.name}}"/>
+				<input type="hidden" name="nameRequired" value="true"/>
+				<div class="custom-vspace"></div>
+			</span>
+			<span class="span6">
+				<label><strong><span class="required-star">*</span>{{registeredUserCertification.numberCaption}}</strong></label>	
+				<div class="custom-vspace-small"></div>				
+				<input class="input-block-level" type="text" name="number" value="{{registeredUserCertification.number}}"/>
+				<input type="hidden" name="numberRequired" value="true"/>						
+				<div class="custom-vspace"></div>
+			</span>
+			
+			<span class="span6">
+				<label><strong><span class="required-star">*</span>{{registeredUserCertification.beginTSCaption}}</strong></label>
+				<div class="custom-vspace-small"></div>
+				<input class="input-block-level datepicker" type="text" name="beginTSString" value="{{registeredUserCertification.beginTSString}}"/>
+				<input type="hidden" name="beginTSRequired" value="true"/>
+				<div class="custom-vspace"></div>
+			</span>
+			<span class="span6">
+				<label><strong>{{registeredUserCertification.endTSCaption}}</strong></label>
+				<div class="custom-vspace-small"></div>
+				<input class="input-block-level datepicker" type="text" name="endTSString" value="{{registeredUserCertification.endTSString}}"/>
+				<div class="custom-vspace"></div>	
+			</span>
+					
+			<div>
+				<a href="#" id="addJobCertificationForm" successUri="{{returnUrl}}" class="btn btn-large btn-primary"><i class="icon-save"></i> {{labels.SAVE}}</a>
+				{{^create}}
+				<a href="{{registeredusercertificationRemoveUri}}?returnUrl={{returnUrl}}&registeredUserCertificationId={{registeredUserCertification.id}}" class="btn btn-large"><i class="icon-remove-sign"></i> {{labels.REMOVE}}</a>
+				{{/create}}
+				<a href="{{returnUrl}}" class="btn btn-large">{{labels.DONE}}</a>
+			</div>
+		</form>
+		</div>
+		<div class="span1"></div>
+	</div>	
+	{{/registeredusercertificationeditBlock}}
+	
+	{{#registereduserreferenceBlock}}
+    <div class="row-fluid">
+    	<div class="span1"></div>
+        <div class="span10">	
+		{{#hasRegisteredUserReferences}}
+			<h3>{{title}}</h3>
+			<ul class="nav nav-tabs nav-stacked">				
+			{{#registeredUserReferences}}
+			  <li>
+			  	<a href="{{registereduserreferenceEditUri}}?returnUrl={{returnUrl}}&registeredUserReferenceId={{id}}">
+			  		<span>{{firstName}} {{lastName}}</span>
+			  	</a>
+			  </li>														
+			{{/registeredUserReferences}}
+			</ul>
+		{{/hasRegisteredUserReferences}}
+		{{^hasRegisteredUserReferences}}
+		<div class="center content">
+			<div class="alert alert-info hint">
+				{{infoMessage}}
+			</div>
+		</div>
+		{{/hasRegisteredUserReferences}}
+		<div>
+			<a href="{{registereduserreferenceEditUri}}?returnUrl={{returnUrl}}" class="btn btn-large btn-primary"><i class="icon-plus-sign"></i> {{labels.ADD_REFERENCE}}</a>	
+			<a href="{{registereduserUri}}" class="btn btn-large">{{labels.DONE}}</a>
+		</div>	
+		</div>
+		<div class="span1"></div>
+		<div class="clearfix"></div>	
+	</div>					
+	{{/registereduserreferenceBlock}}
+	
+	{{#registereduserreferenceeditBlock}}
+	<div class="row-fluid">
+	   <div class="span1"></div>
+	   <div class="span10">
+	   	<h3>{{labels.REFERENCE}}</h3>			
+		<form action="{{jobreferenceActionUri}}/{{registeredUserReference.id}}" method="post" id="jobReferenceForm">
+			<span class="span6">							
+				<label><strong><span class="required-star">*</span>{{registeredUserReference.firstNameCaption}}</strong></label>
+				<div class="custom-vspace-small"></div>					
+				<input class="input-block-level" type="text" name="firstName" value="{{registeredUserReference.firstName}}"/>
+				<input type="hidden" name="firstNameRequired" value="true"/>
+				<div class="custom-vspace"></div>
+			</span>
+			<span class="span6">
+				<label><strong><span class="required-star">*</span>{{registeredUserReference.lastNameCaption}}</strong></label>	
+				<div class="custom-vspace-small"></div>				
+				<input class="input-block-level" type="text" name="lastName" value="{{registeredUserReference.lastName}}"/>
+				<input type="hidden" name="lastNameRequired" value="true"/>
+				<div class="custom-vspace"></div>
+			</span>
+			
+			<span class="span6">
+				<label><strong><span class="required-star">*</span>{{registeredUserReference.phoneCaption}}</strong></label>
+				<div class="custom-vspace-small"></div>					
+				<input class="input-block-level" type="tel" name="phone" value="{{registeredUserReference.phone}}"/>
+				<input type="hidden" name="phoneRequired" value="true"/>	
+				<div class="custom-vspace"></div>
+			</span>
+			<span class="span6">
+				<label><strong>{{registeredUserReference.emailCaption}}</strong></label>
+				<div class="custom-vspace-small"></div>					
+				<input class="input-block-level" type="email" name="email" value="{{registeredUserReference.email}}"/>
+				<div class="custom-vspace"></div>
+			</span>
+			
+			<span class="span6">
+				<label><strong>{{registeredUserReference.titleCaption}}</strong></label>	
+				<div class="custom-vspace-small"></div>				
+				<input class="input-block-level" type="text" name="title" value="{{registeredUserReference.title}}"/>	
+				<div class="custom-vspace"></div>
+			</span>
+			<span class="span6">
+				<label><strong>{{registeredUserReference.companyCaption}}</strong></label>	
+				<div class="custom-vspace-small"></div>				
+				<input class="input-block-level" type="text" name="company" value="{{registeredUserReference.company}}"/>						
+				<div class="custom-vspace"></div>
+			</span>
+							
+			<div>
+				<a href="#" id="addJobReferenceForm" successUri="{{returnUrl}}" class="btn btn-large btn-primary"><i class="icon-save"></i> {{labels.SAVE}}</a>
+				{{^create}}
+				<a href="{{registereduserreferenceRemoveUri}}?returnUrl={{returnUrl}}&registeredUserReferenceId={{registeredUserReference.id}}" class="btn btn-large"><i class="icon-remove-sign"></i> {{labels.REMOVE}}</a>
+				{{/create}}
+				<a href="{{returnUrl}}" class="btn btn-large">{{labels.DONE}}</a>
+			</div>
+		</form>
+	   </div>
+	   <div class="span1"></div>
+	</div>
+	{{/registereduserreferenceeditBlock}}	
+	
+	{{#registereduserskillBlock}}
+    <div class="row-fluid">
+    	<div class="span1"></div>
+        <div class="span10">
+		{{#hasRegisteredUserSkills}}
+			<h3>{{title}}</h3>
+			<ul class="nav nav-tabs nav-stacked">				
+			{{#registeredUserSkills}}
+			  <li>
+			  	<a href="{{registereduserskillEditUri}}?returnUrl={{returnUrl}}&registeredUserSkillId={{id}}">
+			  		<span>{{skillName}}</span>
+			  	</a>
+			  </li>														
+			{{/registeredUserSkills}}
+			</ul>
+		{{/hasRegisteredUserSkills}}
+		{{^hasRegisteredUserSkills}}
+		<div class="center content">
+			<div class="alert alert-info hint">
+				{{infoMessage}}
+			</div>
+		</div>
+		{{/hasRegisteredUserSkills}}
+		<div>
+			<a href="{{registereduserskillEditUri}}?returnUrl={{returnUrl}}" class="btn btn-large btn-primary"><i class="icon-plus-sign"></i> {{labels.ADD_SKILL_AND_EXPERTISE}}</a>	
+			<a href="{{registereduserUri}}" class="btn btn-large">{{labels.DONE}}</a>
+		</div>	
+		</div>
+		<div class="span1"></div>
+		<div class="clearfix"></div>	
+	</div>				
+	{{/registereduserskillBlock}}
+	
+	{{#registereduserskilleditBlock}}
+	<div class="row-fluid">
+	   <div class="span1"></div>
+	   <div class="span10">
+	   	<h3>{{labels.SKILL_AND_EXPERTISE}}</h3>		
+		<form action="{{jobskillActionUri}}/{{registeredUserSkill.id}}" method="post" id="jobSkillForm">							
+			<label><strong><span class="required-star">*</span>{{registeredUserSkill.skillNameCaption}}</strong></label>	
+			<div class="custom-vspace-small"></div>				
+			<input class="input-block-level" type="text" name="skillName" value="{{registeredUserSkill.skillName}}"/>
+			<input type="hidden" name="skillNameRequired" value="true"/>
+			<div class="custom-vspace"></div>
+			<div class="clearfix"></div>
+			
+			<span class="span6">
+				<label><strong><span class="required-star">*</span>{{registeredUserSkill.yearsCaption}}</strong></label>
+				<div class="custom-vspace-small"></div>					
+				<select class="input-block-level" name="years">
+					<option value=""></option>
+					{{#years}}
+						{{#selected}}
+				    	<option value="{{option}}" selected="selected">{{option}}</option>
+				    	{{/selected}}
+				    	{{^selected}}
+				    	<option value="{{option}}">{{option}}</option>
+				    	{{/selected}}
+				    {{/years}}
+				</select>					
+				<input type="hidden" name="yearsRequired" value="true"/>
+				<div class="custom-vspace"></div>
+			</span>
+			
+			<span class="span6">
+				<label><strong><span class="required-star">*</span>{{registeredUserSkill.proficiencyCaption}}</strong></label>
+				<div class="custom-vspace-small"></div>						
+				<select class="input-block-level" name="proficiency">
+					<option value=""></option>
+					{{#proficiencies}}
+						{{#selected}}
+				    	<option value="{{option}}" selected="selected">{{option}}</option>
+				    	{{/selected}}
+				    	{{^selected}}
+				    	<option value="{{option}}">{{option}}</option>
+				    	{{/selected}}
+				    {{/proficiencies}}
+				</select>					
+				<input type="hidden" name="proficiencyRequired" value="true"/>				
+				<div class="custom-vspace"></div>
+			</span>
+						
+			<div>
+				<a href="#" id="addJobSkillForm" successUri="{{returnUrl}}" class="btn btn-large btn-primary"><i class="icon-save"></i> {{labels.SAVE}}</a>
+				{{^create}}
+				<a href="{{registereduserskillRemoveUri}}?returnUrl={{returnUrl}}&registeredUserSkillId={{registeredUserSkill.id}}" class="btn btn-large"><i class="icon-remove-sign"></i> {{labels.REMOVE}}</a>
+				{{/create}}
+				<a href="{{returnUrl}}" class="btn btn-large">{{labels.DONE}}</a>
+			</div>
+		</form>
+		</div>
+		<div class="span1"></div>
+	 </div>
+	{{/registereduserskilleditBlock}}
+	
+	{{#registereduserlanguageBlock}}
+    <div class="row-fluid">
+    	<div class="span1"></div>
+        <div class="span10">
+		{{#hasRegisteredUserLanguages}}
+			<h3>{{title}}</h3>
+			<ul class="nav nav-tabs nav-stacked">				
+			{{#registeredUserLanguages}}
+			  <li>
+			  	<a href="{{registereduserlanguageEditUri}}?returnUrl={{returnUrl}}&registeredUserLanguageId={{id}}">
+			  		<span>{{language}}</span>
+			  	</a>
+			  </li>														
+			{{/registeredUserLanguages}}
+			</ul>
+		{{/hasRegisteredUserLanguages}}
+		{{^hasRegisteredUserLanguages}}
+		<div class="center content">
+			<div class="alert alert-info hint">
+				{{infoMessage}}
+			</div>
+		</div>
+		{{/hasRegisteredUserLanguages}}
+		<div>
+			<a href="{{registereduserlanguageEditUri}}?returnUrl={{returnUrl}}" class="btn btn-large btn-primary"><i class="icon-plus-sign"></i> {{labels.ADD_LANGUAGE}}</a>	
+			<a href="{{registereduserUri}}" class="btn btn-large">{{labels.DONE}}</a>
+		</div>	
+		</div>
+		<div class="span1"></div>
+		<div class="clearfix"></div>	
+	</div>				
+	{{/registereduserlanguageBlock}}
+	
+	{{#registereduserlanguageeditBlock}}
+	<div class="row-fluid">
+	   <div class="span1"></div>
+	   <div class="span10">
+	   	<h3>{{labels.LANGUAGE}}</h3>		
+		<form action="{{joblanguageActionUri}}/{{registeredUserLanguage.id}}" method="post" id="jobLanguageForm">										
+			<span class="span6">
+				<label><strong><span class="required-star">*</span>{{registeredUserLanguage.languageCaption}}</strong></label>	
+				<div class="custom-vspace-small"></div>				
+				<input class="input-block-level" type="text" name="language" value="{{registeredUserLanguage.language}}"/>
+				<input type="hidden" name="languageRequired" value="true"/>
+				<div class="custom-vspace"></div>
+			</span>
+			
+			<span class="span6">
+				<label><strong><span class="required-star">*</span>{{registeredUserLanguage.proficiencyCaption}}</strong></label>
+				<div class="custom-vspace-small"></div>						
+				<select class="input-block-level" name="proficiency">
+					<option value=""></option>
+					{{#proficiencies}}
+						{{#selected}}
+				    	<option value="{{option}}" selected="selected">{{option}}</option>
+				    	{{/selected}}
+				    	{{^selected}}
+				    	<option value="{{option}}">{{option}}</option>
+				    	{{/selected}}
+				    {{/proficiencies}}
+				</select>					
+				<input type="hidden" name="proficiencyRequired" value="true"/>				
+				<div class="custom-vspace"></div>
+			</span>
+						
+			<div>
+				<a href="#" id="addJobLanguageForm" successUri="{{returnUrl}}" class="btn btn-large btn-primary"><i class="icon-save"></i> {{labels.SAVE}}</a>
+				{{^create}}
+				<a href="{{registereduserlanguageRemoveUri}}?returnUrl={{returnUrl}}&registeredUserLanguageId={{registeredUserLanguage.id}}" class="btn btn-large"><i class="icon-remove-sign"></i> {{labels.REMOVE}}</a>
+				{{/create}}
+				<a href="{{returnUrl}}" class="btn btn-large">{{labels.DONE}}</a>
+			</div>
+		</form>
+		</div>
+		<div class="span1"></div>
+	 </div>
+	{{/registereduserlanguageeditBlock}}		
+	  
+	{{#aboutBlock}}
+ 	  <div class="row-fluid">
+        <div class="span12 content">
+        	{{^bannerImageSticky}}
+		  		{{#bannerImage}}
+		  		<div class="center">
+					<img src="{{imageBaseUrl}}{{bannerImage}}"/>
+				</div>
+				<br/>
+				{{/bannerImage}}
+			{{/bannerImageSticky}}
+			<div>
+	  			{{{description}}}
+	  		</div>
+		</div>
+		<div class="clearfix"></div>
+	  </div>				
+	{{/aboutBlock}}
+	  
+	{{#geosBlock}}
+ 	  <div class="row-fluid">
+ 	     <div class="span1"></div>
+         <div class="span10">
+			<ul class="nav nav-tabs nav-stacked">
+			{{#geos}}
+			  <li>
+			  	<a href="{{directionUri}}/{{id}}" class="mapCurrentLocation">
+			  		{{#displayName}}
+			  		<span>
+			  			<i class="icon-map-marker"></i> {{displayName}}
+			  		</span>
+
+					<div>{{formattedAddress}}</div>
+					{{/displayName}}
+			  		{{^displayName}}
+			  		<span>
+			  			<i class="icon-map-marker"></i> {{formattedAddress}}
+			  		</span>
+					{{/displayName}}
+					
+					<div>{{email}}</div>
+					<div>{{phone}}</div>
+			  	</a>
+			  </li>	
+			{{/geos}}
+			</ul>
+		</div>
+		<div class="span1"></div>
+		<div class="clearfix"></div>
+	  </div>					
+	{{/geosBlock}}
+	  
+	{{#geoBlock}}
+ 	  <div class="row-fluid">
+ 	    <div class="span1"></div>
+        <div class="span10 content">
+        	<div>
+				<p><strong>{{geo.formattedAddress}}</strong></p>
+				{{#geo.name}}
+					<p><strong>{{geo.name}}</strong></p>
+				{{/geo.name}}
+				{{#geo.comment}}
+					<p>{{geo.comment}}</p>
+				{{/geo.comment}}
+				{{#geo.email}}
+					<p><strong>{{labels.EMAIL}}: </strong><a href="mailto:{{geo.email}}">{{geo.email}}</a></p>
+				{{/geo.email}}
+				{{#geo.phone}}
+					<p><strong>{{labels.PHONE}}: </strong><a href="tel:{{geo.phone}}">{{geo.phone}}</a></p>
+				{{/geo.phone}}
+				<br/>
+			</div>
+			
+			<ul class="nav nav-tabs nav-stacked">
+			{{#hasDirections}}
+				{{#directions}}
+				  <li>
+				  	{{#mapUrl}}
+				  	  <div class="span8 content">
+					    {{#iconUrl}}
+					  	<span><img src="{{iconUrl}}"/></span>
+					  	{{/iconUrl}}
+					    {{#signs}}
+					  	<span><img src="{{url}}"/></span>
+					  	{{/signs}}
+					  	<span>{{{narrative}}} {{{narrativeNote}}}</span>(<span>{{formattedTime}}</span>)
+					  </div>
+					  <div class="span4">
+					  	<img src="{{mapUrl}}" class="pull-right"/>
+					  </div>
+					  <div class="clearfix"></div>
+				  	  <br/>
+				  	{{/mapUrl}}
+				  	{{^mapUrl}}
+				  	  <div class="span12 content">
+					    {{#iconUrl}}
+					  	<span><img src="{{iconUrl}}"/></span>
+					  	{{/iconUrl}}
+					    {{#signs}}
+					  	<span><img src="{{url}}"/></span>
+					  	{{/signs}}
+					  	<span>{{{narrative}}} {{{narrativeNote}}}</span>(<span>{{formattedTime}}</span>)
+					  </div>
+					  <div class="clearfix"></div>
+				  	  <br/>
+				  	{{/mapUrl}}
+				  </li>	
+				{{/directions}}
+			{{/hasDirections}}
+			{{^hasDirections}}
+				{{labels.DIRECTIONS_NOT_AVAILABLE}}
+			{{/hasDirections}}
+			</ul>
+		</div>
+		<div class="span1"></div>
+		<div class="clearfix"></div>
+	  </div>				
+	  {{/geoBlock}}
+	  
+	  {{#childindexBlock}}
+ 	  <div class="row-fluid jobdescription childindexBlock">
+         <div class="span8 content pdtop">
+         	<div class="row-fluid">
+         	    
+	         	<div class="span8 submitted">
+		          	{{#submitted}}
+					<h3 class="accent-color" style="padding-bottom: 0;margin-top: 0;">{{name}} ({{labels.APPLIED}})</h3>
+					{{/submitted}}	
+					{{^submitted}}
+					<h3 class="accent-color" style="padding-bottom: 0;margin-top: 0;">{{name}}</h3>
+					{{/submitted}}
+					
+					{{#geos}}
+						<a class="accent-color1" href="{{alljobsUri}}?geoId={{id}}">
+							{{cityRegionCountry}}<br/>
+						</a>
+					{{/geos}}
+				</div>
+				
+				<div class="span4 Align-Ment-Image">
+		            <img src="{{customData5}}">
+		        </div>
+				
+			</div>
+			<div class="clearfix"></div>
+			<div class="custom-vspace"></div>
+			
+			<div class="row-fluid">
+				{{#externalApply}}
+		           	<div class="span12">
+				 		{{{externalApply}}}
+		           	</div>
+				{{/externalApply}}
+				{{^externalApply}}
+					<div class="span4">
+						{{#hasLogins}}						
+				            {{#submitted}}
+				            	{{#allowUpdate}}
+									<a href="{{jobapplicationUri}}" class="btn btn-primary btn-large btn-block btn-apply-part">{{labels.UPDATE}}</a>
+								{{/allowUpdate}}
+								{{^allowUpdate}}
+									<a href="#" class="btn btn-primary btn-large btn-block btn-apply-part disabled">{{labels.APPLIED}}</a>
+								{{/allowUpdate}}
+							{{/submitted}}	
+							{{^submitted}}
+								{{^emailJobLink}}
+									<a href="{{jobapplicationUri}}" class="btn btn-primary btn-large btn-block btn-apply-part">{{labels.APPLY}}</a>
+								{{/emailJobLink}}
+								{{#emailJobLink}}
+									{{#customApplyUrl}}
+									<a href="{{customApplyUrl}}" class="btn btn-primary btn-large btn-block btn-apply-part" target="_blank">{{labels.APPLY}}</a>
+									{{/customApplyUrl}}
+									{{^customApplyUrl}}
+									<a href="{{nonMobileUrl}}" class="btn btn-primary btn-large btn-block btn-apply-part" target="_blank">{{labels.APPLY}}</a>
+									{{/customApplyUrl}}
+								{{/emailJobLink}}
+							{{/submitted}}						
+						{{/hasLogins}}
+						{{^hasLogins}}
+							{{^emailJobLink}}
+								<a href="{{anonymousjobapplicationUri}}" class="btn btn-primary btn-large btn-block applybutton">{{labels.APPLY}}</a>
+							{{/emailJobLink}}
+							{{#emailJobLink}}
+								{{#customApplyUrl}}
+								<a href="{{customApplyUrl}}" class="btn btn-primary btn-large btn-block" target="_blank">{{labels.APPLY}}</a>
+								{{/customApplyUrl}}
+								{{^customApplyUrl}}
+								<a href="{{nonMobileUrl}}" class="btn btn-primary btn-large btn-block" target="_blank">{{labels.APPLY}}</a>
+								{{/customApplyUrl}}
+							{{/emailJobLink}}
+						{{/hasLogins}}
+					</div>
+					{{#hasLogins}}
+					<div class="span4">
+						{{#saved}}
+							<a href="{{saveUri}}" class="btn btn-large btn-block">{{labels.UNSAVE}}</a>
+						{{/saved}}
+						{{^saved}}
+							<a href="{{saveUri}}" class="btn btn-large btn-block">{{labels.SAVE}}</a>
+						{{/saved}}			
+		            </div>
+		            {{/hasLogins}}
+		            
+		            <div class="span4 Back_to_results">
+		                    <a href="javascript:history.back()" class="btn btn-large btn-block">Back to Results</a>
+		            </div>
+	           	{{/externalApply}}
+           	</div>
+           	
+           	<div class="clearfix"></div>
+			<div class="custom-vspace"></div>
+			
+			<div class="row-fluid">
+    		    <div class="span12 share-widget">
+    		        
+    			    {{{shareWidget}}}
+    			  
+        		</div>
+			</div>
+			
+			
+           	<div class="row-fluid">
+	            {{#indeedApplyWidget}}
+	           	<div class="span4">
+			 		{{{indeedApplyWidget}}}
+	           	</div>
+	           	{{/indeedApplyWidget}}
+	            {{#monsterApplyWidget}}
+	           	<div class="span4">
+			 		{{{monsterApplyWidget}}}
+	           	</div>
+	           	{{/monsterApplyWidget}}
+           	</div>
+           				
+			
+           	
+           	<div class="clearfix"></div>
+			<br/>
+           	
+           	{{^discussion}}
+           		{{#disqusShortname}}
+				<ul class="nav nav-tabs nav-tabs-google">
+				  <li class="active">
+				    <a href="/job/{{vanityUri}}/{{id}}">{{labels.DESCRIPTION}}</a>
+				  </li>
+				  <li>
+				  	<a href="/job/{{vanityUri}}/{{id}}?discussion=true">{{labels.QA}}</a>
+				  </li>
+				</ul>
+				{{/disqusShortname}}
+				           	
+				<div>{{{description}}}</div>						
+				{{#introVideoUrl}}
+			
+			    <div class="fitvideo" style="margin-top:-11px">
+			    	<iframe src="{{introVideoUrl}}" frameborder="0" allowFullScreen></iframe>
+			    </div>
+				{{/introVideoUrl}}				
+			
+				
+				{{#jobType}}
+				<p>
+				<strong>{{labels.TYPE}}:</strong>
+				{{jobType}}
+				</p>
+				{{/jobType}}
+				{{#experienceLevel}}
+				<p>
+				<strong>{{labels.EXPERIENCE}}:</strong>
+				{{experienceLevel}}
+				</p>
+				{{/experienceLevel}}
+				{{#educationLevel}}
+				<p>
+				<strong>{{labels.EDUCATION}}:</strong>
+				{{educationLevel}}
+				</p>
+				{{/educationLevel}}
+				{{#tags}}
+			    <p>
+			    <strong>{{labels.CATEGORY}}:</strong> {{tags}}
+				</p>
+				{{/tags}}
+				{{#industry}}
+				<p>
+				<strong>{{labels.INDUSTRY}}:</strong>
+				{{industry}}
+				</p>
+				{{/industry}}
+				{{#showCompanies}}
+				{{#companyName}}
+				<p>
+				<strong>{{labels.COMPANY}}:</strong>
+				{{companyName}}
+				</p>
+				{{/companyName}}
+				{{/showCompanies}}
+				{{#showDivisions}}
+				{{#division}}
+				<p>
+				<strong>{{labels.DIVISION_DEPARTMENT}}:</strong>
+				{{division}}
+				</p>
+				{{/division}}
+				{{/showDivisions}}
+				{{#shift}}
+				<p>
+				<strong>{{labels.SHIFT}}:</strong>
+				{{shift}}
+				</p>
+				{{/shift}}							
+				{{#standardHours}}
+				<p>
+				<strong>{{labels.STANDARD_HOURS}}:</strong>
+				{{standardHours}}
+				</p>
+				{{/standardHours}}							
+				{{#salary}}
+				<p>
+				<strong>{{labels.SALARY}}:</strong>
+				{{salary}}
+				</p>
+				{{/salary}}
+				{{#referenceId}}
+				<p class="job-referenceid">
+				<strong>{{labels.REFERENCE_ID}}:</strong>
+				{{referenceId}}
+				</p>
+				{{/referenceId}}
+				{{#beginDate}}
+				<p>
+				<strong>{{labels.DATE_POSTED}}:</strong>
+				{{beginDate}}
+				</p>
+				{{/beginDate}}
+				{{#endDate}}
+				<p>
+				<strong>{{labels.EXPIRATION_DATE}}:</strong>
+				{{endDate}}
+				</p>
+				{{/endDate}}
+				{{#durationBeginDate}}
+				<p>
+				<strong>{{labels.START_DATE}}:</strong>
+				{{durationBeginDate}}
+				</p>
+				{{/durationBeginDate}}
+				{{#durationEndDate}}
+				<p>
+				<strong>{{labels.END_DATE}}:</strong>
+				{{durationEndDate}}
+				</p>
+				{{/durationEndDate}}
+				
+				
+				
+				
+				
+			{{/discussion}}	
+			{{#discussion}}
+				<ul class="nav nav-tabs nav-tabs-google">
+				  <li>
+				    <a href="/job/{{vanityUri}}/{{id}}">{{labels.DESCRIPTION}}</a>
+				  </li>
+				  <li class="active">
+				  	<a href="/job/{{vanityUri}}/{{id}}?discussion=true">{{labels.QA}}</a>
+				  </li>
+				</ul>
+			    {{{qaWidget}}}					
+			{{/discussion}}
+		</div>
+		 
+		{{> sidenav}}
+	  </div>				
+	{{/childindexBlock}}
+	  
+	{{#loginBlock}}
+ 	<div class="row-fluid">
+		<div class="span12">
+		{{#notauthenticated}}
+			{{#apply}}
+				<div class="span12 center">
+					<div class="alert alert-info hint">
+						{{^showAnonymous}}
+					  	<strong>{{labels.WELCOME}}!</strong> {{labels.APPLY_SIGN_IN}}
+					  	{{/showAnonymous}}
+					  	{{#showAnonymous}}
+					  	<strong>{{labels.WELCOME}}!</strong> {{labels.APPLY_SIGN_IN_ANONYMOUS}}
+					  	{{/showAnonymous}}
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<br/>
+				{{#showEmailLogin}}
+				<div class="span4">
+				  <h3>{{labels.NEW_CANDIDATES}}</h3>
+				  <form id="signupForm" action="{{signupActionUri}}" method="post">
+				  	<div>
+				  	  <input type="hidden" id="spottingId" name="spottingId" value="{{spottingId}}" />
+				  	  <input type="hidden" id="campaignId" name="campaignId" value="{{campaign.id}}" />
+					  <input type="hidden" id="base" name="base" value="{{base}}" />
+					  <input type="hidden" id="returnUrl" name="returnUrl" value="{{returnUrl}}" />
+					  <input type="hidden" id="timezone" name="timezone" value="America/New_York" />
+					  <input type="text" id="name" name="name" class="input-block-level" placeholder="{{labels.FULL_NAME}}"/>
+					  <input type="email" id="email" name="email" class="input-block-level" placeholder="{{labels.EMAIL_ADDRESS}}"/>
+					  <input type="password" autocomplete="off" id="password" name="password" class="input-block-level" placeholder="{{labels.PASSWORD}}"/>
+					</div>
+					<button type="submit" id="submitSignupForm" class="btn btn-large btn-primary">{{labels.CREATE_AN_ACCOUNT}}</button>
+					{{#showAnonymous}}
+						<div class="clearfix"></div>
+						<div class="custom-vspace"></div>
+						<a class="btn btn-large" href="{{anonymousUri}}">{{labels.CONTINUE_WITHOUT_AN_ACCOUNT}}</a>
+					{{/showAnonymous}}
+				  </form>
+				</div>
+				<div class="span4">
+				  <h3>{{labels.RETURNING_CANDIDATES}}</h3>
+				  <form id="loginForm" action="/j_spring_security_check" method="post">
+				  	<div>
+					  <input type="hidden" id="campaignId" name="campaignId" value="{{campaign.id}}" />
+					  <input type="hidden" id="returnUrl" name="returnUrl" value="{{returnUrl}}" />
+					  <input type="hidden" id="errorUrl" name="errorUrl" value="{{signinWithEmailUri}}&error=true" />
+					  <input type="hidden" id="base" name="base" value="{{base}}" />
+					  <input type="email" id="j_username" name="j_username" class="input-block-level" placeholder="{{labels.EMAIL_ADDRESS}}"/>
+					  <input type="password" autocomplete="off" id="j_password" name="j_password" class="input-block-level"  placeholder="{{labels.PASSWORD}}"/>
+					</div>
+					{{#error}}
+					<button type="submit" id="submitLoginForm" class="btn btn-large btn-primary">{{labels.RETRY_SIGN_IN}}</button>
+					{{/error}}
+					{{^error}}
+					<button type="submit" id="submitLoginForm" class="btn btn-large btn-primary">{{labels.SIGN_IN}}</button>
+					{{/error}}
+					<a href="{{signinReminderUri}}" class="btn btn-large">{{labels.PASSWORD_HELP}}</a>
+				  </form>	
+				</div>
+				{{/showEmailLogin}}
+				{{#hasSocialLogins}}
+				<div class="span4">
+					<br/><br/><br/>
+					{{#showFacebookLogin}}
+					<a class="btn btn-large btn-primary btn-block" href="{{signinWithFacebookUri}}">{{labels.APPLY_WITH_FACEBOOK}} <i class="icon-facebook-sign"></i></a>
+					{{/showFacebookLogin}}
+					{{#showTwitterLogin}}
+					<a class="btn btn-large btn-primary btn-block" href="{{signinWithTwitterUri}}">{{labels.APPLY_WITH_TWITTER}} <i class="icon-twitter-sign"></i></a>
+					{{/showTwitterLogin}}
+					{{#showLinkedinLogin}}
+					<a class="btn btn-large btn-primary btn-block" href="{{signinWithLinkedInUri}}">{{labels.APPLY_WITH_LINKEDIN}} <i class="icon-linkedin-sign"></i></a>
+					{{/showLinkedinLogin}}
+					{{#showGoogleLogin}}
+					<a class="btn btn-large btn-primary btn-block" href="{{signinWithGoogleUri}}">{{labels.APPLY_WITH_GOOGLE}} <i class="icon-google-plus-sign"></i></a>
+					{{/showGoogleLogin}}
+					{{#showMicrosoftLogin}}
+					<a class="btn btn-large btn-primary btn-block" href="{{signinWithMicrosoftUri}}">{{labels.APPLY_WITH_MICROSOFT}} <i class="icon-windows"></i></a>
+					{{/showMicrosoftLogin}}
+					{{#showXingLogin}}
+					<a class="btn btn-large btn-primary btn-block" href="{{signinWithXingUri}}">{{labels.APPLY_WITH_XING}} <i class="icon-xing-sign"></i></a>
+					{{/showXingLogin}}
+					{{#showSeekLogin}}
+						<a class="btn btn-large btn-primary btn-block seek-apply-btn" href="{{signinWithSeekUri}}">Apply with<span class="seek-apply-btn__image" aria-label="SEEK"></span></a>
+					{{/showSeekLogin}}
+				</div>
+				{{/hasSocialLogins}}
+				<div class="clearfix"></div>
+				<br/>				
+			{{/apply}}
+			{{^apply}}
+				<div class="span12 center">
+					<div class="alert alert-info hint">
+					  	<strong>{{labels.WELCOME}}!</strong> {{labels.CONTINUE_SIGN_IN}}
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<br/>
+				{{#showEmailLogin}}
+				<div class="span4">
+				  <h3>{{labels.NEW_CANDIDATES}}</h3>
+				  <form id="signupForm" action="{{signupActionUri}}" method="post">
+				  	<div>
+				  	  <input type="hidden" id="spottingId" name="spottingId" value="{{spottingId}}" />
+				  	  <input type="hidden" id="campaignId" name="campaignId" value="{{campaign.id}}" />
+					  <input type="hidden" id="base" name="base" value="{{base}}" />
+					  <input type="hidden" id="returnUrl" name="returnUrl" value="{{returnUrl}}" />
+					  <input type="hidden" id="timezone" name="timezone" value="America/New_York" />
+					  <input type="text" id="name" name="name" class="input-block-level" placeholder="{{labels.FULL_NAME}}"/>
+					  <input type="email" id="email" name="email" class="input-block-level" placeholder="{{labels.EMAIL_ADDRESS}}"/>
+					  <input type="password" autocomplete="off" id="password" name="password" class="input-block-level" placeholder="{{labels.PASSWORD}}"/>
+					</div>
+					<button type="submit" id="submitSignupForm" class="btn btn-large btn-primary">{{labels.CREATE_AN_ACCOUNT}}</button>
+				  </form>
+				</div>
+				<div class="span4">
+				  <h3>{{labels.RETURNING_CANDIDATES}}</h3>
+				  <form id="loginForm" action="/j_spring_security_check" method="post">
+				  	<div>
+					  <input type="hidden" id="campaignId" name="campaignId" value="{{campaign.id}}" />
+					  <input type="hidden" id="returnUrl" name="returnUrl" value="{{returnUrl}}" />
+					  <input type="hidden" id="errorUrl" name="errorUrl" value="{{signinWithEmailUri}}&error=true" />
+					  <input type="hidden" id="base" name="base" value="{{base}}" />
+					  <input type="email" id="j_username" name="j_username" class="input-block-level" placeholder="{{labels.EMAIL_ADDRESS}}"/>
+					  <input type="password" autocomplete="off" id="j_password" name="j_password" class="input-block-level"  placeholder="{{labels.PASSWORD}}"/>
+					</div>
+					{{#error}}
+					<button type="submit" id="submitLoginForm" class="btn btn-large btn-primary">{{labels.RETRY_SIGN_IN}}</button>
+					{{/error}}
+					{{^error}}
+					<button type="submit" id="submitLoginForm" class="btn btn-large btn-primary">{{labels.SIGN_IN}}</button>
+					{{/error}}
+					<a href="{{signinReminderUri}}" class="btn btn-large">{{labels.PASSWORD_HELP}}</a>
+				  </form>	
+				</div>
+				{{/showEmailLogin}}
+				{{#hasSocialLogins}}
+				<div class="span4">	
+					<br/><br/><br/>
+					{{#showFacebookLogin}}
+					<a class="btn btn-large btn-primary btn-block" href="{{signinWithFacebookUri}}">{{labels.SIGN_IN_WITH_FACEBOOK}} <i class="icon-facebook-sign"></i></a>
+					{{/showFacebookLogin}}
+					{{#showTwitterLogin}}
+					<a class="btn btn-large btn-primary btn-block" href="{{signinWithTwitterUri}}">{{labels.SIGN_IN_WITH_TWITTER}} <i class="icon-twitter-sign"></i></a>
+					{{/showTwitterLogin}}
+					{{#showLinkedinLogin}}
+					<a class="btn btn-large btn-primary btn-block" href="{{signinWithLinkedInUri}}">{{labels.SIGN_IN_WITH_LINKEDIN}} <i class="icon-linkedin-sign"></i></a>
+					{{/showLinkedinLogin}}
+					{{#showGoogleLogin}}
+					<a class="btn btn-large btn-primary btn-block" href="{{signinWithGoogleUri}}">{{labels.SIGN_IN_WITH_GOOGLE}} <i class="icon-google-plus-sign"></i></a>
+					{{/showGoogleLogin}}
+					{{#showMicrosoftLogin}}
+					<a class="btn btn-large btn-primary btn-block" href="{{signinWithMicrosoftUri}}">{{labels.SIGN_IN_WITH_MICROSOFT}} <i class="icon-windows"></i></a>
+					{{/showMicrosoftLogin}}
+					{{#showXingLogin}}
+					<a class="btn btn-large btn-primary btn-block" href="{{signinWithXingUri}}">{{labels.SIGN_IN_WITH_XING}} <i class="icon-xing-sign"></i></a>
+					{{/showXingLogin}}
+				</div>
+				{{/hasSocialLogins}}
+				<div class="clearfix"></div>
+				<br/>
+		   {{/apply}}
+		{{/notauthenticated}}
+		</div>				
+	</div>
+	{{/loginBlock}}
+	
+	{{#loginreminderBlock}}
+ 	<div class="row-fluid">
+		<div class="span12 center">
+		  <h3>{{labels.PASSWORD_HELP}}</h3>
+		  <form id="recoverForm" action="{{signinReminderSentUri}}" method="post">
+		  	<div>
+			  <input type="hidden" id="base" name="base" class="input-block-level" value="{{base}}" />
+			  <input type="hidden" id="campaignId" name="campaignId" class="input-block-level" value="{{id}}" />
+			  <input type="email" id="email" name="email" class="input-xxlarge" placeholder="{{labels.EMAIL_ADDRESS}}"/>
+			  <button type="submit" id="submitRecoverForm" class="btn btn-large btn-primary" style="margin-top:-10px;">{{labels.RECOVER_PASSWORD}}</button>
+			</div>
+		  </form>
+	   </div>	
+	</div>  
+	{{/loginreminderBlock}}  
+	
+	{{#loginremindersentBlock}}
+ 	<div class="row-fluid">
+ 		<div class="span3"></div>
+		<div class="span6 center">
+			<div class="alert alert-info hint">					
+				{{labels.PASSWORD_RESET_LINK_SENT}}
+			</div>
+		</div>
+		<div class="span3"></div>
+	</div>
+	{{/loginremindersentBlock}}
+	
+	{{#loginremindercheckBlock}}
+ 	<div class="row-fluid">
+ 		<div class="span3"></div>
+		<div class="span6 center">
+		  <h3>{{labels.RESET_PASSWORD}}</h3>
+		  <form id="resetForm" action="{{signinReminderResetUri}}" method="post">
+		  	<div>
+			  <input type="hidden" id="token" name="token" class="input-block-level" value="{{resetToken}}" />
+			  <input type="hidden" id="campaignId" name="campaignId" class="input-block-level" value="{{id}}" />
+			  <input type="password" autocomplete="off" id="password" name="password" class="input-block-level" placeholder="{{labels.NEW_PASSWORD}}"/>
+			</div>
+			<button type="submit" id="submitResetForm" class="btn btn-large btn-primary">{{labels.RESET_PASSWORD}}</button>
+		  </form>
+	   </div>	
+	   <div class="span3"></div>
+	</div>  
+	{{/loginremindercheckBlock}}  
+	
+	{{#loginreminderresetBlock}}
+ 	<div class="row-fluid">
+ 		<div class="span3"></div>
+		<div class="span6 center">
+			<div class="alert alert-success hint">					
+				{{labels.RESET_SUCCESSFULLY}}
+			</div>
+		</div>
+		<div class="span3"></div>
+	</div>
+	{{/loginreminderresetBlock}}
+	
+	{{#signupBlock}}
+	<div class="row-fluid">
+ 		<div class="span3"></div>
+		<div class="span6 center">
+		  <h3>{{labels.NEW_CANDIDATES}}</h3>
+		  <form id="signupForm" action="{{signupActionUri}}" method="post">
+		  	<div>
+		  	  <input type="hidden" id="spottingId" name="spottingId" value="{{spottingId}}" />
+		  	  <input type="hidden" id="campaignId" name="campaignId" value="{{campaign.id}}" />
+			  <input type="hidden" id="base" name="base" value="{{base}}" />
+			  <input type="hidden" id="returnUrl" name="returnUrl" value="{{returnUrl}}" />
+			  <input type="hidden" id="timezone" name="timezone" value="America/New_York" />
+			  <input type="text" id="name" name="name" class="input-block-level" placeholder="{{name}}"/>
+			  <input type="email" id="email" name="email" class="input-block-level" placeholder="{{email}}"/>
+			  <input type="password" autocomplete="off" id="password" name="password" class="input-block-level" placeholder="{{labels.PASSWORD}}"/>
+			</div>
+			<button type="submit" id="submitSignupForm" class="btn btn-large btn-primary">{{labels.CREATE_ACCOUNT}}</button>
+			<a href="{{signinWithEmailUri}}" class="btn btn-large">{{labels.SIGN_IN_WITH_EMAIL}}</a>
+		  </form>
+		  <br/>
+	   		{{#showFacebookLogin}}
+			<a class="btn btn-large btn-primary btn-block" href="{{signinWithFacebookUri}}">{{labels.SIGN_IN_WITH_FACEBOOK}} <i class="icon-facebook-sign"></i></a>
+			{{/showFacebookLogin}}
+			{{#showTwitterLogin}}
+			<a class="btn btn-large btn-primary btn-block" href="{{signinWithTwitterUri}}">{{labels.SIGN_IN_WITH_TWITTER}} <i class="icon-twitter-sign"></i></a>
+			{{/showTwitterLogin}}
+			{{#showLinkedinLogin}}
+			<a class="btn btn-large btn-primary btn-block" href="{{signinWithLinkedInUri}}">{{labels.SIGN_IN_WITH_LINKEDIN}} <i class="icon-linkedin-sign"></i></a>
+			{{/showLinkedinLogin}}
+			{{#showGoogleLogin}}
+			<a class="btn btn-large btn-primary btn-block" href="{{signinWithGoogleUri}}">{{labels.SIGN_IN_WITH_GOOGLE}} <i class="icon-google-plus-sign"></i></a>
+			{{/showGoogleLogin}}
+			{{#showMicrosoftLogin}}
+			<a class="btn btn-large btn-primary btn-block" href="{{signinWithMicrosoftUri}}">{{labels.SIGN_IN_WITH_MICROSOFT}} <i class="icon-windows"></i></a>
+			{{/showMicrosoftLogin}}
+			{{#showXingLogin}}
+			<a class="btn btn-large btn-primary btn-block" href="{{signinWithXingUri}}">{{labels.SIGN_IN_WITH_XING}} <i class="icon-xing-sign"></i></a>
+			{{/showXingLogin}}
+			<br/>
+	  	</div>
+	  	<div class="span3"></div>	
+	 </div>  
+	{{/signupBlock}} 
+	
+	{{#signinwithemailBlock}}
+	<div class="row-fluid">
+ 		<div class="span3"></div>
+		<div class="span6 center">
+		  {{#error}}
+			<div class="alert alert-error hint">
+				{{labels.SIGN_IN_FAILED}}
+			</div>
+		  {{/error}}
+		  {{^error}}
+		 	 <h3>{{labels.RETURNING_CANDIDATES}}</h3>
+		  {{/error}}
+		  <form id="loginForm" action="/j_spring_security_check" method="post">
+		  	<div>
+			  <input type="hidden" id="campaignId" name="campaignId" value="{{campaign.id}}" />
+			  <input type="hidden" id="returnUrl" name="returnUrl" value="{{returnUrl}}" />
+			  <input type="hidden" id="errorUrl" name="errorUrl" value="{{signinWithEmailUri}}&error=true" />
+			  <input type="hidden" id="base" name="base" value="{{base}}" />
+			  <input type="email" id="j_username" name="j_username" class="input-block-level" placeholder="{{labels.EMAIL_ADDRESS}}"/>
+			  <input type="password" autocomplete="off" id="j_password" name="j_password" class="input-block-level"  placeholder="{{labels.PASSWORD}}"/>
+			</div>
+			{{#error}}
+			<button type="submit" id="submitLoginForm" class="btn btn-large btn-primary">{{labels.RETRY_SIGN_IN}}</button>
+			{{/error}}
+			{{^error}}
+			<button type="submit" id="submitLoginForm" class="btn btn-large btn-primary">{{labels.SIGN_IN}}</button>
+			{{/error}}
+			<a href="{{signupUri}}" class="btn btn-large">{{labels.CREATE_AN_ACCOUNT}}</a>
+			<a href="{{signinReminderUri}}" class="btn btn-large">{{labels.PASSWORD_HELP}}</a>
+		  </form>
+		  <br/>
+			{{#showFacebookLogin}}
+			<a class="btn btn-large btn-primary btn-block" href="{{signinWithFacebookUri}}">{{labels.SIGN_IN_WITH_FACEBOOK}} <i class="icon-facebook-sign"></i></a>
+			{{/showFacebookLogin}}
+			{{#showTwitterLogin}}
+			<a class="btn btn-large btn-primary btn-block" href="{{signinWithTwitterUri}}">{{labels.SIGN_IN_WITH_TWITTER}} <i class="icon-twitter-sign"></i></a>
+			{{/showTwitterLogin}}
+			{{#showLinkedinLogin}}
+			<a class="btn btn-large btn-primary btn-block" href="{{signinWithLinkedInUri}}">{{labels.SIGN_IN_WITH_LINKEDIN}} <i class="icon-linkedin-sign"></i></a>
+			{{/showLinkedinLogin}}
+			{{#showGoogleLogin}}
+			<a class="btn btn-large btn-primary btn-block" href="{{signinWithGoogleUri}}">{{labels.SIGN_IN_WITH_GOOGLE}} <i class="icon-google-plus-sign"></i></a>
+			{{/showGoogleLogin}}
+			{{#showMicrosoftLogin}}
+			<a class="btn btn-large btn-primary btn-block" href="{{signinWithMicrosoftUri}}">{{labels.SIGN_IN_WITH_MICROSOFT}} <i class="icon-windows"></i></a>
+			{{/showMicrosoftLogin}}
+			{{#showXingLogin}}
+			<a class="btn btn-large btn-primary btn-block" href="{{signinWithXingUri}}">{{labels.SIGN_IN_WITH_XING}} <i class="icon-xing-sign"></i></a>
+			{{/showXingLogin}}
+			<br/>
+	   </div>
+	   <div class="span3"></div>	
+	</div>  
+	{{/signinwithemailBlock}}
+	
+	{{#confirmemailBlock}}
+	<div class="row-fluid">
+		<div class="span12 center">
+			<h3>{{labels.CONFIRM_EMAIL}}</h3>
+          	<form id="confirmEmailForm" action="{{confirmemailActionUri}}" method="post">
+          		<div>
+          			<input type="hidden" id="spottingId" name="spottingId" value="{{spottingId}}" />
+	          		<input type="hidden" id="campaignId" name="campaignId" value="{{campaign.id}}" />
+	          		<input type="hidden" id="returnUrl" name="returnUrl" value="{{returnUrl}}" />
+	          		<input type="hidden" id="base" name="base" value="{{base}}" />
+	          		<input type="hidden" id="registeredUserId" name="registeredUserId" value="{{registeredUserId}}" />
+				    <input type="email" id="email" name="email" value="{{email}}" class="input-xxlarge" placeholder="{{labels.EMAIL_ADDRESS}}"/>	
+				    <button type="submit" class="btn btn-large btn-primary" id="submitConfirmEmailForm" style="margin-top:-10px;"><i class="icon-chevron-sign-right"></i> {{labels.CONTINUE}}</button>				    
+			    </div>
+          	</form>						
+		</div>
+	</div>
+	{{/confirmemailBlock}}
+	
+	{{#validateemailBlock}}
+	<div class="row-fluid">
+ 		<div class="span3"></div>
+		<div class="span6 center">
+			<h3>{{labels.VALIDATE_EMAIL}}</h3>					
+		</div>
+		<div class="span3"></div>
+	</div>
+	{{/validateemailBlock}}
+	
+	{{#validatedemailBlock}}
+	<div class="row-fluid">
+ 		<div class="span3"></div>
+		<div class="span6 center">
+			<h3>{{labels.VALIDATED_EMAIL}}</h3>
+			<a href="{{returnUrl}}" class="btn btn-large btn-primary">{{labels.CONTINUE}}</a>					
+		</div>
+		<div class="span3"></div>
+	</div>
+	{{/validatedemailBlock}}
+	
+	{{#jobapplicationsubmittedBlock}}
+ 	 <div class="jobsubmittedblock">
+	 
+ 	 <div class="row-fluid">
+ 	  	<div class="span1"></div>
+ 	 	<div class="span10">
+ 	 		<h3 class="snaphop-red"><span class="link-color">{{labels.JOB_APPLYING}}:</span> <a href="{{childhomeUri}}">{{name}}</a></h3>
+ 	 		<div class="custom-vspace"></div>
+			<div class="center">
+				<div class="alert alert-success hint">					
+					{{{thankyou}}}
+				</div>
+			</div>
+			
+			{{#hasJobs}}													
+				{{> joblist}}
+			{{/hasJobs}}
+		</div>
+	    <div class="span1"></div>
+	   <div class="clearfix"></div>	
+	</div>
+	<br/>
+	{{> searchnav}}
+	   
+	</div>
+	{{/jobapplicationsubmittedBlock}}
+	
+	{{#minimumrequiredBlock}}
+ 	 <div class="row-fluid">
+		<div class="span1"></div>
+ 	 	<div class="span10">
+			<div class="center">
+				<div class="alert alert-error hint">						
+					{{errorMessage}}
+				</div>
+			</div>
+	         <div class="center">
+			  	<a class="btn btn-primary btn-large" href="{{returnUrl}}"><i class="icon-chevron-sign-left"></i> {{labels.BACK}}</a>
+			</div>
+		</div>
+	    <div class="span1"></div>
+	   <div class="clearfix"></div>	
+	</div>
+	{{/minimumrequiredBlock}}
+
+	
+	{{#applicationResumePage}}
+	<div class="masonry-item" id="uploadCredential" campaignId="{{campaign.id}}"></div>
+
+    <div class="modal fade" id="captionFormModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form id="captionForm" action="{{addedfilecredentialUri}}" method="post">
+    	  	  <input type="hidden" id="fileId" name="fileId" value=""/>
+    	  	  {{^registeredusercredentialsBlock}}
+    	  	  <input type="hidden" id="returnUrl" name="returnUrl" value="{{returnUrl}}"/>
+    	  	  {{/registeredusercredentialsBlock}}
+    	  	  {{#registeredusercredentialsBlock}}
+    	  	  <input type="hidden" id="returnUrl" name="returnUrl" value="{{registeredusercredentialsUri}}"/>
+    	  	  {{/registeredusercredentialsBlock}}
+          	
+    	      <div class="modal-header">
+    	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    	        <h4 class="modal-title">Please provide a file name</h4>
+    	      </div>
+    	      <div class="modal-body">
+    	      	<div class="form-group">
+    	      		<textarea class="form-control input-lg" id="caption" name="caption" cols="30" rows="4"></textarea>
+    	      	</div>
+    	      	<div class="form-group">
+    		  		<select class="form-control input-lg selectpicker" id="category" name="category">
+    				{{#credentialCategories}}
+    					<option value="{{name}}">{{value}}</option>
+    				{{/credentialCategories}}
+    				</select>
+    			</div>
+    	      </div>
+    	      <div class="modal-footer">
+    	        <button type="submit" class="btn btn-primary btn-lg">{{labels.CONTINUE}} <i class="fa fa-chevron-circle-right"></i></button>
+    	      </div>
+          </form>
+        </div>
+      </div>
+    </div>
+{{/applicationResumePage}}
+	
+	{{#expressapplicationsBlock}}
+	<div class="row-fluid expressapplicationsBlock">
+       <div class="span12">	
+		<div class="MakeDiv">
+        <h2 class="expressapplicationsBlock-Heading"><span class="expressapplicationsBlock-Pointer">{{name}} </span><span class="label label-success">{{labels.JOB_APPLYING}}</span></h2>
+		</div>
+	    <div class="custom-details-field" style="outline: none;">Details: </div>
+	    
+	    <div class="modal fade" id="descriptionModal" tabindex="-1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+              	<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+        		<div>
+        			<p>{{{description}}}</p>
+        		</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="modal-backdrop fade"></div>
+	    
+		<form action="{{expressApplicationActionUri}}" method="post" id="expressApplicationsForm">						
+			{{#applicationSteps}}					
+				{{#basicInfoMessage}}	
+				<div class="alert alert-info hint">
+					{{{basicInfoMessage}}}
+				</div>
+				{{/basicInfoMessage}}
+
+				{{#questionnaireMessage}}
+				<div class="alert alert-info hint">
+					{{{questionnaireMessage}}}
+				</div>
+				{{/questionnaireMessage}}
+				
+				{{#complianceMessage}}
+				<div class="alert alert-info hint">
+					{{{complianceMessage}}}
+				</div>
+				{{/complianceMessage}}
+										
+				{{#repeatable}}
+					{{#validationId}}
+					<a id="validation-{{validationId}}"></a>
+					{{/validationId}}
+					
+					{{#repeatableRequired}}
+					<label><strong><span class="required-star">*</span>{{repeatableTitle}}</strong></label>
+					{{/repeatableRequired}}
+					{{^repeatableRequired}}
+					<label><strong>{{repeatableTitle}}</strong></label>
+					{{/repeatableRequired}}
+					<div class="custom-vspace"></div>						
+				
+					{{#applyFormMessage}}
+					<div class="alert alert-info hint content-margin">
+						{{{applyFormMessage}}}
+					</div>
+					{{/applyFormMessage}}		
+					<ul class="nav nav-tabs nav-stacked">				
+					{{#repeatableForms}}
+					  <li>
+					  	<a href="{{repeatableEditUri}}&transactionId={{transactionId}}&returnUrl={{returnUrl}}" class="save-express-applications-form" validationId="{{validationId}}">
+					  		<i class="icon-chevron-right right-arrow"></i> 
+					  		<span>{{text}}</span>
+					  	</a>
+					  </li>														
+					{{/repeatableForms}}
+					</ul>
+					<a href="{{repeatableEditUri}}&returnUrl={{returnUrl}}" class="btn btn-large btn-primary btn-block save-express-applications-form" validationId="{{validationId}}">
+						<i class="icon-plus-sign"></i> {{labels.ADD}}{{#repeatableLabel}} {{repeatableLabel}}{{/repeatableLabel}}
+					</a>
+					<br/>
+				{{/repeatable}}	
+				{{^repeatable}}
+					{{#applyFormMessage}}
+					<div class="alert alert-info hint">
+						{{{applyFormMessage}}}
+					</div>
+					{{/applyFormMessage}}
+				{{/repeatable}}
+			
+				{{> form}}
+				
+				{{#experienceStep}}
+					{{#validationId}}
+					<a id="validation-{{validationId}}"></a>
+					{{/validationId}}						
+				
+					{{#experienceRequired}}
+					<label><strong><span class="required-star">*</span>{{experienceStep}}</strong></label>
+					{{/experienceRequired}}
+					{{^experienceRequired}}
+					<label><strong>{{experienceStep}}</strong></label>
+					{{/experienceRequired}}
+					<div class="custom-vspace"></div>						
+				
+					{{#experienceMessage}}
+					<div class="alert alert-info hint">
+						{{{experienceMessage}}}
+					</div>			
+					{{/experienceMessage}}			
+					<ul class="nav nav-tabs nav-stacked">				
+					{{#registeredUserPositions}}
+					  <li>
+					  	<a href="{{registereduserexperienceEditUri}}?returnUrl={{returnUrl}}&registeredUserPositionId={{id}}" class="save-express-applications-form" validationId="{{validationId}}">
+					  		<span>{{company}}</span>
+					  		<div>
+					  		{{#endTSString}}
+					  			{{#beginTSString}}
+									{{beginTSString}} - {{endTSString}}
+								{{/beginTSString}}
+					  			{{^beginTSString}}
+									{{endTSString}}
+								{{/beginTSString}}
+							{{/endTSString}}
+					  		{{^endTSString}}
+								{{beginTSString}} - {{labels.PRESENT}}
+							{{/endTSString}}
+							</div>
+					  	</a>
+					  </li>														
+					{{/registeredUserPositions}}
+					</ul>
+					<a href="{{registereduserexperienceEditUri}}?returnUrl={{returnUrl}}" class="btn btn-large btn-primary save-express-applications-form" validationId="{{validationId}}"><i class="icon-plus-sign"></i> {{labels.ADD_WORK_EXPERIENCE}}</a>	
+					<div class="clearfix"></div>
+					<br/>
+				{{/experienceStep}}
+				
+				{{#educationStep}}
+					{{#validationId}}
+					<a id="validation-{{validationId}}"></a>
+					{{/validationId}}						
+				
+					{{#educationRequired}}
+					<label><strong><span class="required-star">*</span>{{educationStep}}</strong></label>
+					{{/educationRequired}}
+					{{^educationRequired}}
+					<label><strong>{{educationStep}}</strong></label>
+					{{/educationRequired}}
+					<div class="custom-vspace"></div>							
+				
+					{{#educationMessage}}
+					<div class="alert alert-info hint">
+						{{{educationMessage}}}
+					</div>			
+					{{/educationMessage}}				
+					<ul class="nav nav-tabs nav-stacked">				
+					{{#registeredUserEducations}}
+					  <li>
+					  	<a href="{{registeredusereducationEditUri}}?returnUrl={{returnUrl}}&registeredUserEducationId={{id}}" class="save-express-applications-form" validationId="{{validationId}}">
+					  		<span>{{schoolName}}</span>
+					  		<div>
+					  		{{#endTSString}}
+					  			{{#beginTSString}}
+									{{beginTSString}} - {{endTSString}}
+								{{/beginTSString}}
+					  			{{^beginTSString}}
+									{{endTSString}}
+								{{/beginTSString}}
+							{{/endTSString}}
+					  		{{^endTSString}}
+								{{beginTSString}} - {{labels.PRESENT}}
+							{{/endTSString}}
+							</div>
+					  	</a>
+					  </li>														
+					{{/registeredUserEducations}}
+					</ul>
+					<a href="{{registeredusereducationEditUri}}?returnUrl={{returnUrl}}" class="btn btn-large btn-primary save-express-applications-form" validationId="{{validationId}}"><i class="icon-plus-sign"></i> {{labels.ADD_EDUCATION}}</a>
+					<div class="clearfix"></div>
+					<br/>
+				{{/educationStep}}
+				
+				{{#certificationStep}}
+					{{#validationId}}
+					<a id="validation-{{validationId}}"></a>
+					{{/validationId}}						
+				
+					{{#certificationRequired}}
+					<label><strong><span class="required-star">*</span>{{certificationStep}}</strong></label>
+					{{/certificationRequired}}
+					{{^certificationRequired}}
+					<label><strong>{{certificationStep}}</strong></label>
+					{{/certificationRequired}}
+					<div class="custom-vspace"></div>							
+				
+					{{#certificationMessage}}
+					<div class="alert alert-info hint">
+						{{{certificationMessage}}}
+					</div>			
+					{{/certificationMessage}}					
+					<ul class="nav nav-tabs nav-stacked">				
+					{{#registeredUserCertifications}}
+					  <li>
+					  	<a href="{{registeredusercertificationEditUri}}?returnUrl={{returnUrl}}&registeredUserCertificationId={{id}}" class="save-express-applications-form" validationId="{{validationId}}">
+					  		<span>{{name}}</span>
+					  		<div>
+					  		{{#endTSString}}
+					  			{{#beginTSString}}
+									{{beginTSString}} - {{endTSString}}
+								{{/beginTSString}}
+					  			{{^beginTSString}}
+									{{endTSString}}
+								{{/beginTSString}}
+							{{/endTSString}}
+					  		{{^endTSString}}
+								{{beginTSString}} - {{labels.PRESENT}}
+							{{/endTSString}}
+							</div>
+					  	</a>
+					  </li>														
+					{{/registeredUserCertifications}}
+					</ul>
+					<a href="{{registeredusercertificationEditUri}}?returnUrl={{returnUrl}}" class="btn btn-large btn-primary save-express-applications-form" validationId="{{validationId}}"><i class="icon-plus-sign"></i> {{labels.ADD_CERTIFICATION}}</a>
+					<div class="clearfix"></div>
+					<br/>
+				{{/certificationStep}}
+				
+				{{#referenceStep}}
+					{{#validationId}}
+					<a id="validation-{{validationId}}"></a>
+					{{/validationId}}						
+				
+					{{#referenceRequired}}
+					<label><strong><span class="required-star">*</span>{{referenceStep}}</strong></label>
+					{{/referenceRequired}}
+					{{^referenceRequired}}
+					<label><strong>{{referenceStep}}</strong></label>
+					{{/referenceRequired}}
+					<div class="custom-vspace"></div>							
+				
+					{{#referenceMessage}}
+					<div class="alert alert-info hint">
+						{{{referenceMessage}}}
+					</div>			
+					{{/referenceMessage}}				
+					<ul class="nav nav-tabs nav-stacked">				
+					{{#registeredUserReferences}}
+					  <li>
+					  	<a href="{{registereduserreferenceEditUri}}?returnUrl={{returnUrl}}&registeredUserReferenceId={{id}}" class="save-express-applications-form" validationId="{{validationId}}">
+					  		<span>{{firstName}} {{lastName}}</span>
+					  	</a>
+					  </li>														
+					{{/registeredUserReferences}}
+					</ul>
+					<a href="{{registereduserreferenceEditUri}}?returnUrl={{returnUrl}}" class="btn btn-large btn-primary save-express-applications-form" validationId="{{validationId}}"><i class="icon-plus-sign"></i> {{labels.ADD_REFERENCE}}</a>
+					<div class="clearfix"></div>
+					<br/>
+				{{/referenceStep}}
+				
+				{{#skillStep}}
+					{{#validationId}}
+					<a id="validation-{{validationId}}"></a>
+					{{/validationId}}						
+				
+					{{#skillRequired}}
+					<label><strong><span class="required-star">*</span>{{skillStep}}</strong></label>
+					{{/skillRequired}}
+					{{^skillRequired}}
+					<label><strong>{{skillStep}}</strong></label>
+					{{/skillRequired}}
+					<div class="custom-vspace"></div>							
+				
+					{{#skillMessage}}
+					<div class="alert alert-info hint">
+						{{{skillMessage}}}
+					</div>			
+					{{/skillMessage}}		
+					<ul class="nav nav-tabs nav-stacked">				
+					{{#registeredUserSkills}}
+					  <li>
+					  	<a href="{{registereduserskillEditUri}}?returnUrl={{returnUrl}}&registeredUserSkillId={{id}}" class="save-express-applications-form" validationId="{{validationId}}"> 
+					  		<span>{{skillName}}</span>
+					  	</a>
+					  </li>														
+					{{/registeredUserSkills}}
+					</ul>
+					<a href="{{registereduserskillEditUri}}?returnUrl={{returnUrl}}" class="btn btn-large btn-primary save-express-applications-form" validationId="{{validationId}}"><i class="icon-plus-sign"></i> {{labels.ADD_SKILL_AND_EXPERTISE}}</a>
+					<div class="clearfix"></div>
+					<br/>
+				{{/skillStep}}
+				
+				{{#languageStep}}
+					{{#validationId}}
+					<a id="validation-{{validationId}}"></a>
+					{{/validationId}}						
+				
+					{{#languageRequired}}
+					<label><strong><span class="required-star">*</span>{{languageStep}}</strong></label>
+					{{/languageRequired}}
+					{{^languageRequired}}
+					<label><strong>{{languageStep}}</strong></label>
+					{{/languageRequired}}
+					<div class="custom-vspace"></div>							
+				
+					{{#languageMessage}}
+					<div class="alert alert-info hint">
+						{{{languageMessage}}}
+					</div>			
+					{{/languageMessage}}		
+					<ul class="nav nav-tabs nav-stacked">				
+					{{#registeredUserLanguages}}
+					  <li>
+					  	<a href="{{registereduserlanguageEditUri}}?returnUrl={{returnUrl}}&registeredUserLanguageId={{id}}" class="save-express-applications-form" validationId="{{validationId}}">
+					  		<span>{{language}}</span>
+					  	</a>
+					  </li>														
+					{{/registeredUserLanguages}}
+					</ul>
+					<a href="{{registereduserlanguageEditUri}}?returnUrl={{returnUrl}}" class="btn btn-large btn-primary save-express-applications-form" validationId="{{validationId}}"><i class="icon-plus-sign"></i> {{labels.ADD_LANGUAGE}}</a>
+					<div class="clearfix"></div>
+					<br/>
+				{{/languageStep}}
+				
+				{{#credentialStep}}
+					{{#validationId}}
+					<a id="validation-{{validationId}}"></a>
+					{{/validationId}}
+					
+					<div class="additionalquestion">
+                        <h3 class="addquestionhead">Additional Questions</h3>
+	                    <div class="questiontoggle"></div>
+	                    <div class="errormsg">Please complete the Questions.</div>
+                    </div>
+				
+					{{#credentialRequired}}
+					<label class="Change-Color"><strong>Application Documents:</strong><span class="required-star">*</span></label>
+					{{/credentialRequired}}
+					{{^credentialRequired}}
+					<label class="Change-Color"><strong>Application Documents:</strong><span class="required-star">*</span></label>
+					{{/credentialRequired}}
+					<div class="custom-vspace"></div>
+					
+					{{#applicationResumeHint}}
+				      <span class="content applicationResumeHint">
+				        
+				          Please upload your application document(s) using your preferred method(s) below.
+				      </span>
+				      <div class="clearfix"></div>
+				      <br/>
+				    {{/applicationResumeHint}}
+
+				    <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9 generaljobapplicationBlock-17">
+
+                        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 pd-left-0">
+                            <input id="uploadCredential" name="data" type="file" class="file-loading" />
+                            <div class="clearfix"></div>
+                            <br />
+                    
+                            <a class="btn btn-primary save-express-applications-form" role="button" href="https://recruitinghop.com/l/static/recruiting/uploadfromcloud?campaignId={{campaign.id}}&registeredUserId={{registeredUser.id}}&returnUrl={{fullBaseUrl}}{{returnUrl}}">
+                                <span class="fa fa-cloud"></span> {{labels.UPLOAD_FROM_CLOUD}}
+                            </a>
+                            
+                            {{#resumeUploadLinkList}}
+				            <a href="{{uri}}" class="btn btn-primary save-express-applications-form Link-1" role="button">
+				                <div class="checkmyname"><i class="{{fontIconClass}}"></i> {{label}}</div>
+				            </a>
+				            {{/resumeUploadLinkList}}
+                            
+                         
+                            <div class="clearfix"></div>
+                            <br />
+                        </div>
+                        <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 hasUploadedResumeLinkList">
+                            <table class="table table-responsive">
+                                <caption class="lead SUBMITTED_RESUME_LIST">
+                               
+                                    Below is the list of application document(s) that you have uploaded. Click or tap on a document to remove it.
+                                </caption>
+                                {{#hasUploadedResumeLinkList}}
+                                <tbody>
+                                    {{#uploadedResumeLinkList}}
+                                    <tr class="resume-length-count uploadedResumeLinkList-check">
+                                        <td class="uploaded_ResumeLinkList uploaded-resume"><a class="lead" href="{{uri}}">{{label}}</a></td>
+                                        <td>
+                                            <a class="lead" href="{{uri}}"><i class="fa fa-window-close"></i></a>
+                                        </td>
+                                    </tr>
+                                    {{/uploadedResumeLinkList}}
+                                </tbody>
+                                {{/hasUploadedResumeLinkList}}
+                            </table>
+                            <div class="clearfix"></div>
+                            <br />
+                        </div>
+                    
+                        <div class="clearfix"></div>
+                      
+                        
+                    </div>
+
+				    <div class="clearfix"></div>
+
+				      <div class="resume-error-msg">Please upload your Application Documents</div>
+				      <div class="resume-length">Please submit at most 2 documents!</div>
+
+				    <br/>
+				    
+				{{/credentialStep}}
+				
+			{{/applicationSteps}}
+			
+			<div class="privacyquestion">
+	            <div class="privacytoggle"></div>
+            </div>
+
+			
+			
+			<div>
+			  <a id="submitExpressApplicationsForm" successUri="{{continueUri}}" class="btn btn-large btn-primary">Submit Application</a>
+			  <a href="{{homeUri}}" class="last-back-uri" tabindex="15">Back to Search</a> 
+              <a href="{{childhomeUri}}" class="last-uri ftr-id" ></a>
+              <a href="{{generaljobapplicationUri}}" class="generaljobapplication" style="display:none;"></a>
+			</div>
+		</form>
+		</div>
+    	<div class="span1"></div>
+   		<div class="clearfix"></div>	
+	</div>			
+	{{/expressapplicationsBlock}}
+	
+	{{#cloudfilecredentialBlock}}
+ 	  <div class="row-fluid">
+ 	  	 <div class="span1"></div>
+         <div class="span10">
+			{{#hint}}
+				<div class="alert alert-info hint">
+					{{hint}}
+				</div>
+         	{{/hint}}
+         
+			<div class="center">
+				{{^manage}}
+			  	<a class="btn btn-large btn-primary" href="{{jobcredentialUri}}"><i class="icon-ok"></i> {{labels.DONE}}</a>
+			  	{{/manage}}
+			  	{{#manage}}
+			  	<a class="btn btn-large btn-primary" href="{{registeredusercredentialsUri}}"><i class="icon-ok"></i> {{labels.DONE}}</a>
+			  	{{/manage}}
+			  	{{#preDirUri}}
+			  		<a class="btn btn-large" href="{{preDirUri}}"><i class="icon-chevron-sign-left"></i> {{labels.BACK}}</a>
+			  	{{/preDirUri}}
+			  	<div class="clearfix"></div>	
+			  	<br/>
+			</div>
+			<ul class="nav nav-tabs nav-stacked">				
+				{{#allCloudFiles}}
+				  {{#dir}}
+					  <li>
+					  	<a href="{{addcloudfilecredentialUri}}?profileurl={{profileurl}}&dirname={{path}}&predirname={{parentPath}}&manage={{manage}}">
+					  		<span><i class="icon-folder-open"></i> {{caption}}</span>
+					  	</a>
+					  </li>	
+				  {{/dir}}
+				  {{^dir}}
+					{{^existing}}
+					  <li>
+					  	<a href="{{addedcloudfilecredentialUri}}?profileurl={{profileurl}}&referenceId={{referenceId}}&path={{path}}&contentType={{contentType}}&caption={{caption}}&dirname={{dirName}}&bytes={{bytes}}&manage={{manage}}">
+					  		<span><i class="icon-file-text"></i> {{caption}} {{#size}}({{size}}){{/size}}</span>
+					  	</a>
+					  </li>	
+					{{/existing}}
+				  {{/dir}}				  													
+				{{/allCloudFiles}}
+			</ul>
+			{{> paginator}}
+		</div>
+		<div class="span1"></div>
+	    <div class="clearfix"></div>	
+	</div>				
+	{{/cloudfilecredentialBlock}}
+	
+	{{#copypastecredentialBlock}}
+ 	 <div class="row-fluid">
+ 	  	 <div class="span1"></div>
+         <div class="span10">
+         	<h3>{{labels.COPY_AND_PASTE_RESUME}}</h3>
+			<form action="{{copypastecredentialActionUri}}" method="post">
+				<div>
+					<input type="hidden" name="returnUrl" value="{{returnUrl}}"/>
+					<input type="hidden" name="manage" value="{{manage}}"/>
+					<textarea class="input-block-level" id="credentialText" name="credentialText" cols="30" rows="15"></textarea>
+					<select class="input-block-level" id="category" name="category">
+						{{#credentialCategories}}
+							<option value="{{name}}">{{value}}</option>
+						{{/credentialCategories}}
+					</select> 
+					
+					{{#authenticated}}
+						{{^manage}}
+						 <div class="custom-vspace"></div>
+				      	 <label class="checkbox">	
+				      	 	<input class="input-block-level" id="saveToProfile" name="saveToProfile" type="checkbox" value="true">{{labels.SAVE_TO_PROFILE}}
+				      		<div class="clearfix"></div>
+				      	 </label>
+				      	 <br/>
+				      	 {{/manage}}
+				      	 {{#manage}}
+				      	 <input type="hidden" name="saveToProfile" value="true"/>
+				      	 {{/manage}}
+			      	{{/authenticated}}
+				</div>
+				<div>
+					<button class="btn btn-large btn-primary" type="submit"><i class="icon-chevron-sign-right"></i> {{labels.CONTINUE}}</button>
+				</div>
+			</form>
+		</div>
+		<div class="span1"></div>
+	    <div class="clearfix"></div>	
+	 </div>						
+	{{/copypastecredentialBlock}}	
+	
+	  {{#alljobsBlock}}
+ 	  <div class="row-fluid alljobsBlock">
+         <div class="span8">
+            {{#jobgroup}}
+         		<h3 style="padding-bottom: 0;margin-top: 0; margin-bottom: 14px;">{{jobgroup}} <span class="alljobspage-job-count q">({{hasJobs}})</span></h3>
+            {{/jobgroup}}
+            {{^jobgroup}}
+            	<h3 style="padding-bottom: 0;margin-top: 0; margin-bottom: 14px;">{{labels.ALL_JOBS}} <span class="alljobspage-job-count">({{hasJobs}})</span></h3>
+            {{/jobgroup}}
+			
+			{{> joblist}}
+			
+			
+			
+			{{^hasSearchResults}}
+				<div class="content center">					
+		
+					<span class="search-no-job 1 "><div class="designer-1">Currently there are no jobs listed - Please complete a <a href="{{generaljobapplicationUri}}">General Job Application</a> and/or a <a href="{{registeredusersearchagentsUri}}">Job Alert</a> to be kept up to date when jobs become available.</div></span>
+				</div>	
+			{{/hasSearchResults}}
+				
+
+			{{> paginator}}
+		</div>
+		{{> sidenav}}
+		<div class="clearfix"></div>
+	   </div>	
+	   {{/alljobsBlock}}
+	   
+	   {{#jobinteractivemapBlock}}
+	 	  <div class="jobinteractivemapBlock">
+	 	  <div class="row-fluid">
+	         <div class="span12">
+	         	<h3>{{labels.INTERACTIVE_JOB_MAP}}</h3>
+	         	<div id="map" class="map"></div>
+	         </div>
+	         <div class="clearfix"></div>
+	         <br/>
+	      </div>
+	      
+	    
+	      {{> searchnav}}
+	      </div>
+	   {{/jobinteractivemapBlock}}
+	   
+		{{#joblocationsBlock}}
+	 	  <div class="row-fluid joblocationsBlock">
+	         <div class="span8">
+	             
+	             
+	         	<h3 style="padding-bottom: 0;margin-top: 0; margin-bottom: 14px;">{{labels.JOBS_BY_LOCATIONS}} <span class="joblocationsBlock-Span-count">({{hasJobLocations}})</span></h3>
+				<ul class="nav nav-tabs nav-stacked">				
+					{{#locations}}
+					  <li>
+					  	<a href="{{alljobsUri}}?geoId={{id}}">
+					  		<span class="pull-right">({{numOfJobs}})</span> 
+					  		<span>{{cityRegionCountry}}</span>
+					  	</a>
+					  </li>														
+					{{/locations}}
+				</ul>
+				{{> paginator}}
+			</div>
+			{{> sidenav}}
+			<div class="clearfix"></div>
+		   </div>	
+		{{/joblocationsBlock}} 
+		
+	    {{#jobregioncountryBlock}}
+	 	  <div class="row-fluid jobregioncountryBlock">
+	         <div class="span8">
+	         <h3>{{labels.JOBS_BY_LOCATIONS}}</h3>
+				<ul class="nav nav-tabs nav-stacked">				
+					{{#regionCountry}}
+					  <li>
+					  	<a href="{{joblocationsUri}}?region={{region}}&country={{country}}">
+					  		<span class="pull-right">({{numOfCities}})</span> 
+					  		<span>{{region}}, {{country}}</span>
+					  	</a>
+					  </li>														
+					{{/regionCountry}}
+				</ul>
+				{{> paginator}}
+			</div>
+			{{> sidenav}}
+			<div class="clearfix"></div>
+		   </div>		
+	    {{/jobregioncountryBlock}}
+		
+		{{#jobcategoriesBlock}}
+	 	  <div class="row-fluid jobcategoriesBlock">
+	         <div class="span8">
+	             
+	         	<h3 style="padding-bottom: 0;margin-top: 0; margin-bottom: 14px;">{{labels.JOBS_BY_CATEGORIES}} <span class="jobcategoriesBlock-Job-Count">({{hasJobCategories}})</span></h3>
+				<ul class="nav nav-tabs nav-stacked alljobsUriCate">				
+					{{#categories}}
+					  <li class="categories">
+					  	<a href="{{alljobsUri}}?tagId={{id}}">
+					  		<span class="pull-right">(<span>{{numOfJobs}}</span>)</span> 
+					  		<span>{{name}}</span>
+					  	</a>
+					  </li>														
+					{{/categories}}
+				</ul>
+				{{> paginator}}
+			</div>
+			{{> sidenav}}
+			<div class="clearfix"></div>
+		   </div>	
+		{{/jobcategoriesBlock}}  
+		
+		{{#jobtypesBlock}}
+        <div class="row-fluid jobtypesBlock">
+	         <div class="span8" >
+	         	<h3 style="padding-bottom: 0;margin-top: 0; margin-bottom: 14px;">{{labels.JOBS_BY_TYPES}} <span class="jobtypesBlock-Span-count">({{hasJobTypes}})</span></h3>
+				<ul class="nav nav-tabs nav-stacked">				
+					{{#types}}
+					  <li>
+					  	<a href="{{alljobsUri}}?type={{id}}">
+					  		<span class="pull-right">({{numOfJobs}})</span> 
+					  		<span class="JOBS_BY_TYPES">{{type}}</span>
+					  	</a>
+					  </li>														
+					{{/types}}
+				</ul>
+				{{> paginator}}
+			</div>
+			{{> sidenav}}
+			<div class="clearfix"></div>
+		</div>
+        {{/jobtypesBlock}}
+	
+		{{#jobcompaniesBlock}}
+	 	  <div class="row-fluid jobcompaniesBlock">
+	         <div class="span8">
+	         	<h3>{{labels.JOBS_BY_COMPANIES}}</h3>
+				<ul class="nav nav-tabs nav-stacked">				
+					{{#companies}}
+					  <li>
+					  	<a href="{{alljobsUri}}?company={{id}}">
+					  		<span class="pull-right">({{numOfJobs}})</span> 
+					  		<span>{{name}}</span>
+					  	</a>
+					  </li>														
+					{{/companies}}
+				</ul>
+				{{> paginator}}
+			</div>
+			{{> sidenav}}
+			<div class="clearfix"></div>
+		 </div>		
+		{{/jobcompaniesBlock}}  
+		
+		{{#jobdivisionsBlock}}
+	 	  <div class="row-fluid jobdivisionsBlock">
+	         <div class="span8">
+	         	<h3>{{labels.JOBS_BY_DIVISIONS}}</h3>
+				<ul class="nav nav-tabs nav-stacked">				
+					{{#divisions}}
+					  <li>
+					  	<a href="{{alljobsUri}}?division={{id}}">
+					  		<span class="pull-right">({{numOfJobs}})</span> 
+					  		<span>{{name}}</span>
+					  	</a>
+					  </li>														
+					{{/divisions}}
+				</ul>
+				{{> paginator}}
+			</div>
+			{{> sidenav}}
+			<div class="clearfix"></div>
+		 </div>		
+		{{/jobdivisionsBlock}} 	
+		
+		{{#jobsearchresultsBlock}}
+	 	  <div class="row-fluid jobsearchresultsBlock">
+	         <div class="span8">
+	         	<h3 style="padding-bottom: 0;margin-top: 0;">{{labels.JOB_SEARCH_RESULTS}} <span class="alljobspage-job-count">({{paginator.total}})</span></h3>					
+				{{#hasSearchResults}}
+				<div class="custom-vspace"></div>
+				<div>				
+					{{> joblist}}
+					
+					{{> paginator}}
+				</div>
+				{{/hasSearchResults}}
+				{{^hasSearchResults}}
+				<div class="content center">					
+		
+					<span class="search-no-job 1 "><div class="designer-1">Currently there are no jobs listed - Please complete a <a href="{{generaljobapplicationUri}}">General Job Application</a> and/or a <a href="{{registeredusersearchagentsUri}}">Job Alert</a> to be kept up to date when jobs become available.</div></span>
+				</div>	
+				{{/hasSearchResults}}
+			</div>
+		   {{> sidenav}}
+		 	<div class="clearfix"></div>	
+	   </div>
+	  {{/jobsearchresultsBlock}}
+	  
+	  
+	  
+		{{#registereduseragreementBlock}}
+	 	  <div class="row-fluid">
+	 	  	 <div class="span1"></div>
+	         <div class="span10">		         	
+				<span class="content">
+					{{{agreement}}}
+				</span>
+				<div class="clearfix"></div>		
+				<div>
+					<a class="btn btn-large btn-primary" href="{{continueUri}}">{{labels.AGREE}}</a>
+					<a class="btn btn-large" href="{{childhomeUri}}">{{labels.CANCEL}}</a>
+				</div>
+			</div>
+		    <div class="span1"></div>
+		   <div class="clearfix"></div>	
+		   <br/>
+		  </div>		
+		{{/registereduseragreementBlock}}	
+	  
+		{{#jobapplicationsBlock}}
+	 	  <div class="row-fluid">
+	 	     <div class="span1"></div>
+	         <div class="span10">	
+	         	<h3 class="snaphop-red"><span class="link-color">{{labels.JOB_APPLYING}}:</span> <a href="{{childhomeUri}}">{{name}}</a></h3>
+	         	
+				{{#basicInfoMessage}}
+					<div class="alert alert-info hint">
+					{{{basicInfoMessage}}}
+					</div>
+				{{/basicInfoMessage}}				
+			
+				<form action="{{jobapplicationActionUri}}" method="post" id="jobApplicationsForm">						
+					{{> form }}
+					<div>
+					  {{#backUri}}
+					   	  <a class="btn btn-large btn-primary" href="{{backUri}}"><i class="icon-chevron-sign-left"></i> {{labels.BACK}}</a>
+					  {{/backUri}}
+					  <a href="#" id="submitJobApplicationsForm" successUri="{{continueUri}}" class="btn btn-large btn-primary"><i class="icon-chevron-sign-right"></i> {{labels.CONTINUE}}</a>
+					</div>
+				</form>
+				
+			
+			
+			</div>
+		    <div class="span1"></div>
+		   <div class="clearfix"></div>	
+		  </div>		
+		{{/jobapplicationsBlock}}
+		
+		{{#jobquestionsBlock}}
+	 	  <div class="row-fluid">
+	 	     <div class="span1"></div>
+	         <div class="span10">	
+	         	<h3 class="snaphop-red"><span class="link-color">{{labels.JOB_APPLYING}}:</span> <a href="{{childhomeUri}}">{{name}}</a></h3>
+	         	
+				{{#questionnaireMessage}}
+					<div class="alert alert-info hint">
+					{{{questionnaireMessage}}}
+					</div>
+				{{/questionnaireMessage}}		
+				<form action="{{jobquestionActionUri}}" method="post" id="jobQuestionsForm">						
+					{{> form }}				
+					<div>
+					  {{#backUri}}
+					   	  <a class="btn btn-large btn-primary" href="{{backUri}}"><i class="icon-chevron-sign-left"></i> {{labels.BACK}}</a>
+					  {{/backUri}}
+					  <a href="#" id="submitJobQuestionsForm" successUri="{{continueUri}}" class="btn btn-large btn-primary"><i class="icon-chevron-sign-right"></i> {{labels.CONTINUE}}</a>
+					</div>
+				</form>
+			</div>
+			<div class="span1"></div>
+		   <div class="clearfix"></div>	
+		</div>			
+		{{/jobquestionsBlock}}
+		
+		{{#jobcompliancesBlock}}
+	 	  <div class="row-fluid">
+	 	     <div class="span1"></div>
+	         <div class="span10">
+				<h3 class="snaphop-red"><span class="link-color">{{labels.JOB_APPLYING}}:</span> <a href="{{childhomeUri}}">{{name}}</a></h3>	
+	         	
+				{{#complianceMessage}}
+					<div class="alert alert-info hint">
+					{{{complianceMessage}}}
+					</div>
+				{{/complianceMessage}}				
+				<form action="{{jobcomplianceActionUri}}" method="post" id="jobComplianceForm">						
+					{{> form }}				
+					<div>								
+					  {{#backUri}}
+					   	  <a class="btn btn-large btn-primary" href="{{backUri}}"><i class="icon-chevron-sign-left"></i> {{labels.BACK}}</a>
+					  {{/backUri}}
+					  <a href="#" id="submitJobComplianceForm" successUri="{{continueUri}}" class="btn btn-large btn-primary"><i class="icon-chevron-sign-right"></i> {{labels.CONTINUE}}</a>
+					</div>
+				</form>
+			</div>
+			<div class="span1"></div>
+		    <div class="clearfix"></div>	
+		</div>			
+		{{/jobcompliancesBlock}}
+	
+		{{#jobformsBlock}}
+	 	 <div class="row-fluid">
+	 	     <div class="span1"></div>
+	         <div class="span10">
+	             <h3 class="snaphop-red"><span class="link-color">{{labels.JOB_APPLYING}}:</span> <a href="{{childhomeUri}}">{{name}}</a></h3>
+	             
+				{{#applyFormMessage}}
+					<div class="alert alert-info hint">
+					{{{applyFormMessage}}}
+					</div>
+				{{/applyFormMessage}}						
+				 <form action="{{jobformActionUri}}/{{formId}}" method="post" id="jobFormsForm">						
+					{{> form }}
+					<div>								
+					  {{#backUri}}
+					   	  <a class="btn btn-large btn-primary" href="{{backUri}}"><i class="icon-chevron-sign-left"></i> {{labels.BACK}}</a>
+					  {{/backUri}}
+					  <a href="#" id="submitJobFormsForm" successUri="{{continueUri}}" class="btn btn-large btn-primary"><i class="icon-chevron-sign-right"></i> {{labels.CONTINUE}}</a>
+					</div>
+				 </form>
+			 </div>
+			<div class="span1"></div>
+		    <div class="clearfix"></div>	
+		</div>			
+		{{/jobformsBlock}}	
+		
+		{{#jobexperienceBlock}}
+	 	 <div class="row-fluid">
+	 	     <div class="span1"></div>
+	         <div class="span10">
+	         	<h3 class="snaphop-red"><span class="link-color">{{labels.JOB_APPLYING}}:</span> <a href="{{childhomeUri}}">{{name}}</a></h3>
+	         	{{#experienceMessage}}
+				  <div class="alert alert-info hint">	
+					{{{experienceMessage}}}	
+				  </div>
+				{{/experienceMessage}}				
+				<ul class="nav nav-tabs nav-stacked">				
+				{{#registeredUserPositions}}
+				  <li>
+				  	<a href="{{registereduserexperienceEditUri}}?returnUrl={{returnUrl}}&registeredUserPositionId={{id}}">
+				  		<span>{{company}}</span>
+				  		<div>
+				  		{{#endTSString}}
+				  			{{#beginTSString}}
+								{{beginTSString}} - {{endTSString}}
+							{{/beginTSString}}
+				  			{{^beginTSString}}
+								{{endTSString}}
+							{{/beginTSString}}
+						{{/endTSString}}
+				  		{{^endTSString}}
+							{{beginTSString}} - {{labels.PRESENT}}
+						{{/endTSString}}
+						</div>
+				  	</a>
+				  </li>														
+				{{/registeredUserPositions}}
+				</ul>
+				<div class="dynamic-content">						
+					<div>
+					    {{#backUri}}
+					   	  <a class="btn btn-large btn-primary" href="{{backUri}}"><i class="icon-chevron-sign-left"></i> {{labels.BACK}}</a>
+					    {{/backUri}}
+						<a href="{{registereduserexperienceEditUri}}?returnUrl={{returnUrl}}" class="btn btn-large btn-primary"><i class="icon-plus-sign"></i> {{labels.ADD_WORK_EXPERIENCE}}</a>				
+					  	<a href="{{continueUri}}" class="btn btn-large btn-primary"><i class="icon-chevron-sign-right"></i> {{labels.CONTINUE}}</a>
+					</div>
+				</div>
+			</div>
+			<div class="span1"></div>
+		    <div class="clearfix"></div>
+		</div>				
+		{{/jobexperienceBlock}}
+		
+		{{#jobeducationBlock}}
+	 	 <div class="row-fluid">
+	 	 	 <div class="span1"></div>
+	         <div class="span10">	
+	            <h3 class="snaphop-red"><span class="link-color">{{labels.JOB_APPLYING}}:</span> <a href="{{childhomeUri}}">{{name}}</a></h3>	
+	         	{{#educationMessage}}
+				  <div class="alert alert-info hint">		
+					{{{educationMessage}}}	
+				  </div>
+				{{/educationMessage}}			
+				<ul class="nav nav-tabs nav-stacked">				
+				{{#registeredUserEducations}}
+				  <li>
+				  	<a href="{{registeredusereducationEditUri}}?returnUrl={{returnUrl}}&registeredUserEducationId={{id}}">
+				  		<span>{{schoolName}}</span>
+				  		<div>
+				  		{{#endTSString}}
+				  			{{#beginTSString}}
+								{{beginTSString}} - {{endTSString}}
+							{{/beginTSString}}
+				  			{{^beginTSString}}
+								{{endTSString}}
+							{{/beginTSString}}
+						{{/endTSString}}
+				  		{{^endTSString}}
+							{{beginTSString}} - {{labels.PRESENT}}
+						{{/endTSString}}
+						</div>
+				  	</a>
+				  </li>														
+				{{/registeredUserEducations}}
+				</ul>
+				<div class="dynamic-content">						
+					<div>
+					    {{#backUri}}
+					   	  <a class="btn btn-large btn-primary" href="{{backUri}}"><i class="icon-chevron-sign-left"></i> {{labels.BACK}}</a>
+					    {{/backUri}}
+						<a href="{{registeredusereducationEditUri}}?returnUrl={{returnUrl}}" class="btn btn-large btn-primary"><i class="icon-plus-sign"></i> {{labels.ADD_EDUCATION}}</a>
+					  	<a href="{{continueUri}}" class="btn btn-large btn-primary"><i class="icon-chevron-sign-right"></i> {{labels.CONTINUE}}</a>
+					</div>
+				</div>
+			</div>
+			<div class="span1"></div>
+		    <div class="clearfix"></div>
+		</div>			
+		{{/jobeducationBlock}}
+		
+		{{#jobcertificationBlock}}
+	 	 <div class="row-fluid">
+	 	     <div class="span1"></div>
+	         <div class="span10">	
+	            <h3 class="snaphop-red"><span class="link-color">{{labels.JOB_APPLYING}}:</span> <a href="{{childhomeUri}}">{{name}}</a></h3>
+	         	{{#certificationMessage}}
+				  <div class="alert alert-info hint">	
+					{{{certificationMessage}}}	
+				  </div>
+				{{/certificationMessage}}					
+				<ul class="nav nav-tabs nav-stacked">				
+				{{#registeredUserCertifications}}
+				  <li>
+				  	<a href="{{registeredusercertificationEditUri}}?returnUrl={{returnUrl}}&registeredUserCertificationId={{id}}">
+				  		<span>{{name}}</span>
+				  		<div>
+				  		{{#endTSString}}
+				  			{{#beginTSString}}
+								{{beginTSString}} - {{endTSString}}
+							{{/beginTSString}}
+				  			{{^beginTSString}}
+								{{endTSString}}
+							{{/beginTSString}}
+						{{/endTSString}}
+				  		{{^endTSString}}
+							{{beginTSString}} - {{labels.PRESENT}}
+						{{/endTSString}}
+						</div>
+				  	</a>
+				  </li>														
+				{{/registeredUserCertifications}}
+				</ul>
+				<div class="dynamic-content">						
+					<div>
+					    {{#backUri}}
+					   	  <a class="btn btn-large btn-primary" href="{{backUri}}"><i class="icon-chevron-sign-left"></i> {{labels.BACK}}</a>
+					    {{/backUri}}
+						<a href="{{registeredusercertificationEditUri}}?returnUrl={{returnUrl}}" class="btn btn-large btn-primary"><i class="icon-plus-sign"></i> {{labels.ADD_CERTIFICATION}}</a>
+					  	<a href="{{continueUri}}" class="btn btn-large btn-primary"><i class="icon-chevron-sign-right"></i> {{labels.CONTINUE}}</a>
+					</div>
+				</div>	
+			</div>		
+			<div class="span1"></div>
+		    <div class="clearfix"></div>
+		</div>
+		{{/jobcertificationBlock}}
+		
+		{{#jobreferenceBlock}}
+	 	 <div class="row-fluid">
+	 	     <div class="span1"></div>
+	         <div class="span10">	
+	            <h3 class="snaphop-red"><span class="link-color">{{labels.JOB_APPLYING}}:</span> <a href="{{childhomeUri}}">{{name}}</a></h3>
+	         	{{#referenceMessage}}
+				  <div class="alert alert-info hint">	
+					{{{referenceMessage}}}	
+				  </div>
+				{{/referenceMessage}}					
+				<ul class="nav nav-tabs nav-stacked">				
+				{{#registeredUserReferences}}
+				  <li>
+				  	<a href="{{registereduserreferenceEditUri}}?returnUrl={{returnUrl}}&registeredUserReferenceId={{id}}">
+				  		<span>{{firstName}} {{lastName}}</span>
+				  	</a>
+				  </li>														
+				{{/registeredUserReferences}}
+				</ul>
+				<div class="dynamic-content">						
+					<div>
+					    {{#backUri}}
+					   	  <a class="btn btn-large btn-primary" href="{{backUri}}"><i class="icon-chevron-sign-left"></i> {{labels.BACK}}</a>
+					    {{/backUri}}
+						<a href="{{registereduserreferenceEditUri}}?returnUrl={{returnUrl}}" class="btn btn-large btn-primary"><i class="icon-plus-sign"></i> {{labels.ADD_REFERENCE}}</a>
+					  	<a href="{{continueUri}}" class="btn btn-large btn-primary"><i class="icon-chevron-sign-right"></i> {{labels.CONTINUE}}</a>
+					</div>
+				</div>	
+			</div>		
+			<div class="span1"></div>
+		    <div class="clearfix"></div>
+		</div>		
+		{{/jobreferenceBlock}}
+		
+		{{#jobskillBlock}}
+	 	 <div class="row-fluid">
+	 	     <div class="span1"></div>
+	         <div class="span10">	
+	            <h3 class="snaphop-red"><span class="link-color">{{labels.JOB_APPLYING}}:</span> <a href="{{childhomeUri}}">{{name}}</a></h3>
+	         	{{#skillMessage}}
+				  <div class="alert alert-info hint">		
+					{{{skillMessage}}}	
+				  </div>
+				{{/skillMessage}}			
+				<ul class="nav nav-tabs nav-stacked">				
+				{{#registeredUserSkills}}
+				  <li>
+				  	<a href="{{registereduserskillEditUri}}?returnUrl={{returnUrl}}&registeredUserSkillId={{id}}">
+				  		<span>{{skillName}}</span>
+				  	</a>
+				  </li>														
+				{{/registeredUserSkills}}
+				</ul>	
+				<div class="dynamic-content">						
+					<div>
+					    {{#backUri}}
+					   	  <a class="btn btn-large btn-primary" href="{{backUri}}"><i class="icon-chevron-sign-left"></i> {{labels.BACK}}</a>
+					    {{/backUri}}
+						<a href="{{registereduserskillEditUri}}?returnUrl={{returnUrl}}" class="btn btn-large btn-primary"><i class="icon-plus-sign"></i> {{labels.ADD_SKILL_AND_EXPERTISE}}</a>
+					  	<a href="{{continueUri}}" class="btn btn-large btn-primary"><i class="icon-chevron-sign-right"></i> {{labels.CONTINUE}}</a>
+					</div>
+				</div>	
+			</div>		
+			<div class="span1"></div>
+		    <div class="clearfix"></div>
+		</div>			
+		{{/jobskillBlock}}
+		
+		{{#joblanguageBlock}}
+	 	 <div class="row-fluid">
+	 	     <div class="span1"></div>
+	         <div class="span10">	
+	            <h3 class="snaphop-red"><span class="link-color">{{labels.JOB_APPLYING}}:</span> <a href="{{childhomeUri}}">{{name}}</a></h3>
+	         	{{#languageMessage}}
+				  <div class="alert alert-info hint">		
+					{{{languageMessage}}}	
+				  </div>
+				{{/languageMessage}}			
+				<ul class="nav nav-tabs nav-stacked">				
+				{{#registeredUserLanguages}}
+				  <li>
+				  	<a href="{{registereduserlanguageEditUri}}?returnUrl={{returnUrl}}&registeredUserLanguageId={{id}}">
+				  		<span>{{language}}</span>
+				  	</a>
+				  </li>														
+				{{/registeredUserLanguages}}
+				</ul>	
+				<div class="dynamic-content">						
+					<div>
+					    {{#backUri}}
+					   	  <a class="btn btn-large btn-primary" href="{{backUri}}"><i class="icon-chevron-sign-left"></i> {{labels.BACK}}</a>
+					    {{/backUri}}
+						<a href="{{registereduserlanguageEditUri}}?returnUrl={{returnUrl}}" class="btn btn-large btn-primary"><i class="icon-plus-sign"></i> {{labels.ADD_LANGUAGE}}</a>
+					  	<a href="{{continueUri}}" class="btn btn-large btn-primary"><i class="icon-chevron-sign-right"></i> {{labels.CONTINUE}}</a>
+					</div>
+				</div>	
+			</div>		
+			<div class="span1"></div>
+		    <div class="clearfix"></div>
+		</div>			
+		{{/joblanguageBlock}}
+		
+		{{#jobapplicationconfirmationBlock}}
+ 	    <div class="row-fluid">
+ 	       <div class="span1"></div>
+           <div class="span10">
+           	  <h3 class="snaphop-red"><span class="link-color">{{labels.JOB_APPLYING}}:</span> <a href="{{childhomeUri}}">{{name}}</a></h3>
+			  <span class="content-margin">	
+			  	{{labels.CONFIRM_JOB_APPLICATION_SUBMISSION}}
+			  </span>
+			  <div class="clearfix"></div>
+			  <br/>
+			  <div class="dynamic-content">						
+			    {{#backUri}}
+			   	  <a class="btn btn-large btn-primary" href="{{backUri}}"><i class="icon-chevron-sign-left"></i> {{labels.BACK}}</a>
+			    {{/backUri}}
+				{{^submitted}}
+				  <a class="btn btn-large btn-primary" href="{{jobapplicationSubmittedUri}}">{{labels.SUBMIT_APPLICATION}}</a>
+				{{/submitted}}
+				{{#submitted}}
+				  <a class="btn btn-large btn-primary" href="{{jobapplicationSubmittedUri}}">{{labels.SUBMIT_UPDATES}}</a>
+				{{/submitted}}
+			  </div>
+		  </div>
+		  <div class="span1"></div>
+		  <div class="clearfix"></div>
+		</div>					
+		{{/jobapplicationconfirmationBlock}}	
+	  
+	  {{#pollsurveyBlock}}
+ 	  <div class="row-fluid">
+ 	  	 <div class="span1"></div>
+         <div class="span10">		
+			<form action="{{pollsurveyActionUri}}" method="post" id="pollSurveyForm">						
+				{{> form }}		
+				<div>
+					<a href="#" id="submitPollSurveyForm" class="btn btn-large btn-primary">{{labels.SUBMIT}}</a>
+				</div>
+			</form>
+		</div>
+		<div class="span1"></div>
+		<div class="clearfix"></div>
+	  </div>				
+	  {{/pollsurveyBlock}}
+	  
+	  {{#pollsurveyresultBlock}}
+ 	  <div class="row-fluid">
+ 	  	 <div class="span1"></div>
+         <div class="span10 content center">	
+         	<div class="alert alert-success hint">			
+				{{labels.THANK_YOU_FOR_VOTING}}
+			</div>
+		 </div>
+		 <div class="span1"></div>
+		<div class="clearfix"></div>
+	  </div>			
+	  {{/pollsurveyresultBlock}}
+
+	  {{#filesBlock}}
+ 	  <div class="row-fluid">
+ 	  	 <div class="span1"></div>
+         <div class="span10">
+			<ul class="nav nav-tabs nav-stacked">
+				<div class="masonry-container">
+					{{#files}}
+						{{#file}}
+						<div class="masonry-item">
+						  	<a href="{{otherBaseUrl}}{{name}}">
+								<div class="center">
+					        		<i class="icon-file-text"></i>
+					          	</div>
+					        	<div class="center text">
+									{{caption}}
+					          	</div>
+						  	</a>
+				        </div>
+						{{/file}}
+					{{/files}}
+				</div>			
+			</ul>
+		</div>
+		<div class="span1"></div>
+		<div class="clearfix"></div>
+	  </div>					
+	  {{/filesBlock}}
+		
+	  {{#mediafilesBlock}}
+ 	  <div class="row-fluid">
+         <div class="span12">
+			<ul class="nav nav-tabs nav-stacked">
+				<div class="masonry-media-container">
+					{{#mediaFiles}}
+						{{#mediaFile}}
+						<div class="masonry-media-item">
+			    			<a href="{{originalUrl}}" class="popup-iframe">
+								<div class="center media-holder">
+									<img src="{{{thumbnailUrl}}}"/>
+								</div>
+							</a>
+							<p class="text mediafile-caption">{{caption}}</p>
+				        </div>
+						{{/mediaFile}}
+					{{/mediaFiles}}
+				</div>
+			</ul>
+		</div>
+	</div>
+	{{/mediafilesBlock}}
+		
+	{{#cloudfilecredentialconfirmcaptionBlock}}
+ 	  <div class="row-fluid">
+ 	     <div class="span1"></div>	
+         <div class="span10">						
+			<form id="captionForm" action="{{addedcloudfilecredentialUri}}" method="get">
+				<div>
+					<input type="hidden" name="id" value="{{id}}"/>
+					<input type="hidden" name="spottingId" value="{{spottingId}}"/>
+					<input type="hidden" name="preview" value="{{preview}}"/>
+					<input type="hidden" name="profileurl" value="{{profileurl}}"/>
+					<input type="hidden" name="captionconfirmed" value="true"/>
+					<input type="hidden" name="path" value="{{path}}"/>
+					<input type="hidden" name="referenceId" value="{{referenceId}}"/>
+					<input type="hidden" name="contentType" value="{{contentType}}"/>
+					<input type="hidden" name="dirname" value="{{dirName}}"/>
+					<input type="hidden" name="manage" value="{{manage}}"/>
+		        	<h4>{{labels.PROVIDE_BRIEF_DESCRIPTION}}</h4>
+					<textarea class="input-block-level" id="caption" name="caption" cols="30" rows="4">{{caption}}</textarea>
+					<select class="input-block-level" id="category" name="category">
+						{{#credentialCategories}}
+							<option value="{{name}}">{{value}}</option>
+						{{/credentialCategories}}
+					</select> 
+					{{#authenticated}}
+						{{^manage}}
+						 <div class="custom-vspace"></div>
+				      	 <label class="checkbox">	
+				      	 	<input class="input-block-level" id="saveToProfile" name="saveToProfile" type="checkbox" value="true">{{labels.SAVE_TO_PROFILE}}
+				      		<div class="clearfix"></div>
+				      	 </label>
+				      	 <br/>
+				      	 {{/manage}}
+				      	 {{#manage}}
+				      	 <input type="hidden" name="saveToProfile" value="true"/>
+				      	 {{/manage}}
+			      	{{/authenticated}}
+				</div>
+				<div>
+					<a id="submitCaptionForm" class="btn btn-large btn-primary" href="#"><i class="icon-chevron-sign-right"></i> {{labels.CONTINUE}}</a>
+				</div>
+			</form>
+		</div>
+		<div class="span1"></div>
+	    <div class="clearfix"></div>	
+	</div>				
+	{{/cloudfilecredentialconfirmcaptionBlock}}
+	  
+	  {{#pageBlock}}
+		{{^page.wordPressFeedUrl}}
+ 	    <div class="row-fluid pageBlock">
+           <div class="span12 content">
+				{{#pageContents}}
+					{{#textContent}}
+						<div>
+							{{{text}}}
+						</div>
+					{{/textContent}}
+					{{#imageContent}}
+						<div>
+							<img src="{{imageUrl}}"/>
+						</div>
+					{{/imageContent}}
+					{{#mediaContent}}
+						<div>
+			    			<a href="{{mediaFullUrl}}" class="popup-iframe">
+								<div class="media-holder">
+									{{{mediaThumbnail}}}
+								</div>
+							</a>
+						</div>
+					{{/mediaContent}}
+				{{/pageContents}}
+			</div>
+		</div>	
+		{{/page.wordPressFeedUrl}}
+		{{#page.wordPressFeedUrl}}					
+			{{#pageWordPressItem}}
+			<div class="row-fluid">
+         		<div class="span12 content">
+					<strong>
+						<a href="{{pageUri}}/{{pageId}}?itemLink={{pageWordPressItem.link}}">{{{pageWordPressItem.title}}}</a>
+					</strong>
+					<div class="clearfix"></div>
+					<br/>
+					<div>
+						{{{pageWordPressItem.encoded}}}
+					</div>
+				</div>
+			</div>
+			{{/pageWordPressItem}}
+			{{^pageWordPressItem}}
+		 	<div class="row-fluid">
+		       <div class="span12 content">
+				<ul class="nav nav-tabs nav-stacked">
+				{{#pageWordPressItems}}
+				  <li>
+				  	<a href="{{pageUri}}/{{pageId}}?itemLink={{link}}">
+				  		<span>{{{title}}}</span>
+			  			<div>
+						{{{description}}}
+						</div>
+				  	</a>
+				  </li>	
+				{{/pageWordPressItems}}
+				</ul>
+			  </div>
+			</div>
+			{{/pageWordPressItem}}		
+		{{/page.wordPressFeedUrl}}
+		{{#page.isGroup}}
+ 	    <div class="row-fluid">
+           <div class="span12 content">
+			<div class="masonry-container">
+	        {{#groupPages}}
+	    	<div class="masonry-item">
+	    		{{^uri}}
+	    		<a href="{{pageUri}}/{{id}}" {{#redirectUrl}}target="_blank"{{/redirectUrl}}>
+	    		{{/uri}}
+	    		{{#uri}}
+	    		<a href="{{uri}}" {{#redirectUrl}}target="_blank"{{/redirectUrl}}>
+	    		{{/uri}}
+		        	<div class="center">
+		        		{{#featureImage}}
+		        			<div class="custom-icon-holder">
+							<img class="custom-icon" src="{{imageBaseUrl}}{{featureImage}}"/>
+							</div>					        		
+		        		{{/featureImage}}
+		        		{{^featureImage}}
+			        		{{#wordPressFeedUrl}}
+			        			{{^featureImagePage}}
+								<i class="icon-rss"></i>
+								{{/featureImagePage}}
+								{{#featureImagePage}}
+								<div class="custom-icon-holder">
+								<img class="custom-icon" src="{{imageBaseUrl}}{{featureImagePage}}"/>
+								</div>
+								{{/featureImagePage}}
+							{{/wordPressFeedUrl}}
+							{{^wordPressFeedUrl}}
+								{{^featureImagePage}}
+								<i class="icon-info-sign"></i>
+								{{/featureImagePage}}
+								{{#featureImagePage}}
+								<div class="custom-icon-holder">
+								<img class="custom-icon" src="{{imageBaseUrl}}{{featureImagePage}}"/>
+								</div>
+								{{/featureImagePage}}
+							{{/wordPressFeedUrl}}
+						{{/featureImage}}
+		          	</div>
+		          	{{#showFeatureImageText}}
+		        	<div class="center text">
+						{{name}}
+		          	</div>
+		          	{{/showFeatureImageText}}
+	          	</a>
+	        </div>
+	        {{/groupPages}}	
+	        </div>
+	      </div>
+		  <div class="clearfix"></div>
+		  <br/><br/>
+	    </div>
+		{{/page.isGroup}}
+		{{^pageWordPressItem}}
+			{{#hasPageJobs}}
+		 	  <div class="row-fluid">
+		         <div class="span8">			
+					{{> joblist}}
+	
+					{{> paginator}}
+				</div>
+				{{> sidenav}}
+				<div class="clearfix"></div>
+			  </div>
+			{{/hasPageJobs}}
+		{{/pageWordPressItem}}
+	  {{/pageBlock}}	
+	
+	  {{#formBlock}}
+ 	  <div class="row-fluid">
+ 	  	 <div class="span1"></div>
+         <div class="span10">
+			{{#formMessage}}
+				<div class="alert alert-info hint">
+				{{{formMessage}}}
+				</div>
+			{{/formMessage}}	
+			<form action="{{formActionUri}}/{{formId}}" method="post" id="form">						
+				{{> form }}
+				<div>
+					<a href="#" id="submitForm" class="btn btn-large btn-primary">{{labels.SUBMIT}}</a>		
+				</div>
+			</form>
+		</div>
+		<div class="span1"></div>
+		<div class="clearfix"></div>
+	  </div>	
+	  {{/formBlock}}
+	  
+	 {{#formresultBlock}}
+ 	  <div class="row-fluid">
+         <div class="span12 center">
+         	<div class="alert alert-success hint">	
+				{{^thankyouMessage}}					
+					{{labels.THANK_YOU}}
+				{{/thankyouMessage}}
+				{{#thankyouMessage}}
+					{{thankyouMessage}}
+				{{/thankyouMessage}}
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	  </div>			
+	 {{/formresultBlock}}	
+	 
+	{{#switchlanguageBlock}}
+    <div class="row-fluid">
+        <div class="span12 center">
+			<div class="masonry-container">
+				{{#languages}}
+					<div class="masonry-item">
+					  	<a href="{{url}}">
+							<div class="center">
+				        		<i class="icon-globe"></i>
+				          	</div>
+				        	<div class="center text">
+								{{name}}
+				          	</div>
+					  	</a>
+			        </div>
+				{{/languages}}
+			</div>	
+		</div>				
+	</div>
+	{{/switchlanguageBlock}}
+	
+	{{#switchcountryBlock}}
+    <div class="row-fluid">
+        <div class="span12 center">
+			<div class="masonry-container">
+				{{#countries}}
+					<div class="masonry-item">
+					  	<a href="{{url}}">
+							<div class="center">
+				        		<i class="icon-globe"></i>
+				          	</div>
+				        	<div class="center text">
+								{{name}}
+				          	</div>
+					  	</a>
+			        </div>
+				{{/countries}}
+			</div>	
+		</div>				
+	</div>
+	{{/switchcountryBlock}}	
+	
+	{{#hasResumeUpload}}
+
+    <div class="modal fade captionFormModal" id="captionFormModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form id="captionForm" action="{{addedfilecredentialUri}}" method="post">
+    	  	  <input type="hidden" id="fileId" name="fileId" value=""/>
+    	  	  {{^registeredusercredentialsBlock}}
+    	  	  <input type="hidden" id="returnUrl" name="returnUrl" value="{{returnUrl}}"/>
+    	  	  {{/registeredusercredentialsBlock}}
+    	  	  {{#registeredusercredentialsBlock}}
+    	  	  <input type="hidden" id="returnUrl" name="returnUrl" value="{{registeredusercredentialsUri}}"/>
+    	  	  {{/registeredusercredentialsBlock}}
+          	
+    	      <div class="modal-header">
+    	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    	        <h4 class="modal-title">Please provide a file name</h4>
+    	      </div>
+    	      <div class="modal-body">
+    	      	<div class="form-group">
+    	      		<textarea class="form-control input-lg" id="caption" name="caption" cols="30" rows="4"></textarea>
+    	      	</div>
+    	      	<div class="form-group">
+    		  		<select class="form-control input-lg selectpicker" id="category" name="category">
+    				{{#credentialCategories}}
+    					<option value="{{name}}">{{value}}</option>
+    				{{/credentialCategories}}
+    				</select>
+    			</div>
+    	      </div>
+    	      <div class="modal-footer">
+    	        <button type="submit" class="btn btn-primary btn-lg">{{labels.CONTINUE}} <i class="fa fa-chevron-circle-right"></i></button>
+    	      </div>
+          </form>
+        </div>
+      </div>
+    </div>
+	{{/hasResumeUpload}}
+	
+	
+	  	   	   	        
+{{> footer}}

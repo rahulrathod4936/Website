@@ -1,0 +1,26 @@
+@media print {
+    #primary-menu,
+    .applybutton,
+    .Back_to_results,
+    .hasSimilarJobs , .newfooter {
+        display: none !important;
+    }
+    .header-fixed__navigation.dark.hide-sm {
+    display: none;
+}
+
+.mobile-menu__buy-tickets {
+    display: none;
+}
+
+.mobile-menu__button {
+    display: none;
+}
+
+a.logo-link img ,  .Align-Ment-Image img{
+    max-width: 300px;
+}
+.mobile-menu , div#hospitality-dropdown , #membership-dropdown , #racing-dropdown , #header__racecourses{
+    display: none;
+}
+}

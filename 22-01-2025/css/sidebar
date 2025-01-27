@@ -1,0 +1,981 @@
+@font-face {
+    font-family: "Glyphicons Halflings";
+    src: url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.eot");
+    src: url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"),
+        url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.woff") format("woff"),
+        url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.ttf") format("truetype"),
+        url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular") format("svg");
+}
+
+.hasSimilarJobs .btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.hasSimilarJobs .glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: "Glyphicons Halflings";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.hasSimilarJobs .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 100%;
+}
+
+.hasSimilarJobs .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    border-radius: 4px !important;
+}
+
+.hasSimilarJobs .input-lg {
+    height: 46px;
+    padding: 10px 16px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+.hasSimilarJobs .bootstrap-select button {
+    border: 1px solid #ccc;
+    font-size: 18px;
+}
+
+.hasSimilarJobs .glyphicon-ok:before {
+    content: "\e013";
+}
+
+.hasSimilarJobs form {
+    margin-bottom: 8px;
+}
+
+.hasSimilarJobs .bootstrap-select > .dropdown-toggle.bs-placeholder {
+    color: #555555;
+}
+
+.hasSimilarJobs input.input-block-level.search-query {
+    margin-bottom: 0;
+}
+
+.hasSimilarJobs input.input-block-level.search-query {
+    border-radius: 4px;
+    height: 46px !important;
+}
+
+.hasSimilarJobs .btn-primary {
+    height: 46px;
+    line-height: 30px;
+}
+
+.hasSimilarJobs form .btn-primary {
+    height: 46px;
+    line-height: 34px;
+}
+
+
+.hasSimilarJobs .featurehover-misc {
+    border-radius: 4px;
+}
+
+.hasSimilarJobs .btn-group-primary {
+    display: grid;
+    gap:5px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hasSimilarJobs .Advanced-button {
+    margin-top: 0 !important;
+    border-left:0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.hasSimilarJobs .Advanced-submit {
+    border-right:0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.hasSimilarJobs .btn-primary {
+    box-shadow: none;
+    border: none !important;
+    text-shadow: none !important;
+}
+
+.hasSimilarJobs .jobsearchActionUri{
+    display:none;
+}
+
+
+
+.jobinteractivemapBlock .col-lg-1,
+.jobinteractivemapBlock .col-lg-10,
+.jobinteractivemapBlock .col-lg-11,
+.jobinteractivemapBlock .col-lg-12,
+.jobinteractivemapBlock .col-lg-2,
+.jobinteractivemapBlock .col-lg-3,
+.jobinteractivemapBlock .col-lg-4,
+.jobinteractivemapBlock .col-lg-5,
+.jobinteractivemapBlock .col-lg-6,
+.jobinteractivemapBlock .col-lg-7,
+.jobinteractivemapBlock .col-lg-8,
+.jobinteractivemapBlock .col-lg-9,
+.jobinteractivemapBlock .col-md-1,
+.jobinteractivemapBlock .col-md-10,
+.jobinteractivemapBlock .col-md-11,
+.jobinteractivemapBlock .col-md-12,
+.jobinteractivemapBlock .col-md-2,
+.jobinteractivemapBlock .col-md-3,
+.jobinteractivemapBlock .col-md-4,
+.jobinteractivemapBlock .col-md-5,
+.jobinteractivemapBlock .col-md-6,
+.jobinteractivemapBlock .col-md-7,
+.jobinteractivemapBlock .col-md-8,
+.jobinteractivemapBlock .col-md-9,
+.jobinteractivemapBlock .col-sm-1,
+.jobinteractivemapBlock .col-sm-10,
+.jobinteractivemapBlock .col-sm-11,
+.jobinteractivemapBlock .col-sm-12,
+.jobinteractivemapBlock .col-sm-2,
+.jobinteractivemapBlock .col-sm-3,
+.jobinteractivemapBlock .col-sm-4,
+.jobinteractivemapBlock .col-sm-5,
+.jobinteractivemapBlock .col-sm-6,
+.jobinteractivemapBlock .col-sm-7,
+.jobinteractivemapBlock .col-sm-8,
+.jobinteractivemapBlock .col-sm-9,
+.jobinteractivemapBlock .col-xs-1,
+.jobinteractivemapBlock .col-xs-10,
+.jobinteractivemapBlock .col-xs-11,
+.jobinteractivemapBlock .col-xs-12,
+.jobinteractivemapBlock .col-xs-2,
+.jobinteractivemapBlock .col-xs-3,
+.jobinteractivemapBlock .col-xs-4,
+.jobinteractivemapBlock .col-xs-5,
+.jobinteractivemapBlock .col-xs-6,
+.jobinteractivemapBlock .col-xs-7,
+.jobinteractivemapBlock .col-xs-8,
+.jobinteractivemapBlock .col-xs-9 ,
+.jobsubmittedblock .col-lg-1,
+.jobsubmittedblock .col-lg-10,
+.jobsubmittedblock .col-lg-11,
+.jobsubmittedblock .col-lg-12,
+.jobsubmittedblock .col-lg-2,
+.jobsubmittedblock .col-lg-3,
+.jobsubmittedblock .col-lg-4,
+.jobsubmittedblock .col-lg-5,
+.jobsubmittedblock .col-lg-6,
+.jobsubmittedblock .col-lg-7,
+.jobsubmittedblock .col-lg-8,
+.jobsubmittedblock .col-lg-9,
+.jobsubmittedblock .col-md-1,
+.jobsubmittedblock .col-md-10,
+.jobsubmittedblock .col-md-11,
+.jobsubmittedblock .col-md-12,
+.jobsubmittedblock .col-md-2,
+.jobsubmittedblock .col-md-3,
+.jobsubmittedblock .col-md-4,
+.jobsubmittedblock .col-md-5,
+.jobsubmittedblock .col-md-6,
+.jobsubmittedblock .col-md-7,
+.jobsubmittedblock .col-md-8,
+.jobsubmittedblock .col-md-9,
+.jobsubmittedblock .col-sm-1,
+.jobsubmittedblock .col-sm-10,
+.jobsubmittedblock .col-sm-11,
+.jobsubmittedblock .col-sm-12,
+.jobsubmittedblock .col-sm-2,
+.jobsubmittedblock .col-sm-3,
+.jobsubmittedblock .col-sm-4,
+.jobsubmittedblock .col-sm-5,
+.jobsubmittedblock .col-sm-6,
+.jobsubmittedblock .col-sm-7,
+.jobsubmittedblock .col-sm-8,
+.jobsubmittedblock .col-sm-9,
+.jobsubmittedblock .col-xs-1,
+.jobsubmittedblock .col-xs-10,
+.jobsubmittedblock .col-xs-11,
+.jobsubmittedblock .col-xs-12,
+.jobsubmittedblock .col-xs-2,
+.jobsubmittedblock .col-xs-3,
+.jobsubmittedblock .col-xs-4,
+.jobsubmittedblock .col-xs-5,
+.jobsubmittedblock .col-xs-6,
+.jobsubmittedblock .col-xs-7,
+.jobsubmittedblock .col-xs-8,
+.jobsubmittedblock .col-xs-9{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.jobinteractivemapBlock .col-xs-1,
+.jobinteractivemapBlock .col-xs-10,
+.jobinteractivemapBlock .col-xs-11,
+.jobinteractivemapBlock .col-xs-12,
+.jobinteractivemapBlock .col-xs-2,
+.jobinteractivemapBlock .col-xs-3,
+.jobinteractivemapBlock .col-xs-4,
+.jobinteractivemapBlock .col-xs-5,
+.jobinteractivemapBlock .col-xs-6,
+.jobinteractivemapBlock .col-xs-7,
+.jobinteractivemapBlock .col-xs-8,
+.jobinteractivemapBlock .col-xs-9,
+
+.jobsubmittedblock .col-xs-1,
+.jobsubmittedblock .col-xs-10,
+.jobsubmittedblock .col-xs-11,
+.jobsubmittedblock .col-xs-12,
+.jobsubmittedblock .col-xs-2,
+.jobsubmittedblock .col-xs-3,
+.jobsubmittedblock .col-xs-4,
+.jobsubmittedblock .col-xs-5,
+.jobsubmittedblock .col-xs-6,
+.jobsubmittedblock .col-xs-7,
+.jobsubmittedblock .col-xs-8,
+.jobsubmittedblock .col-xs-9 {
+    float: left;
+}
+
+.jobinteractivemapBlock .col-xs-12  , .jobsubmittedblock .col-xs-12 {
+    width: 100%;
+}
+
+.jobinteractivemapBlock .carousel , .jobsubmittedblock .carousel {
+    position: relative;
+}
+
+.jobinteractivemapBlock .col-xs-6  ,  .jobsubmittedblock .col-xs-6 {
+    width: 50%;
+}
+
+.jobinteractivemapBlock .carousel div a ,  .jobsubmittedblock .carousel div a{
+    border: none;
+}
+
+.jobinteractivemapBlock .text-center ,  .jobsubmittedblock .text-center{
+    text-align: center;
+}
+
+.jobinteractivemapBlock .well , .jobsubmittedblock .well{
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%);
+}
+
+.jobinteractivemapBlock .well ,  .jobsubmittedblock .well {
+    border-radius: 0;
+}
+
+.jobinteractivemapBlock .well  ,  .jobsubmittedblock .well{
+    border: none;
+    box-shadow: none;
+}
+
+.jobinteractivemapBlock .feature-jobs  , .jobsubmittedblock .feature-jobs {
+    overflow: hidden;
+    padding: 20px;
+}
+
+.jobinteractivemapBlock .feature-jobs .highlight , .jobsubmittedblock .feature-jobs .highlight {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    height: 50px;
+}
+
+.jobinteractivemapBlock .feature-jobs i ,  .jobsubmittedblock .feature-jobs i{
+    font-size: 100px;
+}
+
+.jobinteractivemapBlock .feature-jobs span ,  .jobsubmittedblock .feature-jobs span{
+    font-size: 30px;
+    line-height: 34px;
+}
+
+.jobinteractivemapBlock a:hover  ,  .jobsubmittedblock a:hover {
+    color: #23527c;
+}
+
+@media (min-width: 768px) {
+    .jobinteractivemapBlock .col-sm-1,
+    .jobinteractivemapBlock .col-sm-10,
+    .jobinteractivemapBlock .col-sm-11,
+    .jobinteractivemapBlock .col-sm-12,
+    .jobinteractivemapBlock .col-sm-2,
+    .jobinteractivemapBlock .col-sm-3,
+    .jobinteractivemapBlock .col-sm-4,
+    .jobinteractivemapBlock .col-sm-5,
+    .jobinteractivemapBlock .col-sm-6,
+    .jobinteractivemapBlock .col-sm-7,
+    .jobinteractivemapBlock .col-sm-8,
+    .jobinteractivemapBlock .col-sm-9 ,
+    
+     .jobsubmittedblock .col-sm-1,
+    .jobsubmittedblock .col-sm-10,
+    .jobsubmittedblock .col-sm-11,
+    .jobsubmittedblock .col-sm-12,
+    .jobsubmittedblock .col-sm-2,
+    .jobsubmittedblock .col-sm-3,
+    .jobsubmittedblock .col-sm-4,
+    .jobsubmittedblock .col-sm-5,
+    .jobsubmittedblock .col-sm-6,
+    .jobsubmittedblock .col-sm-7,
+    .jobsubmittedblock .col-sm-8,
+    .jobsubmittedblock .col-sm-9{
+        float: left;
+    }
+
+    .jobinteractivemapBlock .col-sm-12  , .jobsubmittedblock .col-sm-12{
+        width: 100%;
+    }
+
+    .jobinteractivemapBlock .col-sm-6 ,  .jobsubmittedblock .col-sm-6 {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .jobinteractivemapBlock .col-md-1,
+    .jobinteractivemapBlock .col-md-10,
+    .jobinteractivemapBlock .col-md-11,
+    .jobinteractivemapBlock .col-md-12,
+    .jobinteractivemapBlock .col-md-2,
+    .jobinteractivemapBlock .col-md-3,
+    .jobinteractivemapBlock .col-md-4,
+    .jobinteractivemapBlock .col-md-5,
+    .jobinteractivemapBlock .col-md-6,
+    .jobinteractivemapBlock .col-md-7,
+    .jobinteractivemapBlock .col-md-8,
+    .jobinteractivemapBlock .col-md-9,
+    
+    .jobsubmittedblock .col-md-1,
+    .jobsubmittedblock .col-md-10,
+    .jobsubmittedblock .col-md-11,
+    .jobsubmittedblock .col-md-12,
+    .jobsubmittedblock .col-md-2,
+    .jobsubmittedblock .col-md-3,
+    .jobsubmittedblock .col-md-4,
+    .jobsubmittedblock .col-md-5,
+    .jobsubmittedblock .col-md-6,
+    .jobsubmittedblock .col-md-7,
+    .jobsubmittedblock .col-md-8,
+    .jobsubmittedblock .col-md-9 {
+        float: left;
+    }
+
+    .jobinteractivemapBlock .col-md-12  , .jobsubmittedblock .col-md-12 {
+        width: 100%;
+    }
+
+    .jobinteractivemapBlock .col-md-3  , .jobsubmittedblock .col-md-3  {
+        width: 25%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .jobinteractivemapBlock .col-lg-1,
+    .jobinteractivemapBlock .col-lg-10,
+    .jobinteractivemapBlock .col-lg-11,
+    .jobinteractivemapBlock .col-lg-12,
+    .jobinteractivemapBlock .col-lg-2,
+    .jobinteractivemapBlock .col-lg-3,
+    .jobinteractivemapBlock .col-lg-4,
+    .jobinteractivemapBlock .col-lg-5,
+    .jobinteractivemapBlock .col-lg-6,
+    .jobinteractivemapBlock .col-lg-7,
+    .jobinteractivemapBlock .col-lg-8,
+    .jobinteractivemapBlock .col-lg-9,
+    
+    .jobsubmittedblock .col-lg-1,
+    .jobsubmittedblock .col-lg-10,
+    .jobsubmittedblock .col-lg-11,
+    .jobsubmittedblock .col-lg-12,
+    .jobsubmittedblock .col-lg-2,
+    .jobsubmittedblock .col-lg-3,
+    .jobsubmittedblock .col-lg-4,
+    .jobsubmittedblock .col-lg-5,
+    .jobsubmittedblock .col-lg-6,
+    .jobsubmittedblock .col-lg-7,
+    .jobsubmittedblock .col-lg-8,
+    .jobsubmittedblock .col-lg-9 {
+        float: left;
+    }
+
+    .jobinteractivemapBlock .col-lg-12   , .jobsubmittedblock  .col-lg-12{
+        width: 100%;
+    }
+
+    .jobinteractivemapBlock .col-lg-3  ,  .jobsubmittedblock  .col-lg-3{
+        width: 25%;
+    }
+}
+
+.jobinteractivemapBlock .slick-dots,
+.jobinteractivemapBlock .slick-next,
+.jobinteractivemapBlock .slick-prev,
+
+.jobsubmittedblock .slick-dots,
+.jobsubmittedblock .slick-next,
+.jobsubmittedblock .slick-prev {
+    position: absolute;
+    display: block;
+    padding: 0;
+}
+
+.jobinteractivemapBlock .slick-dots , .jobsubmittedblock .slick-dots  {
+    bottom: -25px;
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.jobinteractivemapBlock .slick-dots li   , .jobsubmittedblock .slick-dots li{
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.jobinteractivemapBlock .slick-dots li button , .jobsubmittedblock .slick-dots li button  {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: 0;
+    background: 0 0;
+}
+
+.jobinteractivemapBlock .slick-dots li button:before,
+.jobinteractivemapBlock .slick-next:before,
+.jobinteractivemapBlock .slick-prev:before,
+.jobsubmittedblock .slick-dots li button:before,
+.jobsubmittedblock .slick-next:before,
+.jobsubmittedblock .slick-prev:before {
+    font-family: slick;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.jobinteractivemapBlock .slick-dots li button:before , .jobsubmittedblock .slick-dots li button:before {
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: "•";
+    text-align: center;
+    opacity: 0.25;
+    color: #000;
+}
+
+.jobinteractivemapBlock .slick-dots li.slick-active button:before,
+.jobsubmittedblock  .slick-dots li.slick-active button:before{
+    opacity: 0.75;
+    color: #000;
+}
+
+.jobinteractivemapBlock button,
+.jobinteractivemapBlock select,
+.jobsubmittedblock button,
+.jobsubmittedblock select{
+    text-transform: none;
+}
+
+.jobinteractivemapBlock button ,  .jobsubmittedblock button {
+    overflow: visible;
+}
+
+.jobinteractivemapBlock button,
+html .jobinteractivemapBlock input[type="button"],
+.jobinteractivemapBlock input[type="reset"],
+.jobinteractivemapBlock input[type="submit"],
+
+.jobsubmittedblock button,
+html .jobsubmittedblock input[type="button"],
+.jobsubmittedblock input[type="reset"],
+.jobsubmittedblock input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+.jobinteractivemapBlock , .jobsubmittedblock{
+    overflow: hidden;
+}
+
+.processbar-new .overlay-container {
+    position: fixed;
+    display: table;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    top:0;
+}
+
+.processbar-new .overlay-position {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.processbar-new .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.processbar-new .row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.processbar-new .text-center {
+    text-align: center;
+}
+
+.processbar-new .col-lg-1,
+.processbar-new .col-lg-10,
+.processbar-new .col-lg-11,
+.processbar-new .col-lg-12,
+.processbar-new .col-lg-2,
+.processbar-new .col-lg-3,
+.processbar-new .col-lg-4,
+.processbar-new .col-lg-5,
+.processbar-new .col-lg-6,
+.processbar-new .col-lg-7,
+.processbar-new .col-lg-8,
+.processbar-new .col-lg-9,
+.processbar-new .col-md-1,
+.processbar-new .col-md-10,
+.processbar-new .col-md-11,
+.processbar-new .col-md-12,
+.processbar-new .col-md-2,
+.processbar-new .col-md-3,
+.processbar-new .col-md-4,
+.processbar-new .col-md-5,
+.processbar-new .col-md-6,
+.processbar-new .col-md-7,
+.processbar-new .col-md-8,
+.processbar-new .col-md-9,
+.processbar-new .col-sm-1,
+.processbar-new .col-sm-10,
+.processbar-new .col-sm-11,
+.processbar-new .col-sm-12,
+.processbar-new .col-sm-2,
+.processbar-new .col-sm-3,
+.processbar-new .col-sm-4,
+.processbar-new .col-sm-5,
+.processbar-new .col-sm-6,
+.processbar-new .col-sm-7,
+.processbar-new .col-sm-8,
+.processbar-new .col-sm-9,
+.processbar-new .col-xs-1,
+.processbar-new .col-xs-10,
+.processbar-new .col-xs-11,
+.processbar-new .col-xs-12,
+.processbar-new .col-xs-2,
+.processbar-new .col-xs-3,
+.processbar-new .col-xs-4,
+.processbar-new .col-xs-5,
+.processbar-new .col-xs-6,
+.processbar-new .col-xs-7,
+.processbar-new .col-xs-8,
+.processbar-new .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.processbar-new .col-xs-1,
+.processbar-new .col-xs-10,
+.processbar-new .col-xs-11,
+.processbar-new .col-xs-12,
+.processbar-new .col-xs-2,
+.processbar-new .col-xs-3,
+.processbar-new .col-xs-4,
+.processbar-new .col-xs-5,
+.processbar-new .col-xs-6,
+.processbar-new .col-xs-7,
+.processbar-new .col-xs-8,
+.processbar-new .col-xs-9 {
+    float: left;
+}
+
+.processbar-new .col-xs-10 {
+    width: 83.33333333%;
+}
+
+.processbar-new .col-xs-offset-1 {
+    margin-left: 8.33333333%;
+}
+
+.processbar-new .progress {
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
+    box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
+}
+
+.processbar-new .progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #337ab7;
+    -webkit-box-shadow: inset 0 -1px 0 rgb(0 0 0 / 15%);
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 15%);
+    -webkit-transition: width 0.6s ease;
+    -o-transition: width 0.6s ease;
+    transition: width 0.6s ease;
+}
+
+.processbar-new .progress-bar-striped,
+.processbar-new .progress-striped .progress-bar {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    -webkit-background-size: 40px 40px;
+    background-size: 40px 40px;
+}
+
+.processbar-new .progress-bar.active,
+.processbar-new .progress.active .progress-bar {
+    -webkit-animation: progress-bar-stripes 2s linear infinite;
+    -o-animation: progress-bar-stripes 2s linear infinite;
+    animation: progress-bar-stripes 2s linear infinite;
+}
+
+.processbar-new .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.processbar-new .btn-group-vertical > .btn-group:after,
+.processbar-new .btn-group-vertical > .btn-group:before,
+.processbar-new .btn-toolbar:after,
+.processbar-new .btn-toolbar:before,
+.processbar-new .clearfix:after,
+.processbar-new .clearfix:before,
+.processbar-new .container-fluid:after,
+.processbar-new .container-fluid:before,
+.processbar-new .container:after,
+.processbar-new .container:before,
+.processbar-new .dl-horizontal dd:after,
+.processbar-new .dl-horizontal dd:before,
+.processbar-new .form-horizontal .form-group:after,
+.processbar-new .form-horizontal .form-group:before,
+.processbar-new .modal-footer:after,
+.processbar-new .modal-footer:before,
+.processbar-new .modal-header:after,
+.processbar-new .modal-header:before,
+.processbar-new .nav:after,
+.processbar-new .nav:before,
+.processbar-new .navbar-collapse:after,
+.processbar-new .navbar-collapse:before,
+.processbar-new .navbar-header:after,
+.processbar-new .navbar-header:before,
+.processbar-new .navbar:after,
+.processbar-new .navbar:before,
+.processbar-new .pager:after,
+.processbar-new .pager:before,
+.processbar-new .panel-body:after,
+.processbar-new .panel-body:before,
+.processbar-new .row:after,
+.processbar-new .row:before {
+    display: table;
+    content: " ";
+}
+
+.processbar-new .btn-group-vertical > .btn-group:after,
+.processbar-new .btn-toolbar:after,
+.processbar-new .clearfix:after,
+.processbar-new .container-fluid:after,
+.processbar-new .container:after,
+.processbar-new .dl-horizontal dd:after,
+.form-horizontal .form-group:after,
+.processbar-new .modal-footer:after,
+.processbar-new .modal-header:after,
+.processbar-new .nav:after,
+.processbar-new .navbar-collapse:after,
+.processbar-new .navbar-header:after,
+.processbar-new .navbar:after,
+.processbar-new .pager:after,
+.processbar-new .panel-body:after,
+.processbar-new .row:after {
+    clear: both;
+}
+
+@media (min-width: 768px) {
+    .processbar-new .col-sm-1,
+    .processbar-new .col-sm-10,
+    .processbar-new .col-sm-11,
+    .processbar-new .col-sm-12,
+    .processbar-new .col-sm-2,
+    .processbar-new .col-sm-3,
+    .processbar-new .col-sm-4,
+    .processbar-new .col-sm-5,
+    .processbar-new .col-sm-6,
+    .processbar-new .col-sm-7,
+    .processbar-new .col-sm-8,
+    .processbar-new .col-sm-9 {
+        float: left;
+    }
+
+    .processbar-new .col-sm-10 {
+        width: 83.33333333%;
+    }
+
+    .processbar-new .col-sm-offset-1 {
+        margin-left: 8.33333333%;
+    }
+}
+
+@media (min-width: 992px) {
+    .processbar-new .col-md-1,
+    .processbar-new .col-md-10,
+    .processbar-new .col-md-11,
+    .processbar-new .col-md-12,
+    .processbar-new .col-md-2,
+    .processbar-new .col-md-3,
+    .processbar-new .col-md-4,
+    .processbar-new .col-md-5,
+    .processbar-new .col-md-6,
+    .processbar-new .col-md-7,
+    .processbar-new .col-md-8,
+    .processbar-new .col-md-9 {
+        float: left;
+    }
+
+    .processbar-new .col-md-8 {
+        width: 66.66666667%;
+    }
+
+    .processbar-new .col-md-offset-2 {
+        margin-left: 16.66666667%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .processbar-new .col-lg-1,
+    .processbar-new .col-lg-10,
+    .processbar-new .col-lg-11,
+    .processbar-new .col-lg-12,
+    .processbar-new .col-lg-2,
+    .processbar-new .col-lg-3,
+    .processbar-new .col-lg-4,
+    .processbar-new .col-lg-5,
+    .processbar-new .col-lg-6,
+    .processbar-new .col-lg-7,
+    .processbar-new .col-lg-8,
+    .processbar-new .col-lg-9 {
+        float: left;
+    }
+
+    .processbar-new .col-lg-6 {
+        width: 50%;
+    }
+
+    .processbar-new .col-lg-offset-3 {
+        margin-left: 25%;
+    }
+}
+
+.expressapplicationsBlock-Heading{
+    font-size: 30px;
+}
+
+.expressapplicationsBlock-Heading span.label.label-success {
+    display: inline;
+    padding: 0.2em 0.6em 0.3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25em;
+    background-color: #5cb85c;
+    text-shadow: none;
+    position: relative;
+    top: -4px;
+}
+
+.DescriptionPointer {
+    cursor:text!important;
+}
+
+.expressapplicationsBlock-Pointer{
+    cursor:pointer;
+}
+
+.modal-open {
+    overflow: hidden;
+}
+
+.modal-open .expressapplicationsBlock .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.expressapplicationsBlock .modal.fade .modal-dialog {
+    
+}
+
+.expressapplicationsBlock .modal-content{
+    border-radius: 6px;
+}
+
+.expressapplicationsBlock .modal-backdrop{
+    background-color: #000;
+    display:none;
+}
+
+.expressapplicationsBlock .modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
+body .modal-backdrop.fade.in{
+    background-color: #000;
+}
+
+.expressapplicationsBlock #descriptionModal{
+    border-radius:6px;
+    display:none;
+}
+
+.expressapplicationsBlock button.close {
+    position: relative;
+    top: -10px;
+    right: -5px;
+}
+
+
+@media (min-width: 767px) {
+    .jobdescription  .Back_to_results{
+        margin-top:0px !important;
+    }
+}
+@media (max-width: 768px) {
+    .jobdescription  .Back_to_results{
+        margin-top:15px;
+    }
+    
+    .span4.Align-Ment-Image.is-active{
+        text-align:center;
+        margin:10px 0;
+    }
+    
+    
+    .expressapplicationsBlock .hasUploadedResumeLinkList {
+        padding: 0 !important;
+    }
+    
+    div#kvFileinputModal.modal.fade {
+        top: -215%;
+    }
+    
+    .expressapplicationsBlock .col-sm-8{
+        max-width:100% !important;
+        width:100% !important;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .expressapplicationsBlock .expressapplicationsBlock-Pointer {
+        display: block;
+        font-size: 26px;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+.registeredusersearchagentseditBlock .MainFlex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.registeredusersearchagentseditBlock select#frequencyInDays,
+.registeredusersearchagentseditBlock select.input-block-level{
+    height:42px;
+}
+
+@media (max-width: 600px) {
+    .registeredusersearchagentseditBlock .MainFlex {
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+}
+
+

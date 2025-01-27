@@ -1,0 +1,50 @@
+<ul class="nav nav-tabs nav-stacked">
+				{{#jobs}}
+				  <li>
+				  	{{#facebookApp}}
+				  	<a href="{{path}}?facebook=true&sref=facebook.com"> 
+				  	{{/facebookApp}}
+				  	{{^facebookApp}}
+				  		{{#registereduserBlock}}
+				  			<a href="{{path}}?showExpired=true">
+				  		{{/registereduserBlock}}
+				  		{{^registereduserBlock}}
+				  			<a href="{{path}}">
+				  		{{/registereduserBlock}}
+				  	{{/facebookApp}}
+						<span class="span10">{{name}}</span>
+					  	<div class="span2">{{formattedBeginTime}}</div>
+					  	
+						{{#hasJobCompanies}}
+	    					{{#companyName}}
+	    						<div class="clearfix"></div>
+	    						<div>
+	    						{{{companyName}}}
+	    						</div>
+	    					{{/companyName}}
+						{{/hasJobCompanies}}
+					  	
+				  		{{#locations}}
+				  			<div class="clearfix"></div>
+				  			<div>
+							{{{locations}}}
+							</div>
+						{{/locations}}				
+						<div class="clearfix"></div>
+						
+						<p/>
+						<div class="fb-like" data-href="{{fullBaseUrl}}job/{{vanityUri}}/{{id}}/{{spottingId}}/{{preview}}" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+				  	
+						{{^facebookApp}}
+							{{#descriptionSummary}}
+								<div class="clearfix"></div>
+								<div class="custom-vspace"></div>
+								<div>
+								{{{descriptionSummary}}}
+								</div>
+							{{/descriptionSummary}}
+						{{/facebookApp}}
+				  	</a>
+				  </li>														
+				{{/jobs}}
+</ul>

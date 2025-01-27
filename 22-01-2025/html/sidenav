@@ -1,0 +1,358 @@
+{{^hasSimilarJobs}}
+<div class="span4 hasSimilarJobs" style="padding-bottom:30px;">
+   {{#facebookApp}}
+    <div class="clearfix"></div>
+    {{#introVideoUrl}}
+        <div class="center fitvideo media-holder">
+            <iframe src="{{introVideoUrl}}" frameborder="0" allowfullscreen></iframe>
+            <br/>
+        </div>
+    {{/introVideoUrl}}
+    {{/facebookApp}}
+    
+    <div class="search-holder">
+        <form class="form-search" action="{{jobsearchActionUri}}" method="get">
+            <input type="text" class="input-block-level search-query" value="{{#term}}{{term}}{{/term}}" placeholder="{{^term}}{{labels.SEARCH_JOBS}}{{/term}}" name="term"/>
+                <div class="jobsearchActionUri">
+                    
+                    <div class="custom-vspace"></div>
+                    <div class="hasJobCategories-Menu Change-done-1">
+                        {{#hasJobCategories}}
+                         
+                            <select class="form-control input-lg input-block-level multipleselect" id="tags" name="tags" multiple="multiple" data-none-selected-text="{{labels.SEARCH_AGENT_ALL_CATEGORIES}}" current="{{currentTag}}" {{#parentCampaign}}campaignId={{parentCampaign.id}}{{/parentCampaign}}{{^parentCampaign}}campaignId={{campaign.id}}{{/parentCampaign}}>
+								{{#jobCategories}}
+									{{#multipleSelections}}
+									    <option value="{{label}}" {{#isSelected}}selected="selected"{{/isSelected}}>{{label}}</option>
+									{{/multipleSelections}}
+								{{/jobCategories}}
+							</select>
+                        {{/hasJobCategories}}
+                    </div>
+                    	
+                    <div class="custom-vspace"></div>
+                    
+                    <div class="SEARCH_AGENT_ALL_LOCATIONS-Menu">
+                       
+                        <select class="form-control input-lg input-block-level multipleselect" multiple="multiple" data-none-selected-text="{{labels.SEARCH_AGENT_ALL_LOCATIONS}}" current="{{currentLocation}}" id="locations" name="locations" {{#parentCampaign}}campaignId={{parentCampaign.id}}{{/parentCampaign}}{{^parentCampaign}}campaignId={{campaign.id}}{{/parentCampaign}}>
+							{{#jobLocations}}
+								{{#multipleSelections}}
+								    <option value="{{value}}" {{#isSelected}}selected="selected"{{/isSelected}}>{{label}}</option>
+								{{/multipleSelections}}
+							{{/jobLocations}}
+						</select>
+                    </div>
+                    
+                    <div class="custom-vspace"></div>
+                    
+                    <div class="hasJobTypes-Menu">
+                        {{#hasJobTypes}}
+                          
+                            <select class="form-control input-lg input-block-level multipleselect" id="jobTypes" name="jobTypes" multiple="multiple"  data-none-selected-text="{{labels.SEARCH_AGENT_ALL_JOBTYPES}}" current="{{currentJobType}}" {{#parentCampaign}}campaignId={{parentCampaign.id}}{{/parentCampaign}}{{^parentCampaign}}campaignId={{campaign.id}}{{/parentCampaign}}>
+								{{#jobTypes}}
+									{{#multipleSelections}}
+									    <option value="{{value}}" {{#isSelected}}selected="selected"{{/isSelected}}>{{label}}</option>
+									{{/multipleSelections}}
+								{{/jobTypes}}
+							</select>
+                        {{/hasJobTypes}}
+                    </div>
+                    
+                    
+                    <div class="custom-vspace"></div>
+                    
+                    <div class="jobDaysElapsed-Menu">
+                       
+                        <select class="form-control input-lg input-block-level multipleselect" id="daysElapsed" name="daysElapsed" multiple="multiple" data-max-options="1" data-none-selected-text="{{labels.SEARCH_AGENT_ALL_POSTING_DATES}}">
+							{{#jobDaysElapsed}}
+								<option value="{{value}}" {{#isSelected}}selected="selected"{{/isSelected}}>{{label}}</option>
+							{{/jobDaysElapsed}}
+					    </select>
+                    </div>
+                    
+                </div>
+                
+                <div class="custom-vspace"></div>
+                
+                <div class="btn-group-primary">
+                    <button class="btn btn-primary btn-block btn-large Advanced-submit" type="submit">
+                        <i class="icon-search icon-white"></i>
+                    </button>
+                    <a class="btn btn-primary btn-block btn-large Advanced-button">Advanced</a>
+                </div>
+                
+                {{#authenticated}}
+                    <div class="custom-vspace"></div>
+                    
+                    {{^savedSearch}}
+                        <a class="btn btn-large btn-block" href="{{saveToProfileUri}}"><i class="icon-save"></i> {{labels.SAVE_SEARCH}}</a>
+                    {{/savedSearch}}
+                    
+                    {{#savedSearch}}
+                        <a class="btn btn-large btn-block" href="{{registeredusersearchagentsRemoveUri}}?searchAgentId={{savedSearch}}&returnUrl={{jobsearchActionUri}}"><i class="icon-remove-sign"></i> {{labels.REMOVE_SEARCH}}</a>
+                    {{/savedSearch}}
+                {{/authenticated}}
+         <div class="clearfix"></div>
+        </form>
+    </div>
+    
+    {{^jobcategoriesBlock}}
+        {{#facebookApp}}
+            <a href="{{jobcategoriesUri}}?facebook=true" class="btn btn-primary btn-large btn-block hasJobCategories">
+        {{/facebookApp}}
+        
+        {{^facebookApp}}
+            <a href="{{jobcategoriesUri}}" class="btn btn-primary btn-large btn-block hasJobCategories">
+        {{/facebookApp}}
+            {{labels.SEARCH_JOBS_BY_CATEGORIES}} ({{hasJobCategories}})
+        </a>
+   {{/jobcategoriesBlock}}
+   
+    {{^joblocationsBlock}}
+        {{^jobregioncountryBlock}}
+            {{#facebookApp}}
+                <a href="{{jobaggregatedlocationsUri}}?facebook=true" class="btn btn-primary btn-large btn-block hasJobLocations">
+            {{/facebookApp}}
+            
+            {{^facebookApp}}
+                <a href="{{jobaggregatedlocationsUri}}" class="btn btn-primary btn-large btn-block hasJobLocations">
+            {{/facebookApp}}
+            {{labels.SEARCH_JOBS_BY_LOCATIONS}} ({{hasJobLocations}})
+            </a>
+        {{/jobregioncountryBlock}}
+   {{/joblocationsBlock}}
+   
+   
+    {{#hasJobTypes}}
+        {{#facebookApp}}
+            <a href="{{jobtypesUri}}" class="btn btn-primary btn-large btn-block hasJobCompanies">
+        {{/facebookApp}}
+        {{^facebookApp}}
+            <a href="{{jobtypesUri}}" class="btn btn-primary btn-large btn-block hasJobCompanies">
+        {{/facebookApp}}
+            {{labels.SEARCH_AGENT_ALL_JOBTYPES}} ({{hasJobTypes}})
+        </a>
+    {{/hasJobTypes}}
+    
+    <div class="Div_Class 1">
+        {{#hasJobInteractiveMap}}
+        <div class="Width_Full">
+            <strong>
+                <a href="{{jobinteractivemapUri}}" class="btn btn-large btn-primary D" target="_blank">{{labels.INTERACTIVE_JOB_MAP}}</a>
+                <span class=""></span>
+            </strong>
+        </div>
+        {{/hasJobInteractiveMap}} 
+        
+        {{#hasGeneralJobApplication}}
+        <div class="row-fluid general_j" style="margin-top: 8px;">
+            <div class="span12">
+                <a href="{{generaljobapplicationUri}}" style="cursor: default;" class="noclickme">
+                    <div class="well featurehover featurehover-misc center">
+                        <div class="highlight">{{labels.NO_OPEN_POSITION}}</div>
+                        <div>Create an alert below, so you can be advised of roles as they are created, or submit your information, and we will retain it for future consideration.</div>
+                        <div class="clearfix"></div>
+                        <div class="custom-vspace"></div>
+                        <a class="btn btn-large btn-primary JOB_U" href="{{generaljobapplicationUri}}">{{labels.GENERAL_JOB_APPLICATION}}</a>
+                        {{#searchAgentIntegration}} 
+                            {{#registeredusersearchagentseditBlock}}
+                            <a href="{{registeredusersearchagentsUri}}" class="btn btn-large btn-primary">{{labels.SEARCH_AGENTS}}</a>
+                            {{/registeredusersearchagentseditBlock}} 
+                            
+                            {{^registeredusersearchagentseditBlock}} 
+                                {{#registeredusersearchagentsBlock}}
+                                <a href="{{registeredusersearchagentsUri}}" class="btn btn-large btn-primary">{{labels.SEARCH_AGENTS}}</a>
+                                {{/registeredusersearchagentsBlock}} 
+                                
+                                {{^registeredusersearchagentsBlock}}
+                                <a href="{{registeredusersearchagentsUri}}" class="btn btn-large btn-primary Sea_Agent">{{labels.SEARCH_AGENTS}}</a>
+                                {{/registeredusersearchagentsBlock}} 
+                            {{/registeredusersearchagentseditBlock}} 
+                        {{/searchAgentIntegration}}
+                    </div>
+                </a>
+            </div>
+        </div>
+        {{/hasGeneralJobApplication}}
+    </div>
+</div>
+{{/hasSimilarJobs}}
+
+{{#hasSimilarJobs}}
+<div class="span4 hasSimilarJobs" style="padding-bottom:30px;">
+   {{#facebookApp}}
+    <div class="clearfix"></div>
+    {{#introVideoUrl}}
+        <div class="center fitvideo media-holder">
+            <iframe src="{{introVideoUrl}}" frameborder="0" allowfullscreen></iframe>
+            <br/>
+        </div>
+    {{/introVideoUrl}}
+    {{/facebookApp}}
+    
+    <div class="search-holder">
+        <form class="form-search" action="{{jobsearchActionUri}}" method="get">
+            <input type="text" class="input-block-level search-query" value="{{#term}}{{term}}{{/term}}" placeholder="{{^term}}{{labels.SEARCH_JOBS}}{{/term}}" name="term"/>
+                <div class="jobsearchActionUri">
+                    
+                    <div class="custom-vspace"></div>
+                    <div class="hasJobCategories-Menu changes-done-2">
+                        {{#hasJobCategories}}
+                          
+                            <select class="form-control input-lg input-block-level multipleselect" id="tags" name="tags" multiple="multiple" data-none-selected-text="{{labels.SEARCH_AGENT_ALL_CATEGORIES}}" current="{{currentTag}}" {{#parentCampaign}}campaignId={{parentCampaign.id}}{{/parentCampaign}}{{^parentCampaign}}campaignId={{campaign.id}}{{/parentCampaign}}>
+								{{#jobCategories}}
+									{{#multipleSelections}}
+									    <option value="{{label}}" {{#isSelected}}selected="selected"{{/isSelected}}>{{label}}</option>
+									{{/multipleSelections}}
+								{{/jobCategories}}
+							</select>
+                        {{/hasJobCategories}}
+                    </div>
+                    	
+                    
+                    <div class="custom-vspace"></div>
+                    
+                    <div class="SEARCH_AGENT_ALL_LOCATIONS-Menu">
+                       
+                        <select class="form-control input-lg input-block-level multipleselect" multiple="multiple" data-none-selected-text="{{labels.SEARCH_AGENT_ALL_LOCATIONS}}" current="{{currentLocation}}" id="locations" name="locations" {{#parentCampaign}}campaignId={{parentCampaign.id}}{{/parentCampaign}}{{^parentCampaign}}campaignId={{campaign.id}}{{/parentCampaign}}>
+							{{#jobLocations}}
+								{{#multipleSelections}}
+								    <option value="{{value}}" {{#isSelected}}selected="selected"{{/isSelected}}>{{label}}</option>
+								{{/multipleSelections}}
+							{{/jobLocations}}
+						</select>
+                    </div>
+                    
+                    <div class="custom-vspace"></div>
+                    
+                    <div class="hasJobTypes-Menu">
+                        {{#hasJobTypes}}
+                          
+                            <select class="form-control input-lg input-block-level multipleselect" id="jobTypes" name="jobTypes" multiple="multiple"  data-none-selected-text="{{labels.SEARCH_AGENT_ALL_JOBTYPES}}" current="{{currentJobType}}" {{#parentCampaign}}campaignId={{parentCampaign.id}}{{/parentCampaign}}{{^parentCampaign}}campaignId={{campaign.id}}{{/parentCampaign}}>
+								{{#jobTypes}}
+									{{#multipleSelections}}
+									    <option value="{{value}}" {{#isSelected}}selected="selected"{{/isSelected}}>{{label}}</option>
+									{{/multipleSelections}}
+								{{/jobTypes}}
+							</select>
+                        {{/hasJobTypes}}
+                    </div>
+                    
+                    
+                    <div class="custom-vspace"></div>
+                    
+                    <div class="jobDaysElapsed-Menu">
+                       
+                        <select class="form-control input-lg input-block-level multipleselect" id="daysElapsed" name="daysElapsed" multiple="multiple" data-max-options="1" data-none-selected-text="{{labels.SEARCH_AGENT_ALL_POSTING_DATES}}">
+							{{#jobDaysElapsed}}
+								<option value="{{value}}" {{#isSelected}}selected="selected"{{/isSelected}}>{{label}}</option>
+							{{/jobDaysElapsed}}
+					    </select>
+                    </div>
+                    
+                </div>
+                
+                <div class="custom-vspace"></div>
+                
+                <div class="btn-group-primary">
+                    <button class="btn btn-primary btn-block btn-large Advanced-submit" type="submit">
+                        <i class="icon-search icon-white"></i>
+                    </button>
+                    <a class="btn btn-primary btn-block btn-large Advanced-button">Advanced</a>
+                </div>
+                
+                {{#authenticated}}
+                    <div class="custom-vspace"></div>
+                    
+                    {{^savedSearch}}
+                        <a class="btn btn-large btn-block" href="{{saveToProfileUri}}"><i class="icon-save"></i> {{labels.SAVE_SEARCH}}</a>
+                    {{/savedSearch}}
+                    
+                    {{#savedSearch}}
+                        <a class="btn btn-large btn-block" href="{{registeredusersearchagentsRemoveUri}}?searchAgentId={{savedSearch}}&returnUrl={{jobsearchActionUri}}"><i class="icon-remove-sign"></i> {{labels.REMOVE_SEARCH}}</a>
+                    {{/savedSearch}}
+                {{/authenticated}}
+         <div class="clearfix"></div>
+        </form>
+    </div>
+    
+    {{^jobcategoriesBlock}}
+        {{#facebookApp}}
+            <a href="{{jobcategoriesUri}}?facebook=true" class="btn btn-primary btn-large btn-block hasJobCategories">
+        {{/facebookApp}}
+        
+        {{^facebookApp}}
+            <a href="{{jobcategoriesUri}}" class="btn btn-primary btn-large btn-block hasJobCategories">
+        {{/facebookApp}}
+            {{labels.SEARCH_JOBS_BY_CATEGORIES}} ({{hasJobCategories}})
+        </a>
+   {{/jobcategoriesBlock}}
+   
+   
+    {{^joblocationsBlock}}
+        {{^jobregioncountryBlock}}
+            {{#facebookApp}}
+                <a href="{{jobaggregatedlocationsUri}}?facebook=true" class="btn btn-primary btn-large btn-block hasJobLocations">
+            {{/facebookApp}}
+            
+            {{^facebookApp}}
+                <a href="{{jobaggregatedlocationsUri}}" class="btn btn-primary btn-large btn-block hasJobLocations">
+            {{/facebookApp}}
+            {{labels.SEARCH_JOBS_BY_LOCATIONS}} ({{hasJobLocations}})
+            </a>
+        {{/jobregioncountryBlock}}
+   {{/joblocationsBlock}}
+   
+    {{#hasJobTypes}}
+        {{#facebookApp}}
+            <a href="{{jobtypesUri}}" class="btn btn-primary btn-large btn-block hasJobCompanies">
+        {{/facebookApp}}
+        {{^facebookApp}}
+            <a href="{{jobtypesUri}}" class="btn btn-primary btn-large btn-block hasJobCompanies">
+        {{/facebookApp}}
+            {{labels.SEARCH_AGENT_ALL_JOBTYPES}} ({{hasJobTypes}})
+        </a>
+    {{/hasJobTypes}}
+    
+    <div class="Div_Class 1">
+        {{#hasJobInteractiveMap}}
+        <div class="Width_Full">
+            <strong>
+                <a href="{{jobinteractivemapUri}}" class="btn btn-large btn-primary D" target="_blank">{{labels.INTERACTIVE_JOB_MAP}}</a>
+                <span class=""></span>
+            </strong>
+        </div>
+        {{/hasJobInteractiveMap}} 
+        
+        {{#hasGeneralJobApplication}}
+        <div class="row-fluid general_j" style="margin-top: 8px;">
+            <div class="span12">
+                <a href="{{generaljobapplicationUri}}" style="cursor: default;" class="noclickme">
+                    <div class="well featurehover featurehover-misc center">
+                        <div class="highlight">{{labels.NO_OPEN_POSITION}}</div>
+                        <div>Create an alert below, so you can be advised of roles as they are created, or submit your information, and we will retain it for future consideration.</div>
+                        <div class="clearfix"></div>
+                        <div class="custom-vspace"></div>
+                        <a class="btn btn-large btn-primary JOB_U" href="{{generaljobapplicationUri}}">{{labels.GENERAL_JOB_APPLICATION}}</a>
+                        {{#searchAgentIntegration}} 
+                            {{#registeredusersearchagentseditBlock}}
+                            <a href="{{registeredusersearchagentsUri}}" class="btn btn-large btn-primary">{{labels.SEARCH_AGENTS}}</a>
+                            {{/registeredusersearchagentseditBlock}} 
+                            
+                            {{^registeredusersearchagentseditBlock}} 
+                                {{#registeredusersearchagentsBlock}}
+                                <a href="{{registeredusersearchagentsUri}}" class="btn btn-large btn-primary">{{labels.SEARCH_AGENTS}}</a>
+                                {{/registeredusersearchagentsBlock}} 
+                                
+                                {{^registeredusersearchagentsBlock}}
+                                <a href="{{registeredusersearchagentsUri}}" class="btn btn-large btn-primary Sea_Agent">{{labels.SEARCH_AGENTS}}</a>
+                                {{/registeredusersearchagentsBlock}} 
+                            {{/registeredusersearchagentseditBlock}} 
+                        {{/searchAgentIntegration}}
+                    </div>
+                </a>
+            </div>
+        </div>
+        {{/hasGeneralJobApplication}}
+    </div>
+</div>
+{{/hasSimilarJobs}}

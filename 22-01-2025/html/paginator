@@ -1,0 +1,23 @@
+<div class="pagination">
+    <ul>              
+    {{#paginator.hasPrevious}}
+		<li><a href="{{nextPageUri}}{{paginator.previousPageLabel}}"><i class="icon-angle-left"></i></a></li> 
+	{{/paginator.hasPrevious}}
+
+    {{#paginator}}
+    	{{#gap}}
+			<li><a href="#" class="noaction-click">...</a></li>
+		{{/gap}}
+		{{#current}}
+			<li class="page active"><a href="#" class="noaction-click">{{pageLabel}}</a></li>
+		{{/current}}
+		{{^current}}
+			<li><a href="{{nextPageUri}}{{pageLabel}}">{{pageLabel}}</a></li>
+		{{/current}}	
+	{{/paginator}}	
+	
+    {{#paginator.hasNext}}
+	      <li><a href="{{nextPageUri}}{{paginator.nextPageLabel}}"><i class="icon-angle-right"></i></a></li>
+	{{/paginator.hasNext}}			
+    </ul>
+</div>
